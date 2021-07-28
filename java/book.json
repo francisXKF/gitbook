@@ -1,3 +1,9 @@
 {
-  "plugins": ["summary"]
+  "author": "莫显辉",
+  "description" : "日常笔记",
+  "language" : "zh-hans",
+  "styles": {
+	    "website": "styles/website.css"
+	},
+  "plugins": ["summary", "splitter", "code", "-sharing"]
 }
