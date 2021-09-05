@@ -1,0 +1,872 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AbstractExecutorService.Java · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="莫显辉">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Callable.java.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Doc</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../AbstractMap.java.html">
+            
+                <a href="../AbstractMap.java.html">
+            
+                    
+                    AbstractMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Map.java.html">
+            
+                <a href="../Map.java.html">
+            
+                    
+                    Map.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Concurrent
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.3.1" data-path="AbstractExecutorService.java.html">
+            
+                <a href="AbstractExecutorService.java.html">
+            
+                    
+                    AbstractExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="Callable.java.html">
+            
+                <a href="Callable.java.html">
+            
+                    
+                    Callable.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="ConcurrentHashMap.java.html">
+            
+                <a href="ConcurrentHashMap.java.html">
+            
+                    
+                    ConcurrentHashMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="ConcurrentMap.java.html">
+            
+                <a href="ConcurrentMap.java.html">
+            
+                    
+                    ConcurrentMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="Executor.java.html">
+            
+                <a href="Executor.java.html">
+            
+                    
+                    Executor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="ExecutorCompletionService.java.html">
+            
+                <a href="ExecutorCompletionService.java.html">
+            
+                    
+                    ExecutorCompletionService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="ExecutorService.java.html">
+            
+                <a href="ExecutorService.java.html">
+            
+                    
+                    ExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="Future.java.html">
+            
+                <a href="Future.java.html">
+            
+                    
+                    Future.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="FutureTask.java.html">
+            
+                <a href="FutureTask.java.html">
+            
+                    
+                    FutureTask.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="RunnableFuture.java.html">
+            
+                <a href="RunnableFuture.java.html">
+            
+                    
+                    RunnableFuture.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="ThreadPoolExecutor.java.html">
+            
+                <a href="ThreadPoolExecutor.java.html">
+            
+                    
+                    ThreadPoolExecutor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" >
+            
+                <span>
+            
+                    
+                    Locks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.12.1" data-path="locks/AbstractOwnableSynchronizer.java.html">
+            
+                <a href="locks/AbstractOwnableSynchronizer.java.html">
+            
+                    
+                    AbstractOwnableSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.2" data-path="locks/AbstractQueuedSynchronizer.java.html">
+            
+                <a href="locks/AbstractQueuedSynchronizer.java.html">
+            
+                    
+                    AbstractQueuedSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.3" data-path="locks/Condition.java.html">
+            
+                <a href="locks/Condition.java.html">
+            
+                    
+                    Condition.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.4" data-path="locks/Lock.java.html">
+            
+                <a href="locks/Lock.java.html">
+            
+                    
+                    Lock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.5" data-path="locks/ReentrantLock.java.html">
+            
+                <a href="locks/ReentrantLock.java.html">
+            
+                    
+                    ReentrantLock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../日志.html">
+            
+                <a href="../../日志.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >AbstractExecutorService.Java</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="abstractexecutorservice">AbstractExecutorService</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */</span>
+
+<span class="hljs-comment">/*
+ *
+ *
+ *  
+ *
+ *
+ * Written by Doug Lea with assistance from members of JCP JSR-166
+ * Expert Group and released to the public domain, as explained at
+ * http://creativecommons.org/publicdomain/zero/1.0/
+ */</span>
+
+<span class="hljs-keyword">package</span> java.util.concurrent;
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-comment">/**
+ * Provides default implementations of {<span class="hljs-doctag">@link</span> ExecutorService}
+ * execution methods. This class implements the {<span class="hljs-doctag">@code</span> submit},
+ * {<span class="hljs-doctag">@code</span> invokeAny} and {<span class="hljs-doctag">@code</span> invokeAll} methods using a
+ * {<span class="hljs-doctag">@link</span> RunnableFuture} returned by {<span class="hljs-doctag">@code</span> newTaskFor}, which defaults
+ * to the {<span class="hljs-doctag">@link</span> FutureTask} class provided in this package.  For example,
+ * the implementation of {<span class="hljs-doctag">@code</span> submit(Runnable)} creates an
+ * associated {<span class="hljs-doctag">@code</span> RunnableFuture} that is executed and
+ * returned. Subclasses may override the {<span class="hljs-doctag">@code</span> newTaskFor} methods
+ * to return {<span class="hljs-doctag">@code</span> RunnableFuture} implementations other than
+ * {<span class="hljs-doctag">@code</span> FutureTask}.
+ * &#x63D0;&#x4F9B;ExecutorService&#x6267;&#x884C;&#x65B9;&#x6CD5;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+ * &#x8BE5;&#x7C7B;&#x901A;&#x8FC7;&#x4F7F;&#x7528;RunnableFuture&#x8FD4;&#x56DE;&#x7684;newTaskFor&#xFF08;newTaskFor&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x7684;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x4E3A;&#x8BE5;&#x5305;&#x4E0B;&#x7684;FutureTask&#x7C7B;&#x5B9E;&#x4F8B;&#xFF09;&#x5B9E;&#x73B0;&#x4E86;submit&#x3001;invokeAny&#x548C;invokeAll&#x65B9;&#x6CD5;&#xFF0C;
+ * &#x4F8B;&#x5982;&#xFF0C;&#x5B9E;&#x73B0;&#x7684;submit(Runnable)&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5173;&#x8054;&#x7684;RunnableFuture&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x4E0E;&#x8FD4;&#x56DE;&#x3002;
+ * &#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x8986;&#x76D6;newTaskFor&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x8FD4;&#x56DE;RunnableFuture&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x800C;&#x4E0D;&#x662F;FutureTask&#x7684;&#x5B9E;&#x73B0;&#x3002;
+ *
+ * &lt;p&gt;&lt;b&gt;Extension example&lt;/b&gt;. Here is a sketch of a class
+ * that customizes {<span class="hljs-doctag">@link</span> ThreadPoolExecutor} to use
+ * a {<span class="hljs-doctag">@code</span> CustomTask} class instead of the default {<span class="hljs-doctag">@code</span> FutureTask}:
+ * &#x6269;&#x5C55;&#x6837;&#x4F8B;&#x3002;
+ * &#x8FD9;&#x6709;&#x4E00;&#x4E2A;&#x8349;&#x56FE;&#xFF08;sketch&#xFF09;&#xFF0C;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;ThreadPoolExecutor&#x4F7F;&#x7528;CustomTask&#x7C7B;&#x66FF;&#x4EE3;&#x9ED8;&#x8BA4;&#x7684;FutureTask&#x7C7B;&#xFF1A;
+ * 
+ *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+ * public class CustomThreadPoolExecutor extends ThreadPoolExecutor {
+ *
+ *   static class CustomTask&lt;V&gt; implements RunnableFuture&lt;V&gt; {...}
+ *
+ *   protected &lt;V&gt; RunnableFuture&lt;V&gt; newTaskFor(Callable&lt;V&gt; c) {
+ *       return new CustomTask&lt;V&gt;(c); // AbstractExecutorService&#x8FD9;&#x91CC;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;new FutureTask&#xFF0C;&#x8BE5;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A;new CustomTask&#xFF0C;&#x53EA;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86;RunnableFuture&#x63A5;&#x53E3;&#x5C31;&#x884C;&#x3002;
+ *   }
+ *   protected &lt;V&gt; RunnableFuture&lt;V&gt; newTaskFor(Runnable r, V v) {
+ *       return new CustomTask&lt;V&gt;(r, v);
+ *   }
+ *   // ... add constructors, etc.
+ * }}&lt;/pre&gt;
+ *
+ * <span class="hljs-doctag">@since</span> 1.5
+ * <span class="hljs-doctag">@author</span> Doug Lea
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AbstractExecutorService</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">ExecutorService</span> </span>{
+
+    <span class="hljs-comment">/**
+     * Returns a {<span class="hljs-doctag">@code</span> RunnableFuture} for the given runnable and default
+     * value.
+     * &#x8FD4;&#x56DE;RunnableFture&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x7684;runnable&#x4E0E;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x503C;&#x6784;&#x5EFA;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> runnable the runnable task being wrapped
+     *        runnable &#x88AB;&#x5305;&#x88C5;&#x7684;runnable&#x4EFB;&#x52A1;
+     * <span class="hljs-doctag">@param</span> value the default value for the returned future
+     *        value &#x9ED8;&#x8BA4;&#x7684;future&#x8FD4;&#x56DE;&#x503C;
+     * <span class="hljs-doctag">@param</span> &lt;T&gt; the type of the given value
+     *        &lt;T&gt; &#x7ED9;&#x5B9A;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x7C7B;&#x578B;
+     * <span class="hljs-doctag">@return</span> a {<span class="hljs-doctag">@code</span> RunnableFuture} which, when run, will run the
+     * underlying runnable and which, as a {<span class="hljs-doctag">@code</span> Future}, will yield
+     * the given value as its result and provide for cancellation of
+     * the underlying task
+     *         &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;RunnableFuture&#xFF0C;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4F1A;&#x6267;&#x884C;&#x5E95;&#x5C42;&#x7684;runnable&#xFF0C;
+     *         &#x5E76;&#x4E14;&#x4F5C;&#x4E3A;Future&#xFF0C;&#x5C06;&#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x5E95;&#x5C42;&#x4EFB;&#x52A1;&#x7684;&#x53D6;&#x6D88;&#xFF08;&#x65B9;&#x6CD5;&#xFF09;
+     * <span class="hljs-doctag">@since</span> 1.6
+     */</span>
+    <span class="hljs-keyword">protected</span> &lt;T&gt; <span class="hljs-function">RunnableFuture&lt;T&gt; <span class="hljs-title">newTaskFor</span><span class="hljs-params">(Runnable runnable, T value)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> FutureTask&lt;T&gt;(runnable, value); <span class="hljs-comment">// FutureTask&#x4F1A;&#x8C03;&#x7528;Executors#callable&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;runnable+value&#x8F6C;&#x5316;&#x4E3A;callable&#x3002;&#x5982;&#x679C;runnable&#x4E3A;null&#xFF0C;&#x629B;&#x51FA;&#x7A7A;&#x6307;&#x9488;&#x5F02;&#x5E38;</span>
+    }
+
+    <span class="hljs-comment">/**
+     * Returns a {<span class="hljs-doctag">@code</span> RunnableFuture} for the given callable task.
+     * &#x8FD4;&#x56DE;Runnable&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x7684;callable&#x4EFB;&#x52A1;&#x6784;&#x5EFA;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> callable the callable task being wrapped
+     * <span class="hljs-doctag">@param</span> &lt;T&gt; the type of the callable&apos;s result
+     * <span class="hljs-doctag">@return</span> a {<span class="hljs-doctag">@code</span> RunnableFuture} which, when run, will call the
+     * underlying callable and which, as a {<span class="hljs-doctag">@code</span> Future}, will yield
+     * the callable&apos;s result as its result and provide for
+     * cancellation of the underlying task
+     * <span class="hljs-doctag">@since</span> 1.6
+     */</span>
+    <span class="hljs-keyword">protected</span> &lt;T&gt; <span class="hljs-function">RunnableFuture&lt;T&gt; <span class="hljs-title">newTaskFor</span><span class="hljs-params">(Callable&lt;T&gt; callable)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> FutureTask&lt;T&gt;(callable); <span class="hljs-comment">// &#x5982;&#x679C;callable&#x4E3A;null&#xFF0C;&#x629B;&#x51FA;&#x7A7A;&#x6307;&#x9488;&#x5F02;&#x5E38;&#x3002;&#x5426;&#x5219;&#x521B;&#x5EFA;FutureTask&#xFF0C;callable=callable&#xFF0C;state=NEW</span>
+    }
+
+    <span class="hljs-comment">/**
+     * &#x63D0;&#x4EA4;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;null&#x7684;Runnable&#x4EFB;&#x52A1;
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException       {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-keyword">public</span> Future&lt;?&gt; submit(Runnable task) {
+        <span class="hljs-keyword">if</span> (task == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException(); <span class="hljs-comment">// &#x5982;&#x679C;&#x63D0;&#x4EA4;&#x7684;&#x4EFB;&#x52A1;&#x4E3A;null&#xFF0C;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+        RunnableFuture&lt;Void&gt; ftask = newTaskFor(task, <span class="hljs-keyword">null</span>); <span class="hljs-comment">// &#x5C06;&#x4EFB;&#x52A1;&#x8F6C;&#x5316;&#x4E3A;FutureTask</span>
+        execute(ftask);                                       <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x7684;execute&#x662F;Executor&#x63A5;&#x53E3;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x8C03;&#x7528;&#x662F;&#x5B9E;&#x73B0;&#x7C7B;&#x505A;&#x7684;&#xFF0C;&#x6BD4;&#x5982;ThreadPoolExecutor#execute(Runnable command)</span>
+        <span class="hljs-keyword">return</span> ftask;                                        <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x5C06;&#x63D0;&#x4EA4;&#x7684;RunnableFuture&#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x4E86;&#xFF08;&#x662F;&#x60F3;&#x62FF;&#x8FD9;&#x4E2A;Future&#x6765;&#x83B7;&#x53D6;&#x7ED3;&#x679C;&#xFF09;</span>
+    }
+
+    <span class="hljs-comment">/**
+     * &#x63D0;&#x4EA4;&#x5E26;&#x6709;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x503C;&#x7684;Runnable&#x4EFB;&#x52A1;
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException       {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-keyword">public</span> &lt;T&gt; <span class="hljs-function">Future&lt;T&gt; <span class="hljs-title">submit</span><span class="hljs-params">(Runnable task, T result)</span> </span>{
+        <span class="hljs-keyword">if</span> (task == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException();
+        RunnableFuture&lt;T&gt; ftask = newTaskFor(task, result);
+        execute(ftask);                                       <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x662F;&#x4EA4;&#x7ED9;&#x5B9E;&#x73B0;&#x7C7B;&#x505A;&#x7684;&#xFF0C;&#x6BD4;&#x5982;ThreadPoolExecutor#execute</span>
+        <span class="hljs-keyword">return</span> ftask;
+    }
+
+    <span class="hljs-comment">/**
+     * &#x63D0;&#x4EA4;callable&#x4EFB;&#x52A1;
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException       {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-keyword">public</span> &lt;T&gt; <span class="hljs-function">Future&lt;T&gt; <span class="hljs-title">submit</span><span class="hljs-params">(Callable&lt;T&gt; task)</span> </span>{
+        <span class="hljs-keyword">if</span> (task == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException();
+        RunnableFuture&lt;T&gt; ftask = newTaskFor(task);
+        execute(ftask);                                       <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x662F;&#x4EA4;&#x7ED9;&#x5B9E;&#x73B0;&#x7C7B;&#x505A;&#x7684;&#xFF0C;&#x6BD4;&#x5982;ThreadPoolExecutor#execute</span>
+        <span class="hljs-keyword">return</span> ftask;
+    }
+
+    <span class="hljs-comment">/**
+     * the main mechanics of invokeAny.
+     * invokeAny&#x7684;&#x4E3B;&#x8981;&#x673A;&#x5236;
+     * &#xFF08;&#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x8FD4;&#x56DE;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x7ED3;&#x679C;&#xFF08;&#x5373;&#x6CA1;&#x6709;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#x3002;&#xFF09;
+     */</span>
+    <span class="hljs-keyword">private</span> &lt;T&gt; <span class="hljs-function">T <span class="hljs-title">doInvokeAny</span><span class="hljs-params">(Collection&lt;? extends Callable&lt;T&gt;&gt; tasks,
+                              <span class="hljs-keyword">boolean</span> timed, <span class="hljs-keyword">long</span> nanos)</span> <span class="hljs-comment">// tasks&#x4E3A;&#x8981;&#x63D0;&#x4EA4;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x9650;&#x65F6;&#x6267;&#x884C;&#xFF08;&#x8BE5;&#x9650;&#x65F6;&#x4E3A;&#x62FF;&#x5230;&#x6240;&#x6709;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7684;&#x603B;&#x9650;&#x65F6;&#xFF09;</span>
+        <span class="hljs-keyword">throws</span> InterruptedException, ExecutionException, TimeoutException </span>{
+        <span class="hljs-keyword">if</span> (tasks == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException();
+        <span class="hljs-keyword">int</span> ntasks = tasks.size();
+        <span class="hljs-keyword">if</span> (ntasks == <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalArgumentException(); <span class="hljs-comment">// &#x5982;&#x679C;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#x91CC;&#x6CA1;&#x6709;&#x4EFB;&#x52A1;&#xFF0C;&#x629B;&#x51FA;IllegalArgumentException</span>
+        ArrayList&lt;Future&lt;T&gt;&gt; futures = <span class="hljs-keyword">new</span> ArrayList&lt;Future&lt;T&gt;&gt;(ntasks); <span class="hljs-comment">// &#x521B;&#x5EFA;&#x521D;&#x8BC6;&#x5BB9;&#x91CF;&#x4E3A;&#x4EFB;&#x52A1;&#x6570;&#x957F;&#x5EA6;&#x7684;&#x7A7A;&#x5217;&#x8868;&#x3002;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;future&#x662F;&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x65B9;&#x4FBF;&#x64CD;&#x4F5C;&#x4EFB;&#x52A1;&#xFF0C;&#x6BD4;&#x5982;cancel&#x7B49;&#x64CD;&#x4F5C;&#x3002;</span>
+        ExecutorCompletionService&lt;T&gt; ecs =
+            <span class="hljs-keyword">new</span> ExecutorCompletionService&lt;T&gt;(<span class="hljs-keyword">this</span>); <span class="hljs-comment">// &#x7528;AbstractExecutorService&#x521B;&#x5EFA;ExecutorCompletionService&#xFF08;ecs&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x96C6;&#xFF0C;&#x5E76;&#x5C06;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x4FDD;&#x5B58;&#x5728;&#x5B8C;&#x6210;&#x961F;&#x5217;&#x4E2D;</span>
+
+        <span class="hljs-comment">// For efficiency, especially in executors with limited</span>
+        <span class="hljs-comment">// parallelism, check to see if previously submitted tasks are</span>
+        <span class="hljs-comment">// done before submitting more of them. This interleaving</span>
+        <span class="hljs-comment">// plus the exception mechanics account for messiness of main</span>
+        <span class="hljs-comment">// loop.</span>
+        <span class="hljs-comment">// &#x4E3A;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#xFF08;efficiency&#xFF09;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5728;&#x5E76;&#x884C;&#x6027;&#xFF08;parallelism&#xFF09;&#x6709;&#x9650;&#x7684;&#x6267;&#x884C;&#x5668;&#x4E2D;&#xFF08;executors&#xFF09;&#xFF0C;</span>
+        <span class="hljs-comment">// &#x5728;&#x66F4;&#x591A;&#x7684;&#x4EFB;&#x52A1;&#x63D0;&#x4EA4;&#x4E4B;&#x524D;&#x68C0;&#x67E5;&#x4E4B;&#x524D;&#x63D0;&#x4EA4;&#x7684;&#x4EFB;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x5B8C;&#x6210;&#x3002;</span>
+        <span class="hljs-comment">// &#x8FD9;&#x79CD;&#x4EA4;&#x9519;&#xFF08;interleaving &#x4EA4;&#x53C9;&#xFF09;&#x52A0;&#x4E0A;&#x5F02;&#x5E38;&#x673A;&#x5236;&#x89E3;&#x91CA;&#x4E86;&#xFF08;account for&#xFF09;&#x4E3B;&#x5FAA;&#x73AF;&#x7684;&#x6DF7;&#x4E71;&#x3002;</span>
+
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// Record exceptions so that if we fail to obtain any</span>
+            <span class="hljs-comment">// result, we can throw the last exception we got.</span>
+            <span class="hljs-comment">// &#x8BB0;&#x5F55;&#x5F02;&#x5E38;&#xFF0C;&#x5982;&#x679C;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x4EFB;&#x4F55;&#x7ED3;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x629B;&#x51FA;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x3002;</span>
+            ExecutionException ee = <span class="hljs-keyword">null</span>;
+            <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> deadline = timed ? System.nanoTime() + nanos : <span class="hljs-number">0L</span>;  <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x9650;&#x65F6;&#x622A;&#x6B62;&#x65F6;&#x95F4;</span>
+            Iterator&lt;? extends Callable&lt;T&gt;&gt; it = tasks.iterator();
+
+            <span class="hljs-comment">// Start one task for sure; the rest incrementally</span>
+            <span class="hljs-comment">// &#x786E;&#x5B9A;&#x5F00;&#x59CB;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x5176;&#x4F59;&#x9010;&#x6E10;&#x589E;&#x52A0;</span>
+            futures.add(ecs.submit(it.next()));                    <span class="hljs-comment">// ecs.submit&#x5C06;&#x4EFB;&#x52A1;&#x63D0;&#x4EA4;&#x5230;Executor&#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;RunnableFuture&#xFF0C;&#x662F;&#x901A;&#x8FC7;AES&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x672C;&#x7C7B;&#xFF09;&#x7684;newTaskFor&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x7684;&#x3002;</span>
+            --ntasks;                                              <span class="hljs-comment">// &#x6267;&#x884C;&#x4E86;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x6570;-1</span>
+            <span class="hljs-keyword">int</span> active = <span class="hljs-number">1</span>;                                        <span class="hljs-comment">// &#x6D3B;&#x8DC3;&#x7684;&#x4EFB;&#x52A1;&#x6570;&#x7F6E;&#x4E3A;1&#x3002;&#x6D3B;&#x8DC3;&#x4EFB;&#x52A1;=&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;</span>
+
+            <span class="hljs-keyword">for</span> (;;) {
+                Future&lt;T&gt; f = ecs.poll();                          <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5B8C;&#x6210;&#x961F;&#x5217;&#x961F;&#x9996;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5219;&#x8FD4;&#x56DE;null&#xFF08;&#x4E0D;&#x4F1A;&#x963B;&#x585E;&#xFF0C;take&#x6216;&#x8005;poll(&#x65F6;&#x9650;)&#x624D;&#x4F1A;&#x963B;&#x585E;&#xFF09;</span>
+                <span class="hljs-keyword">if</span> (f == <span class="hljs-keyword">null</span>) {                                  <span class="hljs-comment">// f == null&#x8868;&#x793A;&#x6CA1;&#x6709;&#x62FF;&#x5230;&#x961F;&#x9996;&#x5143;&#x7D20;&#xFF0C;&#x8BF4;&#x660E;&#x5F53;&#x524D;&#x6CA1;&#x6709;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x7ED3;&#x679C;</span>
+                    <span class="hljs-keyword">if</span> (ntasks &gt; <span class="hljs-number">0</span>) {
+                        --ntasks;
+                        futures.add(ecs.submit(it.next()));        <span class="hljs-comment">// &#x5982;&#x679C;&#x4EFB;&#x52A1;&#x6CA1;&#x6267;&#x884C;&#x5B8C;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4E0B;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x52A0;&#x5165;ecs&#x4E2D;&#x6267;&#x884C;&#xFF08;&#x6CE8;&#x610F;&#x4F7F;&#x7528;&#x8FED;&#x4EE3;&#x5668;&#x5B9E;&#x73B0;&#x83B7;&#x53D6;&#x4E0B;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#xFF09;&#x3002;&#x4EFB;&#x52A1;&#x6570;-1&#xFF0C;&#x6D3B;&#x8DC3;&#x4EFB;&#x52A1;&#x6570;+1</span>
+                        ++active;
+                    }
+                    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (active == <span class="hljs-number">0</span>)
+                        <span class="hljs-keyword">break</span>;                                     <span class="hljs-comment">// &#x5982;&#x679C;&#x6D3B;&#x8DC3;&#x4EFB;&#x52A1;&#x6570;&#x4E3A;0&#xFF0C;&#x8868;&#x793A;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x9000;&#x51FA;</span>
+                    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (timed) {
+                        f = ecs.poll(nanos, TimeUnit.NANOSECONDS);  <span class="hljs-comment">// &#x5230;&#x4E86;&#x8FD9;&#x91CC;&#xFF0C;&#x5C1A;&#x672A;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;=0&#xFF0C;&#x6D3B;&#x8DC3;&#x7684;&#x4EFB;&#x52A1;&gt;0&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x7B49;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x4E86;&#x3002;&#x5982;&#x679C;&#x9650;&#x65F6;&#x7B49;&#x5F85;&#xFF0C;&#x5C31;&#x7528;ecs.poll(&#x65F6;&#x9650;)&#x7684;&#x65B9;&#x6CD5;&#x7B49;&#xFF0C;&#x7B49;&#x4E0D;&#x5230;&#x629B;&#x5F02;&#x5E38;</span>
+                        <span class="hljs-keyword">if</span> (f == <span class="hljs-keyword">null</span>)
+                            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> TimeoutException();
+                        nanos = deadline - System.nanoTime();       <span class="hljs-comment">// &#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#xFF0C;&#x5982;&#x679C;&#x7B49;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#xFF0C;&#x5269;&#x4F59;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x9700;&#x8981;&#x51CF;&#x53BB;&#x5F53;&#x524D;&#x5DF2;&#x7528;&#x65F6;&#x95F4;</span>
+                    }
+                    <span class="hljs-keyword">else</span>
+                        f = ecs.take();                             <span class="hljs-comment">// &#x5982;&#x679C;&#x4E0D;&#x9650;&#x65F6;&#xFF0C;&#x90A3;&#x5C31;&#x4E00;&#x76F4;&#x7B49;&#x4E86;</span>
+                }                                                   <span class="hljs-comment">// &#x5230;&#x4E86;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6700;&#x591A;&#x6709;&#x4E24;&#x4E2A;&#x4EFB;&#x52A1;&#x5728;&#x5E76;&#x884C;&#x6267;&#x884C;</span>
+                <span class="hljs-keyword">if</span> (f != <span class="hljs-keyword">null</span>) {                                   <span class="hljs-comment">// &#x5982;&#x679C;&#x6709;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#xFF0C;&#x62FF;&#x5230;&#x5B8C;&#x6210;&#x7ED3;&#x679C;&#x3002;&#xFF08;&#x6CE8;&#x610F;&#x8FD9;&#x4E2A;f&#x53EF;&#x4EE5;&#x662F;&#x5728;f==null&#x5206;&#x652F;&#x91CC;&#x9762;&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#xFF09;</span>
+                    --active;                                       <span class="hljs-comment">// &#x6D3B;&#x8DC3;&#x4EFB;&#x52A1;&#x6570;-1</span>
+                    <span class="hljs-keyword">try</span> {
+                        <span class="hljs-keyword">return</span> f.get();                            <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x6267;&#x884C;&#x7ED3;&#x679C;</span>
+                    } <span class="hljs-keyword">catch</span> (ExecutionException eex) {
+                        ee = eex;                                   <span class="hljs-comment">// ee&#x7528;&#x6765;&#x8BB0;&#x5F55;&#x4E0A;&#x6B21;&#x7684;&#x5F02;&#x5E38;&#x7ED3;&#x679C;</span>
+                    } <span class="hljs-keyword">catch</span> (RuntimeException rex) {
+                        ee = <span class="hljs-keyword">new</span> ExecutionException(rex);
+                    }
+                }
+            }
+
+            <span class="hljs-keyword">if</span> (ee == <span class="hljs-keyword">null</span>)
+                ee = <span class="hljs-keyword">new</span> ExecutionException();                      <span class="hljs-comment">// &#x6267;&#x884C;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x8BF4;&#x660E;&#x9000;&#x51FA;&#x4E86;for&#x5FAA;&#x73AF;&#xFF0C;&#x4F46;&#x5E76;&#x6CA1;&#x6709;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7684;&#x503C;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x629B;&#x51FA;&#x6267;&#x884C;&#x5F02;&#x5E38;&#x3002;</span>
+            <span class="hljs-keyword">throw</span> ee;
+
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>, size = futures.size(); i &lt; size; i++)
+                futures.get(i).cancel(<span class="hljs-keyword">true</span>);                        <span class="hljs-comment">// &#x56E0;&#x4E3A;&#x662F;invokeAny&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5B8C;&#x4E86;&#xFF0C;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x90FD;&#x53D6;&#x6D88;&#x3002;&#xFF08;&#x53EA;&#x6709;FutureTask NEW-&gt;CANCELLED&#x6216;&#x8005;&#x662F;NEW-&gt;INTERRUPTING-&gt;INTERRUPTED&#xFF09;</span>
+        }
+    }
+
+    <span class="hljs-comment">// &#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x8FD4;&#x56DE;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x7ED3;&#x679C;&#xFF08;&#x5373;&#x6CA1;&#x6709;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#x3002;&#xFF08;&#x91CD;&#x8F7D;ExecutorService&#x65B9;&#x6CD5;&#xFF09;</span>
+    <span class="hljs-comment">// &#x4E0D;&#x9650;&#x65F6;&#x7684;invokeAny</span>
+    <span class="hljs-keyword">public</span> &lt;T&gt; <span class="hljs-function">T <span class="hljs-title">invokeAny</span><span class="hljs-params">(Collection&lt;? extends Callable&lt;T&gt;&gt; tasks)</span>
+        <span class="hljs-keyword">throws</span> InterruptedException, ExecutionException </span>{
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">return</span> doInvokeAny(tasks, <span class="hljs-keyword">false</span>, <span class="hljs-number">0</span>); <span class="hljs-comment">// &#x4E0D;&#x9650;&#x65F6;</span>
+        } <span class="hljs-keyword">catch</span> (TimeoutException cannotHappen) {
+            <span class="hljs-keyword">assert</span> <span class="hljs-keyword">false</span>; <span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x6709;&#x610F;&#x601D;&#xFF0C;&#x4E00;&#x4E2A;&#x4ECE;&#x6765;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x7684;&#x5F02;&#x5E38;&#x5982;&#x679C;&#x8FDB;&#x6765;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x65AD;&#x8A00;&#x4E3A;&#x5931;&#x8D25;&#xFF0C;&#x4E0D;return&#x7ED3;&#x679C;&#xFF1F;&#xFF1F;&#xFF1F;&#xFF08;&#x4E0D;&#x77E5;&#x9053;&#x6709;&#x5565;&#x7528;&#xFF09;</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+    }
+
+    <span class="hljs-comment">// &#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x8FD4;&#x56DE;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x7ED3;&#x679C;&#xFF08;&#x5373;&#x6CA1;&#x6709;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#x3002;&#xFF08;&#x91CD;&#x8F7D;ExecutorService&#x65B9;&#x6CD5;&#xFF09;</span>
+    <span class="hljs-comment">// &#x9650;&#x65F6;&#x7684;invokeAny&#xFF08;&#x8BE5;&#x9650;&#x65F6;&#x4E3A;&#x62FF;&#x5230;&#x6240;&#x6709;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7684;&#x603B;&#x9650;&#x65F6;&#xFF09;</span>
+    <span class="hljs-keyword">public</span> &lt;T&gt; <span class="hljs-function">T <span class="hljs-title">invokeAny</span><span class="hljs-params">(Collection&lt;? extends Callable&lt;T&gt;&gt; tasks,
+                           <span class="hljs-keyword">long</span> timeout, TimeUnit unit)</span>
+        <span class="hljs-keyword">throws</span> InterruptedException, ExecutionException, TimeoutException </span>{
+        <span class="hljs-keyword">return</span> doInvokeAny(tasks, <span class="hljs-keyword">true</span>, unit.toNanos(timeout));
+    }
+
+    <span class="hljs-comment">// &#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x8FD4;&#x56DE;Future&#x5217;&#x8868;&#x6301;&#x6709;&#x5F53;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x90FD;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x72B6;&#x6001;&#x548C;&#x7ED3;&#x679C;&#x3002;&#xFF08;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x7B49;&#x5F85;wait&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x90FD;&#x5B8C;&#x6210;&#xFF09;&#xFF08;&#x91CD;&#x8F7D;ExecutorService&#x65B9;&#x6CD5;&#xFF09;</span>
+    <span class="hljs-comment">// &#x4E0D;&#x9650;&#x65F6;&#x7684;invokeAll</span>
+    <span class="hljs-keyword">public</span> &lt;T&gt; List&lt;Future&lt;T&gt;&gt; invokeAll(Collection&lt;? extends Callable&lt;T&gt;&gt; tasks)
+        <span class="hljs-keyword">throws</span> InterruptedException {
+        <span class="hljs-keyword">if</span> (tasks == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException();
+        ArrayList&lt;Future&lt;T&gt;&gt; futures = <span class="hljs-keyword">new</span> ArrayList&lt;Future&lt;T&gt;&gt;(tasks.size()); <span class="hljs-comment">// &#x521B;&#x5EFA;&#x521D;&#x8BC6;&#x5BB9;&#x91CF;&#x4E3A;&#x4EFB;&#x52A1;&#x6570;&#x957F;&#x5EA6;&#x7684;&#x7A7A;&#x5217;&#x8868;&#x3002;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;future&#x662F;&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x65B9;&#x4FBF;&#x64CD;&#x4F5C;&#x4EFB;&#x52A1;&#xFF0C;&#x6BD4;&#x5982;cancel&#x7B49;&#x64CD;&#x4F5C;&#x3002;</span>
+        <span class="hljs-keyword">boolean</span> done = <span class="hljs-keyword">false</span>;                                       <span class="hljs-comment">// &#x6240;&#x6709;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x6807;&#x8BC6;</span>
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">for</span> (Callable&lt;T&gt; t : tasks) {
+                RunnableFuture&lt;T&gt; f = newTaskFor(t);
+                futures.add(f);                                      <span class="hljs-comment">// &#x5C06;&#x5305;&#x88C5;&#x540E;&#x7684;&#x4EFB;&#x52A1;&#x52A0;&#x5165;&#x5230;futures</span>
+                execute(f);                                          <span class="hljs-comment">// &#x8C03;&#x7528;&#x5B50;&#x7C7B;&#x7684;execute&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#xFF08;&#x50CF;ThreadPoolExecutor&#x53EF;&#x80FD;&#x53EA;&#x662F;&#x63D0;&#x4EA4;&#x4E86;&#x4EFB;&#x52A1;&#xFF0C;&#x4EFB;&#x52A1;&#x9700;&#x8981;&#x6392;&#x961F;&#x6267;&#x884C;&#xFF09;</span>
+            }
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>, size = futures.size(); i &lt; size; i++) {
+                Future&lt;T&gt; f = futures.get(i);                        <span class="hljs-comment">// &#x904D;&#x5386;futures&#xFF0C;&#x62FF;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;future</span>
+                <span class="hljs-keyword">if</span> (!f.isDone()) {                                   <span class="hljs-comment">// &#x5224;&#x65AD;&#x8BE5;&#x4EFB;&#x52A1;&#x662F;&#x5426;&#x6267;&#x884C;&#x5B8C;&#x6210;&#xFF08;state!=NEW&#xFF09;</span>
+                    <span class="hljs-keyword">try</span> {
+                        f.get();                                     <span class="hljs-comment">// &#x5982;&#x679C;&#x6CA1;&#x5B8C;&#x6210;&#xFF0C;&#x901A;&#x8FC7;FutureTask#get()&#x6765;FutureTask#awaitDone(false, 0L)&#xFF0C;&#x7B49;&#x5F85;&#x5B8C;&#x6210;</span>
+                    } <span class="hljs-keyword">catch</span> (CancellationException ignore) {
+                    } <span class="hljs-keyword">catch</span> (ExecutionException ignore) {
+                    }
+                }
+            }
+            done = <span class="hljs-keyword">true</span>;                                             <span class="hljs-comment">// &#x6267;&#x884C;&#x5230;&#x8FD9;&#x91CC;&#x8BF4;&#x660E;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x90FD;&#x5B8C;&#x6210;&#x4E86;</span>
+            <span class="hljs-keyword">return</span> futures;                                          <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x662F;&#x6240;&#x6709;future&#x96C6;&#x5408;</span>
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span> (!done)                                                <span class="hljs-comment">// &#x5982;&#x679C;&#x4EFB;&#x52A1;&#x6CA1;&#x5B8C;&#x6210;&#x800C;&#x5230;&#x4E86;&#x8FD9;&#x4E00;&#x6B65;&#xFF0C;&#x8BF4;&#x660E;&#x53EF;&#x80FD;&#x8BE5;&#x65B9;&#x6CD5;&#x88AB;&#x4E2D;&#x65AD;&#xFF0C;&#x9700;&#x8981;&#x53D6;&#x6D88;&#x6240;&#x6709;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;</span>
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>, size = futures.size(); i &lt; size; i++)
+                    futures.get(i).cancel(<span class="hljs-keyword">true</span>);                      <span class="hljs-comment">// &#x53D6;&#x6D88;&#x4EFB;&#x52A1;&#xFF08;&#x53EF;&#x53D6;&#x6D88;&#x7684;&#x4EFB;&#x52A1;state == NEW&#xFF09;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x4E2D;&#x65AD;runner&#x6765;&#x7ED3;&#x675F;</span>
+        }
+    }
+
+    <span class="hljs-comment">// &#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x8FD4;&#x56DE;Future&#x5217;&#x8868;&#x6301;&#x6709;&#x5F53;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x90FD;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x72B6;&#x6001;&#x548C;&#x7ED3;&#x679C;&#x3002;&#xFF08;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x7B49;&#x5F85;wait&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x90FD;&#x5B8C;&#x6210;&#xFF09;&#xFF08;&#x91CD;&#x8F7D;ExecutorService&#x65B9;&#x6CD5;&#xFF09;</span>
+    <span class="hljs-comment">// &#x9650;&#x65F6;&#x7684;invokeAll&#xFF08;&#x8BE5;&#x9650;&#x65F6;&#x4E3A;&#x62FF;&#x5230;&#x6240;&#x6709;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7684;&#x603B;&#x9650;&#x65F6;&#xFF09;</span>
+    <span class="hljs-keyword">public</span> &lt;T&gt; List&lt;Future&lt;T&gt;&gt; invokeAll(Collection&lt;? extends Callable&lt;T&gt;&gt; tasks,
+                                         <span class="hljs-keyword">long</span> timeout, TimeUnit unit)
+        <span class="hljs-keyword">throws</span> InterruptedException {
+        <span class="hljs-keyword">if</span> (tasks == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException();
+        <span class="hljs-keyword">long</span> nanos = unit.toNanos(timeout);
+        ArrayList&lt;Future&lt;T&gt;&gt; futures = <span class="hljs-keyword">new</span> ArrayList&lt;Future&lt;T&gt;&gt;(tasks.size());
+        <span class="hljs-keyword">boolean</span> done = <span class="hljs-keyword">false</span>;
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">for</span> (Callable&lt;T&gt; t : tasks)
+                futures.add(newTaskFor(t));                           <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x8DDF;&#x4E0D;&#x9650;&#x65F6;&#x7684;invokeAll&#x6709;&#x533A;&#x522B;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x7ACB;&#x5373;&#x5C06;&#x4EFB;&#x52A1;&#x653E;&#x5230;Executor&#xFF08;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#xFF09;#execute&#x6267;&#x884C;</span>
+
+            <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> deadline = System.nanoTime() + nanos;
+            <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> size = futures.size();
+
+            <span class="hljs-comment">// Interleave time checks and calls to execute in case</span>
+            <span class="hljs-comment">// executor doesn&apos;t have any/much parallelism.</span>
+            <span class="hljs-comment">// &#x4EA4;&#x9519;&#x65F6;&#x95F4;&#x68C0;&#x67E5;&#x548C;&#x8C03;&#x7528;&#x6267;&#x884C;&#xFF0C;&#x4EE5;&#x9632;&#x6B62;executor&#x6CA1;&#x6709;&#x4EFB;&#x4F55;/&#x5F88;&#x591A;&#x5E76;&#x884C;&#x6027;</span>
+            <span class="hljs-comment">// &#xFF08;&#x9010;&#x4E2A;&#x4EFB;&#x52A1;&#x63D0;&#x4EA4;&#x6267;&#x884C;&#xFF08;&#x4E0D;&#x5E76;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x5B9E;&#x9645;&#x7531;Executor&#x5B9E;&#x73B0;&#x5B50;&#x7C7B;&#x6765;&#x51B3;&#x5B9A;&#xFF09;&#xFF0C;&#x8BB0;&#x5F55;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF0C;&#x786E;&#x4FDD;&#x9650;&#x65F6;&#x529F;&#x80FD;&#xFF09;</span>
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; size; i++) {
+                execute((Runnable)futures.get(i));                    <span class="hljs-comment">// &#x9010;&#x4E2A;&#x63D0;&#x4EA4;&#x6267;&#x884C;&#xFF0C;&#x8BA1;&#x7B97;&#x5269;&#x4F59;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;&#x5269;&#x4F59;&#x65F6;&#x95F4;&lt;=0L&#xFF0C;&#x8FD4;&#x56DE;&#xFF08;&#x5728;finally&#x4E2D;&#x505C;&#x6B62;&#x5C1A;&#x672A;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#xFF09;</span>
+                nanos = deadline - System.nanoTime();
+                <span class="hljs-keyword">if</span> (nanos &lt;= <span class="hljs-number">0L</span>)
+                    <span class="hljs-keyword">return</span> futures;
+            }
+
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; size; i++) {
+                Future&lt;T&gt; f = futures.get(i);
+                <span class="hljs-keyword">if</span> (!f.isDone()) {
+                    <span class="hljs-keyword">if</span> (nanos &lt;= <span class="hljs-number">0L</span>)
+                        <span class="hljs-keyword">return</span> futures;
+                    <span class="hljs-keyword">try</span> {
+                        f.get(nanos, TimeUnit.NANOSECONDS);           <span class="hljs-comment">// &#x7528;&#x5269;&#x4F59;&#x65F6;&#x95F4;&#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x679C;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x8D85;&#x8FC7;&#x5269;&#x4F59;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#xFF0C;&#x6216;&#x8005;&#x90E8;&#x5206;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x5DF2;&#x7ECF;&#x8D85;&#x8FC7;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#xFF0C;&#x8FD4;&#x56DE;&#xFF08;&#x5728;finally&#x4E2D;&#x505C;&#x6B62;&#x5C1A;&#x672A;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#xFF09;</span>
+                    } <span class="hljs-keyword">catch</span> (CancellationException ignore) {
+                    } <span class="hljs-keyword">catch</span> (ExecutionException ignore) {
+                    } <span class="hljs-keyword">catch</span> (TimeoutException toe) {
+                        <span class="hljs-keyword">return</span> futures;
+                    }
+                    nanos = deadline - System.nanoTime();
+                }
+            }
+            done = <span class="hljs-keyword">true</span>;
+            <span class="hljs-keyword">return</span> futures;
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span> (!done)
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>, size = futures.size(); i &lt; size; i++)
+                    futures.get(i).cancel(<span class="hljs-keyword">true</span>);                      <span class="hljs-comment">// &#x53D6;&#x6D88;&#x4EFB;&#x52A1;&#xFF08;&#x53EF;&#x53D6;&#x6D88;&#x7684;&#x4EFB;&#x52A1;state == NEW&#xFF09;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x4E2D;&#x65AD;runner&#x6765;&#x7ED3;&#x675F;</span>
+        }
+    }
+
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Callable.java.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Callable.Java">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AbstractExecutorService.Java","level":"1.2.3.1","depth":3,"next":{"title":"Callable.Java","level":"1.2.3.2","depth":3,"path":"Doc/util/concurrent/Callable.java.md","ref":"Doc/util/concurrent/Callable.java.md","articles":[]},"previous":{"title":"Concurrent","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"AbstractExecutorService.Java","level":"1.2.3.1","depth":3,"path":"Doc/util/concurrent/AbstractExecutorService.java.md","ref":"Doc/util/concurrent/AbstractExecutorService.java.md","articles":[]},{"title":"Callable.Java","level":"1.2.3.2","depth":3,"path":"Doc/util/concurrent/Callable.java.md","ref":"Doc/util/concurrent/Callable.java.md","articles":[]},{"title":"ConcurrentHashMap.Java","level":"1.2.3.3","depth":3,"path":"Doc/util/concurrent/ConcurrentHashMap.java.md","ref":"Doc/util/concurrent/ConcurrentHashMap.java.md","articles":[]},{"title":"ConcurrentMap.Java","level":"1.2.3.4","depth":3,"path":"Doc/util/concurrent/ConcurrentMap.java.md","ref":"Doc/util/concurrent/ConcurrentMap.java.md","articles":[]},{"title":"Executor.Java","level":"1.2.3.5","depth":3,"path":"Doc/util/concurrent/Executor.java.md","ref":"Doc/util/concurrent/Executor.java.md","articles":[]},{"title":"ExecutorCompletionService.Java","level":"1.2.3.6","depth":3,"path":"Doc/util/concurrent/ExecutorCompletionService.java.md","ref":"Doc/util/concurrent/ExecutorCompletionService.java.md","articles":[]},{"title":"ExecutorService.Java","level":"1.2.3.7","depth":3,"path":"Doc/util/concurrent/ExecutorService.java.md","ref":"Doc/util/concurrent/ExecutorService.java.md","articles":[]},{"title":"Future.Java","level":"1.2.3.8","depth":3,"path":"Doc/util/concurrent/Future.java.md","ref":"Doc/util/concurrent/Future.java.md","articles":[]},{"title":"FutureTask.Java","level":"1.2.3.9","depth":3,"path":"Doc/util/concurrent/FutureTask.java.md","ref":"Doc/util/concurrent/FutureTask.java.md","articles":[]},{"title":"RunnableFuture.Java","level":"1.2.3.10","depth":3,"path":"Doc/util/concurrent/RunnableFuture.java.md","ref":"Doc/util/concurrent/RunnableFuture.java.md","articles":[]},{"title":"ThreadPoolExecutor.Java","level":"1.2.3.11","depth":3,"path":"Doc/util/concurrent/ThreadPoolExecutor.java.md","ref":"Doc/util/concurrent/ThreadPoolExecutor.java.md","articles":[]},{"title":"Locks","level":"1.2.3.12","depth":3,"ref":"","articles":[{"title":"AbstractOwnableSynchronizer.Java","level":"1.2.3.12.1","depth":4,"path":"Doc/util/concurrent/locks/AbstractOwnableSynchronizer.java.md","ref":"Doc/util/concurrent/locks/AbstractOwnableSynchronizer.java.md","articles":[]},{"title":"AbstractQueuedSynchronizer.Java","level":"1.2.3.12.2","depth":4,"path":"Doc/util/concurrent/locks/AbstractQueuedSynchronizer.java.md","ref":"Doc/util/concurrent/locks/AbstractQueuedSynchronizer.java.md","articles":[]},{"title":"Condition.Java","level":"1.2.3.12.3","depth":4,"path":"Doc/util/concurrent/locks/Condition.java.md","ref":"Doc/util/concurrent/locks/Condition.java.md","articles":[]},{"title":"Lock.Java","level":"1.2.3.12.4","depth":4,"path":"Doc/util/concurrent/locks/Lock.java.md","ref":"Doc/util/concurrent/locks/Lock.java.md","articles":[]},{"title":"ReentrantLock.Java","level":"1.2.3.12.5","depth":4,"path":"Doc/util/concurrent/locks/ReentrantLock.java.md","ref":"Doc/util/concurrent/locks/ReentrantLock.java.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["summary","splitter","code","-sharing","-lunr","-search","search-pro","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"summary":{},"splitter":{},"code":{"copyButtons":true},"search-pro":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"莫显辉","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*","description":"日常笔记"},"file":{"path":"Doc/util/concurrent/AbstractExecutorService.java.md","mtime":"2021-07-29T02:23:19.319Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-30T05:59:23.144Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

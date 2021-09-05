@@ -1,0 +1,1136 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ConcurrentMap.Java · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="莫显辉">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Executor.java.html" />
+    
+    
+    <link rel="prev" href="ConcurrentHashMap.java.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Doc</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../AbstractMap.java.html">
+            
+                <a href="../AbstractMap.java.html">
+            
+                    
+                    AbstractMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Map.java.html">
+            
+                <a href="../Map.java.html">
+            
+                    
+                    Map.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Concurrent
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="AbstractExecutorService.java.html">
+            
+                <a href="AbstractExecutorService.java.html">
+            
+                    
+                    AbstractExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="Callable.java.html">
+            
+                <a href="Callable.java.html">
+            
+                    
+                    Callable.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="ConcurrentHashMap.java.html">
+            
+                <a href="ConcurrentHashMap.java.html">
+            
+                    
+                    ConcurrentHashMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.4" data-path="ConcurrentMap.java.html">
+            
+                <a href="ConcurrentMap.java.html">
+            
+                    
+                    ConcurrentMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="Executor.java.html">
+            
+                <a href="Executor.java.html">
+            
+                    
+                    Executor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="ExecutorCompletionService.java.html">
+            
+                <a href="ExecutorCompletionService.java.html">
+            
+                    
+                    ExecutorCompletionService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="ExecutorService.java.html">
+            
+                <a href="ExecutorService.java.html">
+            
+                    
+                    ExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="Future.java.html">
+            
+                <a href="Future.java.html">
+            
+                    
+                    Future.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="FutureTask.java.html">
+            
+                <a href="FutureTask.java.html">
+            
+                    
+                    FutureTask.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="RunnableFuture.java.html">
+            
+                <a href="RunnableFuture.java.html">
+            
+                    
+                    RunnableFuture.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="ThreadPoolExecutor.java.html">
+            
+                <a href="ThreadPoolExecutor.java.html">
+            
+                    
+                    ThreadPoolExecutor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" >
+            
+                <span>
+            
+                    
+                    Locks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.12.1" data-path="locks/AbstractOwnableSynchronizer.java.html">
+            
+                <a href="locks/AbstractOwnableSynchronizer.java.html">
+            
+                    
+                    AbstractOwnableSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.2" data-path="locks/AbstractQueuedSynchronizer.java.html">
+            
+                <a href="locks/AbstractQueuedSynchronizer.java.html">
+            
+                    
+                    AbstractQueuedSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.3" data-path="locks/Condition.java.html">
+            
+                <a href="locks/Condition.java.html">
+            
+                    
+                    Condition.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.4" data-path="locks/Lock.java.html">
+            
+                <a href="locks/Lock.java.html">
+            
+                    
+                    Lock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.5" data-path="locks/ReentrantLock.java.html">
+            
+                <a href="locks/ReentrantLock.java.html">
+            
+                    
+                    ReentrantLock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../日志.html">
+            
+                <a href="../../日志.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >ConcurrentMap.Java</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="concurrentmap">ConcurrentMap</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */</span>
+
+<span class="hljs-comment">/*
+ *
+ *
+ *
+ *
+ *
+ * Written by Doug Lea with assistance from members of JCP JSR-166
+ * Expert Group and released to the public domain, as explained at
+ * http://creativecommons.org/publicdomain/zero/1.0/
+ */</span>
+
+<span class="hljs-keyword">package</span> java.util.concurrent;
+<span class="hljs-keyword">import</span> java.util.Map;
+<span class="hljs-keyword">import</span> java.util.Objects;
+<span class="hljs-keyword">import</span> java.util.function.BiConsumer;
+<span class="hljs-keyword">import</span> java.util.function.BiFunction;
+<span class="hljs-keyword">import</span> java.util.function.Function;
+
+<span class="hljs-comment">/**
+ * A {<span class="hljs-doctag">@link</span> java.util.Map} providing thread safety and atomicity
+ * guarantees.
+ * &#x63D0;&#x4F9B;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x4E0E;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#x4FDD;&#x8BC1;&#x7684;Map&#x3002;
+ *
+ * &lt;p&gt;Memory consistency effects: As with other concurrent
+ * collections, actions in a thread prior to placing an object into a
+ * {<span class="hljs-doctag">@code</span> ConcurrentMap} as a key or value
+ * &lt;a href=&quot;package-summary.html#MemoryVisibility&quot;&gt;&lt;i&gt;happen-before&lt;/i&gt;&lt;/a&gt;
+ * actions subsequent to the access or removal of that object from
+ * the {<span class="hljs-doctag">@code</span> ConcurrentMap} in another thread.
+ * &#x5185;&#x5B58;&#x4E00;&#x81F4;&#x6027;&#x5F71;&#x54CD;&#xFF1A;&#x4E0E;&#x5176;&#x4ED6;&#x5E76;&#x53D1;&#x96C6;&#x5408;&#x4E00;&#x6837;&#xFF0C;&#x5728;&#x7EBF;&#x7A0B;A&#x5C06;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;key&#x6216;&#x8005;value&#x653E;&#x5165;ConcurrentMap&#x4E4B;&#x524D;&#xFF0C;
+ * &#x7EBF;&#x7A0B;A&#x7684;&#x64CD;&#x4F5C;&#x53D1;&#x751F;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4ECE;ConcurrentMap&#x8BBF;&#x95EE;&#x6216;&#x5220;&#x9664;&#x8BE5;&#x5BF9;&#x8C61;&#x4E4B;&#x524D;&#x3002;
+ * &#xFF08;&#x4FDD;&#x8BC1;&#x63D2;&#x5165;&#x7684;&#x64CD;&#x4F5C;&#x5BF9;&#x63D2;&#x5165;&#x540E;&#x7684;&#x8BBF;&#x95EE;&#x64CD;&#x4F5C;&#x662F;&#x53EF;&#x89C1;&#x7684;&#xFF09;
+ *
+ * &lt;p&gt;This interface is a member of the
+ * &lt;a href=&quot;{<span class="hljs-doctag">@docRoot</span>}/../technotes/guides/collections/index.html&quot;&gt;
+ * Java Collections Framework&lt;/a&gt;.
+ * &#x8BE5;&#x63A5;&#x53E3;&#x662F;Java Collections Framework&#x7684;&#x4E00;&#x5458;&#x3002;
+ *
+ * <span class="hljs-doctag">@since</span> 1.5
+ * <span class="hljs-doctag">@author</span> Doug Lea
+ * <span class="hljs-doctag">@param</span> &lt;K&gt; the type of keys maintained by this map
+ * <span class="hljs-doctag">@param</span> &lt;V&gt; the type of mapped values
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">ConcurrentMap</span>&lt;<span class="hljs-title">K</span>, <span class="hljs-title">V</span>&gt; <span class="hljs-keyword">extends</span> <span class="hljs-title">Map</span>&lt;<span class="hljs-title">K</span>, <span class="hljs-title">V</span>&gt; </span>{
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     * &#x5728;Map&#x63A5;&#x53E3;&#x4E5F;&#x6709;default&#x5B9E;&#x73B0;
+     *
+     * <span class="hljs-doctag">@implNote</span> This implementation assumes that the ConcurrentMap cannot
+     * contain null values and {<span class="hljs-doctag">@code</span> get()} returning null unambiguously means
+     * the key is absent. Implementations which support null values
+     * &lt;strong&gt;must&lt;/strong&gt; override this default implementation.
+     * &#x5B9E;&#x73B0;&#x8BF4;&#x660E;&#xFF0C;&#x8BE5;&#x5B9E;&#x73B0;&#x5047;&#x5B9A;ConcurrentMap&#x4E0D;&#x80FD;&#x5305;&#x542B;value&#x4E3A;null&#x503C;&#xFF0C;&#x5E76;&#x4E14;get()&#x8FD4;&#x56DE;null&#x660E;&#x786E;&#xFF08;unambiguously&#xFF09;&#x8868;&#x793A;key&#x4E0D;&#x5B58;&#x5728;&#xFF08;absent&#xFF09;&#x3002;
+     * &#x652F;&#x6301;value&#x4E3A;null&#x7684;&#x5B9E;&#x73B0;&#x5FC5;&#x987B;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x8BE5;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     *
+     * <span class="hljs-doctag">@throws</span> ClassCastException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@since</span> 1.8
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">default</span> V <span class="hljs-title">getOrDefault</span><span class="hljs-params">(Object key, V defaultValue)</span> </span>{
+        V v;
+        <span class="hljs-keyword">return</span> ((v = get(key)) != <span class="hljs-keyword">null</span>) ? v : defaultValue; <span class="hljs-comment">// &#x4E0E;Map&#x63A5;&#x53E3;&#x7684;default&#x4E0D;&#x540C;&#x5728;&#x4E8E;&#xFF0C;value&#x4E0D;&#x80FD;&#x4E3A;null&#xFF08;&#x6216;&#x8005;&#x8BF4;value&#x4E3A;null&#x4F1A;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;</span>
+    }
+
+   <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span> The default implementation is equivalent to, for this
+     * {<span class="hljs-doctag">@code</span> map}:
+     * &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * for ((Map.Entry&lt;K, V&gt; entry : map.entrySet())
+     *     action.accept(entry.getKey(), entry.getValue());
+     * }&lt;/pre&gt;
+     * &#x5BF9;&#x4E8E;&#x8BE5;map&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x7B49;&#x6548;&#x4E8E;&#xFF1A;
+     * for ((Map.Entry&lt;K, V&gt; entry : map.entrySet())
+     *     action.accept(entry.getKey(), entry.getValue());
+     *
+     * <span class="hljs-doctag">@implNote</span> The default implementation assumes that
+     * {<span class="hljs-doctag">@code</span> IllegalStateException} thrown by {<span class="hljs-doctag">@code</span> getKey()} or
+     * {<span class="hljs-doctag">@code</span> getValue()} indicates that the entry has been removed and cannot
+     * be processed. Operation continues for subsequent entries.
+     * &#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x5047;&#x5B9A;&#xFF0C;&#x5F53;getKey()&#x6216;&#x8005;getValue()&#x629B;&#x51FA;IllegalStateException&#x65F6;&#xFF0C;&#x8868;&#x793A;&#x8BE5;entry&#x5DF2;&#x7ECF;&#x88AB;&#x79FB;&#x9664;&#x5E76;&#x4E14;&#x65E0;&#x6CD5;&#x5904;&#x7406;&#x3002;
+     * &#x4F1A;&#x7EE7;&#x7EED;&#x64CD;&#x4F5C;&#x540E;&#x7EED;&#x7684;entry
+     *
+     * <span class="hljs-doctag">@throws</span> NullPointerException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@since</span> 1.8
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">default</span> <span class="hljs-keyword">void</span> <span class="hljs-title">forEach</span><span class="hljs-params">(BiConsumer&lt;? <span class="hljs-keyword">super</span> K, ? <span class="hljs-keyword">super</span> V&gt; action)</span> </span>{
+        Objects.requireNonNull(action);
+        <span class="hljs-keyword">for</span> (Map.Entry&lt;K, V&gt; entry : entrySet()) {
+            K k;
+            V v;
+            <span class="hljs-keyword">try</span> {
+                k = entry.getKey();
+                v = entry.getValue();
+            } <span class="hljs-keyword">catch</span>(IllegalStateException ise) {
+                <span class="hljs-comment">// this usually means the entry is no longer in the map.</span>
+                <span class="hljs-keyword">continue</span>;
+            }
+            action.accept(k, v);  <span class="hljs-comment">// &#x4E0D;&#x592A;&#x6E05;&#x695A;&#x8FD9;&#x4E2A;action.accept&#x505A;&#x4E86;&#x5565;</span>
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * If the specified key is not already associated
+     * with a value, associate it with the given value.
+     * This is equivalent to
+     *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * if (!map.containsKey(key))
+     *   return map.put(key, value);
+     * else
+     *   return map.get(key);
+     * }&lt;/pre&gt;
+     * &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7684;key&#x5C1A;&#x672A;&#x5173;&#x8054;value&#xFF0C;&#x5219;&#x5173;&#x8054;&#x5230;&#x7ED9;&#x5B9A;&#x7684;value&#x3002;
+     * &#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;
+     * if (!map.containsKey(key))
+     *   return map.put(key, value);
+     * else
+     *   return map.get(key);
+     *
+     * except that the action is performed atomically.
+     * &#x9664;&#x4E86;&#x52A8;&#x4F5C;&#x662F;&#x539F;&#x5B50;&#x6267;&#x884C;&#x7684;&#x3002;
+     * &#xFF08;&#x8FD9;&#x53E5;&#x8BDD;&#x610F;&#x601D;&#x662F;&#x4E0E;&#x4E0A;&#x9762;&#x7684;&#x7B49;&#x4EF7;&#x64CD;&#x4F5C;&#x975E;&#x539F;&#x5B50;&#x6027;&#x7684;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x539F;&#x5B50;&#x7684;&#xFF09;
+     *
+     * <span class="hljs-doctag">@implNote</span> This implementation intentionally re-abstracts the
+     * inappropriate default provided in {<span class="hljs-doctag">@code</span> Map}.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x8BD5;&#x56FE;&#xFF08;&#x6709;&#x610F;&#xFF09;&#x91CD;&#x65B0;&#x62BD;&#x8C61;&#x7531;Map&#x63D0;&#x4F9B;&#x7684;&#x4E0D;&#x9002;&#x5F53;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> key key with which the specified value is to be associated
+     * <span class="hljs-doctag">@param</span> value value to be associated with the specified key
+     * <span class="hljs-doctag">@return</span> the previous value associated with the specified key, or
+     *         {<span class="hljs-doctag">@code</span> null} if there was no mapping for the key.
+     *         (A {<span class="hljs-doctag">@code</span> null} return can also indicate that the map
+     *         previously associated {<span class="hljs-doctag">@code</span> null} with the key,
+     *         if the implementation supports null values.)
+     *         &#x8FD4;&#x56DE;&#x539F;&#x5173;&#x8054;&#x7684;value&#x503C;&#xFF08;&#x652F;&#x6301;value&#x4E3A;null&#x7684;&#x8BDD;&#x4E5F;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;null&#xFF09;&#xFF0C;&#x6CA1;&#x5173;&#x8054;&#x7684;&#x8BDD;&#x8FD4;&#x56DE;null
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException if the {<span class="hljs-doctag">@code</span> put} operation
+     *         is not supported by this map
+     * <span class="hljs-doctag">@throws</span> ClassCastException if the class of the specified key or value
+     *         prevents it from being stored in this map
+     * <span class="hljs-doctag">@throws</span> NullPointerException if the specified key or value is null,
+     *         and this map does not permit null keys or values
+     * <span class="hljs-doctag">@throws</span> IllegalArgumentException if some property of the specified key
+     *         or value prevents it from being stored in this map
+     */</span>
+     <span class="hljs-function">V <span class="hljs-title">putIfAbsent</span><span class="hljs-params">(K key, V value)</span></span>;
+
+    <span class="hljs-comment">/**
+     * Removes the entry for a key only if currently mapped to a given value.
+     * This is equivalent to
+     *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * if (map.containsKey(key) &amp;&amp; Objects.equals(map.get(key), value)) {
+     *   map.remove(key);
+     *   return true;
+     * } else
+     *   return false;
+     * }&lt;/pre&gt;
+     * &#x6839;&#x636E;key&#x79FB;&#x9664;entry&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#x5F53;&#x524D;key&#x6620;&#x5C04;&#x7684;value&#x4E3A;&#x7ED9;&#x5B9A;value&#x3002;
+     * &#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;
+     * if (map.containsKey(key) &amp;&amp; Objects.equals(map.get(key), value)) { // &#x7528;&#x4E86;1.7&#x4E4B;&#x540E;&#x7684;Objects&#x7C7B;
+     *   map.remove(key);
+     *   return true;
+     * } else
+     *   return false;
+     *
+     * except that the action is performed atomically.
+     * &#x9664;&#x4E86;&#x52A8;&#x4F5C;&#x662F;&#x539F;&#x5B50;&#x6267;&#x884C;&#x7684;&#x3002;
+     * &#xFF08;&#x8FD9;&#x53E5;&#x8BDD;&#x610F;&#x601D;&#x662F;&#x4E0E;&#x4E0A;&#x9762;&#x7684;&#x7B49;&#x4EF7;&#x64CD;&#x4F5C;&#x975E;&#x539F;&#x5B50;&#x6027;&#x7684;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x539F;&#x5B50;&#x7684;&#xFF09;
+     *
+     * <span class="hljs-doctag">@implNote</span> This implementation intentionally re-abstracts the
+     * inappropriate default provided in {<span class="hljs-doctag">@code</span> Map}.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x8BD5;&#x56FE;&#xFF08;&#x6709;&#x610F;&#xFF09;&#x91CD;&#x65B0;&#x62BD;&#x8C61;&#x7531;Map&#x63D0;&#x4F9B;&#x7684;&#x4E0D;&#x9002;&#x5F53;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> key key with which the specified value is associated
+     * <span class="hljs-doctag">@param</span> value value expected to be associated with the specified key
+     * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if the value was removed
+     *          &#x79FB;&#x9664;&#x6210;&#x529F;&#x8FD4;&#x56DE;true
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException if the {<span class="hljs-doctag">@code</span> remove} operation
+     *         is not supported by this map
+     * <span class="hljs-doctag">@throws</span> ClassCastException if the key or value is of an inappropriate
+     *         type for this map
+     *         (&lt;a href=&quot;../Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)
+     * <span class="hljs-doctag">@throws</span> NullPointerException if the specified key or value is null,
+     *         and this map does not permit null keys or values
+     *         (&lt;a href=&quot;../Collection.html#optional-restrictions&quot;&gt;optional&lt;/a&gt;)
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">remove</span><span class="hljs-params">(Object key, Object value)</span></span>;
+
+    <span class="hljs-comment">/**
+     * Replaces the entry for a key only if currently mapped to a given value.
+     * This is equivalent to
+     *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * if (map.containsKey(key) &amp;&amp; Objects.equals(map.get(key), oldValue)) {
+     *   map.put(key, newValue);
+     *   return true;
+     * } else
+     *   return false;
+     * }&lt;/pre&gt;
+     * &#x6839;&#x636E;key&#x66FF;&#x6362;entry&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#x5F53;&#x524D;key&#x6620;&#x5C04;&#x7684;value&#x503C;&#x4E3A;&#x7ED9;&#x5B9A;&#x7684;value&#x503C;&#x3002;
+     * &#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;
+     * if (map.containsKey(key) &amp;&amp; Objects.equals(map.get(key), oldValue)) {
+     *   map.put(key, newValue);
+     *   return true;
+     * } else
+     *   return false;
+     *
+     * except that the action is performed atomically.
+     * &#x9664;&#x4E86;&#x52A8;&#x4F5C;&#x662F;&#x539F;&#x5B50;&#x6267;&#x884C;&#x7684;&#x3002;
+     * &#xFF08;&#x8FD9;&#x53E5;&#x8BDD;&#x610F;&#x601D;&#x662F;&#x4E0E;&#x4E0A;&#x9762;&#x7684;&#x7B49;&#x4EF7;&#x64CD;&#x4F5C;&#x975E;&#x539F;&#x5B50;&#x6027;&#x7684;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x539F;&#x5B50;&#x7684;&#xFF09;
+     *
+     * <span class="hljs-doctag">@implNote</span> This implementation intentionally re-abstracts the
+     * inappropriate default provided in {<span class="hljs-doctag">@code</span> Map}.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x8BD5;&#x56FE;&#xFF08;&#x6709;&#x610F;&#xFF09;&#x91CD;&#x65B0;&#x62BD;&#x8C61;&#x7531;Map&#x63D0;&#x4F9B;&#x7684;&#x4E0D;&#x9002;&#x5F53;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> key key with which the specified value is associated
+     * <span class="hljs-doctag">@param</span> oldValue value expected to be associated with the specified key
+     * <span class="hljs-doctag">@param</span> newValue value to be associated with the specified key
+     * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if the value was replaced
+     *          &#x66FF;&#x6362;&#x6210;&#x529F;&#x8FD4;&#x56DE;true
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException if the {<span class="hljs-doctag">@code</span> put} operation
+     *         is not supported by this map
+     * <span class="hljs-doctag">@throws</span> ClassCastException if the class of a specified key or value
+     *         prevents it from being stored in this map
+     * <span class="hljs-doctag">@throws</span> NullPointerException if a specified key or value is null,
+     *         and this map does not permit null keys or values
+     * <span class="hljs-doctag">@throws</span> IllegalArgumentException if some property of a specified key
+     *         or value prevents it from being stored in this map
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">replace</span><span class="hljs-params">(K key, V oldValue, V newValue)</span></span>;
+
+    <span class="hljs-comment">/**
+     * Replaces the entry for a key only if currently mapped to some value.
+     * This is equivalent to
+     *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * if (map.containsKey(key)) {
+     *   return map.put(key, value);
+     * } else
+     *   return null;
+     * }&lt;/pre&gt;
+     * &#x6839;&#x636E;key&#x66FF;&#x6362;entry&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#x5F53;&#x524D;key&#x6620;&#x5C04;&#x5230;&#x67D0;&#x4E9B;value&#xFF08;&#x67D0;&#x4E9B;&#x662F;&#x6307;&#x4FDD;&#x8BC1;key&#x5B58;&#x5728;&#xFF0C;&#x4F46;&#x4E0D;&#x5173;&#x5FC3;key&#x5177;&#x4F53;&#x6620;&#x5C04;&#x7684;value&#x503C;&#xFF09;&#x3002;
+     * &#x7B49;&#x4EF7;&#x4E8E;
+     * if (map.containsKey(key)) {
+     *   return map.put(key, value);
+     * } else
+     *   return null;
+     *
+     * except that the action is performed atomically.
+     * &#x9664;&#x4E86;&#x52A8;&#x4F5C;&#x662F;&#x539F;&#x5B50;&#x6267;&#x884C;&#x7684;&#x3002;
+     * &#xFF08;&#x8FD9;&#x53E5;&#x8BDD;&#x610F;&#x601D;&#x662F;&#x4E0E;&#x4E0A;&#x9762;&#x7684;&#x7B49;&#x4EF7;&#x64CD;&#x4F5C;&#x975E;&#x539F;&#x5B50;&#x6027;&#x7684;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x539F;&#x5B50;&#x7684;&#xFF09;
+     *
+     * <span class="hljs-doctag">@implNote</span> This implementation intentionally re-abstracts the
+     * inappropriate default provided in {<span class="hljs-doctag">@code</span> Map}.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x8BD5;&#x56FE;&#xFF08;&#x6709;&#x610F;&#xFF09;&#x91CD;&#x65B0;&#x62BD;&#x8C61;&#x7531;Map&#x63D0;&#x4F9B;&#x7684;&#x4E0D;&#x9002;&#x5F53;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> key key with which the specified value is associated
+     * <span class="hljs-doctag">@param</span> value value to be associated with the specified key
+     * <span class="hljs-doctag">@return</span> the previous value associated with the specified key, or
+     *         {<span class="hljs-doctag">@code</span> null} if there was no mapping for the key.
+     *         (A {<span class="hljs-doctag">@code</span> null} return can also indicate that the map
+     *         previously associated {<span class="hljs-doctag">@code</span> null} with the key,
+     *         if the implementation supports null values.)
+     *         &#x8FD4;&#x56DE;&#x8BE5;key&#x5173;&#x8054;&#x7684;&#x539F;value&#x503C;&#xFF08;&#x5982;&#x679C;&#x5B9E;&#x73B0;&#x652F;&#x6301;null&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x53EF;&#x80FD;&#x4E3A;null&#xFF09;&#xFF0C;&#x6CA1;&#x6709;&#x8BE5;key&#x539F;&#x6CA1;&#x6709;&#x6620;&#x5C04;value&#xFF0C;&#x5219;&#x8FD4;&#x56DE;null&#x3002;
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException if the {<span class="hljs-doctag">@code</span> put} operation
+     *         is not supported by this map
+     * <span class="hljs-doctag">@throws</span> ClassCastException if the class of the specified key or value
+     *         prevents it from being stored in this map
+     * <span class="hljs-doctag">@throws</span> NullPointerException if the specified key or value is null,
+     *         and this map does not permit null keys or values
+     * <span class="hljs-doctag">@throws</span> IllegalArgumentException if some property of the specified key
+     *         or value prevents it from being stored in this map
+     */</span>
+    <span class="hljs-function">V <span class="hljs-title">replace</span><span class="hljs-params">(K key, V value)</span></span>;
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * &lt;p&gt;The default implementation is equivalent to, for this {<span class="hljs-doctag">@code</span> map}:
+     * &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * for ((Map.Entry&lt;K, V&gt; entry : map.entrySet())
+     *     do {
+     *        K k = entry.getKey();
+     *        V v = entry.getValue();
+     *     } while(!replace(k, v, function.apply(k, v)));
+     * }&lt;/pre&gt;
+     * &#x5BF9;&#x4E8E;&#x8BE5;map&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;
+     * for ((Map.Entry&lt;K, V&gt; entry : map.entrySet())
+     *     do {
+     *        K k = entry.getKey();
+     *        V v = entry.getValue();
+     *     } while(!replace(k, v, function.apply(k, v)));
+     *
+     * The default implementation may retry these steps when multiple
+     * threads attempt updates including potentially calling the function
+     * repeatedly for a given key.
+     * &#x5F53;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5C1D;&#x8BD5;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x4F1A;&#x591A;&#x6B21;&#x5C1D;&#x8BD5;&#x8FD9;&#x4E9B;&#x6B65;&#x9AA4;&#xFF0C;&#x5305;&#x62EC;&#x53EF;&#x80FD;&#xFF08;potentially &#x6F5C;&#x5728;&#x5730;&#xFF09;&#x4E3A;&#x7ED9;&#x5B9A;&#x7684;key&#x91CD;&#x590D;&#x8C03;&#x7528;&#x8BE5;function&#x3002;
+     *
+     * &lt;p&gt;This implementation assumes that the ConcurrentMap cannot contain null
+     * values and {<span class="hljs-doctag">@code</span> get()} returning null unambiguously means the key is
+     * absent. Implementations which support null values &lt;strong&gt;must&lt;/strong&gt;
+     * override this default implementation.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x5047;&#x5B9A;ConcurrentMap&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x4E3A;null&#x503C;&#x7684;value&#xFF0C;&#x5E76;&#x4E14;get()&#x8FD4;&#x56DE;null&#x660E;&#x786E;&#xFF08;unambiguously&#xFF09;&#x8868;&#x793A;key&#x4E0D;&#x5B58;&#x5728;&#xFF08;absent&#xFF09;&#x3002;
+     * &#x652F;&#x6301;value&#x4E3A;null&#x7684;&#x5B9E;&#x73B0;&#x5FC5;&#x987B;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x8BE5;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     * 
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> ClassCastException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> IllegalArgumentException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@since</span> 1.8
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">default</span> <span class="hljs-keyword">void</span> <span class="hljs-title">replaceAll</span><span class="hljs-params">(BiFunction&lt;? <span class="hljs-keyword">super</span> K, ? <span class="hljs-keyword">super</span> V, ? extends V&gt; function)</span> </span>{
+        Objects.requireNonNull(function);
+        forEach((k,v) -&gt; {
+            <span class="hljs-keyword">while</span>(!replace(k, v, function.apply(k, v))) {
+                <span class="hljs-comment">// v changed or k is gone</span>
+                <span class="hljs-keyword">if</span> ( (v = get(k)) == <span class="hljs-keyword">null</span>) {
+                    <span class="hljs-comment">// k is no longer in the map.</span>
+                    <span class="hljs-keyword">break</span>;
+                }
+            }
+        });
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     * &#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#x4E0E;&#x539F;value&#x503C;&#x8BA1;&#x7B97;&#x51FA;&#x65B0;value&#x503C;&#xFF0C;&#x5E76;&#x66F4;&#x65B0;
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * The default implementation is equivalent to the following steps for this
+     * {<span class="hljs-doctag">@code</span> map}, then returning the current value or {<span class="hljs-doctag">@code</span> null} if now
+     * absent:
+     * &#x5BF9;&#x4E8E;&#x8BE5;map&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x7B49;&#x4EF7;&#x4E8E;&#x4E0B;&#x9762;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#xFF08;&#x539F;&#xFF09;value&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;key&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;null&#xFF1A;
+     *
+     * &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * if (map.get(key) == null) {
+     *     V newValue = mappingFunction.apply(key);
+     *     if (newValue != null)
+     *         return map.putIfAbsent(key, newValue);
+     * }
+     * }&lt;/pre&gt;
+     *
+     * The default implementation may retry these steps when multiple
+     * threads attempt updates including potentially calling the mapping
+     * function multiple times.
+     * &#x5F53;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5C1D;&#x8BD5;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x4F1A;&#x591A;&#x6B21;&#x5C1D;&#x8BD5;&#x8FD9;&#x4E9B;&#x6B65;&#x9AA4;&#xFF0C;&#x5305;&#x62EC;&#x53EF;&#x80FD;&#x4E3A;&#x7ED9;&#x5B9A;&#x7684;key&#x91CD;&#x590D;&#x8C03;&#x7528;&#x8BE5;&#x6620;&#x5C04;function&#x3002;
+     *
+     * &lt;p&gt;This implementation assumes that the ConcurrentMap cannot contain null
+     * values and {<span class="hljs-doctag">@code</span> get()} returning null unambiguously means the key is
+     * absent. Implementations which support null values &lt;strong&gt;must&lt;/strong&gt;
+     * override this default implementation.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x5047;&#x5B9A;ConcurrentMap&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x4E3A;null&#x503C;&#x7684;value&#xFF0C;&#x5E76;&#x4E14;get()&#x8FD4;&#x56DE;null&#x660E;&#x786E;&#xFF08;unambiguously&#xFF09;&#x8868;&#x793A;key&#x4E0D;&#x5B58;&#x5728;&#xFF08;absent&#xFF09;&#x3002;
+     * &#x652F;&#x6301;value&#x4E3A;null&#x7684;&#x5B9E;&#x73B0;&#x5FC5;&#x987B;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x8BE5;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     *
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> ClassCastException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@since</span> 1.8
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">default</span> V <span class="hljs-title">computeIfAbsent</span><span class="hljs-params">(K key,
+            Function&lt;? <span class="hljs-keyword">super</span> K, ? extends V&gt; mappingFunction)</span> </span>{
+        Objects.requireNonNull(mappingFunction);
+        V v, newValue;
+        <span class="hljs-keyword">return</span> ((v = get(key)) == <span class="hljs-keyword">null</span> &amp;&amp;
+                (newValue = mappingFunction.apply(key)) != <span class="hljs-keyword">null</span> &amp;&amp;        <span class="hljs-comment">// &#x7528;&#x65E7;&#x503C;&#x8BA1;&#x7B97;&#x65B0;&#x503C;</span>
+                (v = putIfAbsent(key, newValue)) == <span class="hljs-keyword">null</span>) ? newValue : v; <span class="hljs-comment">// &#x5982;&#x679C;key&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;&#x8BA1;&#x7B97;&#x540E;value&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x539F;value</span>
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * The default implementation is equivalent to performing the following
+     * steps for this {<span class="hljs-doctag">@code</span> map}, then returning the current value or
+     * {<span class="hljs-doctag">@code</span> null} if now absent. :
+     * &#x5BF9;&#x4E8E;&#x8BE5;map&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x7B49;&#x4EF7;&#x4E8E;&#x4E0B;&#x9762;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#xFF08;&#x539F;&#xFF09;value&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;key&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;null&#xFF1A;
+     *
+     * &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * if (map.get(key) != null) {
+     *     V oldValue = map.get(key);
+     *     V newValue = remappingFunction.apply(key, oldValue);
+     *     if (newValue != null)
+     *         map.replace(key, oldValue, newValue);
+     *     else
+     *         map.remove(key, oldValue);
+     * }
+     * }&lt;/pre&gt;
+     *
+     * The default implementation may retry these steps when multiple threads
+     * attempt updates including potentially calling the remapping function
+     * multiple times.
+     * &#x5F53;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5C1D;&#x8BD5;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x4F1A;&#x591A;&#x6B21;&#x5C1D;&#x8BD5;&#x8FD9;&#x4E9B;&#x6B65;&#x9AA4;&#xFF0C;&#x5305;&#x62EC;&#x53EF;&#x80FD;&#x4E3A;&#x7ED9;&#x5B9A;&#x7684;key&#x91CD;&#x590D;&#x8C03;&#x7528;&#x8BE5;&#x91CD;&#x65B0;&#x6620;&#x5C04;&#x7684;function&#x3002;
+     *
+     * &lt;p&gt;This implementation assumes that the ConcurrentMap cannot contain null
+     * values and {<span class="hljs-doctag">@code</span> get()} returning null unambiguously means the key is
+     * absent. Implementations which support null values &lt;strong&gt;must&lt;/strong&gt;
+     * override this default implementation.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x5047;&#x5B9A;ConcurrentMap&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x4E3A;null&#x503C;&#x7684;value&#xFF0C;&#x5E76;&#x4E14;get()&#x8FD4;&#x56DE;null&#x660E;&#x786E;&#xFF08;unambiguously&#xFF09;&#x8868;&#x793A;key&#x4E0D;&#x5B58;&#x5728;&#xFF08;absent&#xFF09;&#x3002;
+     * &#x652F;&#x6301;value&#x4E3A;null&#x7684;&#x5B9E;&#x73B0;&#x5FC5;&#x987B;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x8BE5;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     *
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> ClassCastException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@since</span> 1.8
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">default</span> V <span class="hljs-title">computeIfPresent</span><span class="hljs-params">(K key,
+            BiFunction&lt;? <span class="hljs-keyword">super</span> K, ? <span class="hljs-keyword">super</span> V, ? extends V&gt; remappingFunction)</span> </span>{
+        Objects.requireNonNull(remappingFunction);
+        V oldValue;
+        <span class="hljs-keyword">while</span>((oldValue = get(key)) != <span class="hljs-keyword">null</span>) {                   <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x5FAA;&#x73AF;&#x662F;&#x4E3A;&#x4E86;&#x5F53;&#x5E76;&#x53D1;&#x65F6;&#xFF0C;replace&#x7531;&#x4E8E;&#x7ADE;&#x4E89;&#x5BFC;&#x81F4;&#x5931;&#x8D25;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x8FDB;&#x884C;replace&#x3002;</span>
+            V newValue = remappingFunction.apply(key, oldValue);
+            <span class="hljs-keyword">if</span> (newValue != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">if</span> (replace(key, oldValue, newValue))
+                    <span class="hljs-keyword">return</span> newValue;
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (remove(key, oldValue))                    <span class="hljs-comment">// &#x5982;&#x679C;&#x8BA1;&#x7B97;&#x7684;&#x65B0;&#x503C;&#x4E3A;null&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x79FB;&#x9664;&#x8BE5;key&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;</span>
+               <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+        <span class="hljs-keyword">return</span> oldValue;
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * The default implementation is equivalent to performing the following
+     * steps for this {<span class="hljs-doctag">@code</span> map}, then returning the current value or
+     * {<span class="hljs-doctag">@code</span> null} if absent:
+     * &#x5BF9;&#x4E8E;&#x8BE5;map&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x7B49;&#x4EF7;&#x4E8E;&#x4E0B;&#x9762;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#xFF08;&#x539F;&#xFF09;value&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;key&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;null&#xFF1A;
+     *
+     * &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * V oldValue = map.get(key);
+     * V newValue = remappingFunction.apply(key, oldValue);
+     * if (oldValue != null ) {
+     *    if (newValue != null)
+     *       map.replace(key, oldValue, newValue);
+     *    else
+     *       map.remove(key, oldValue);
+     * } else {
+     *    if (newValue != null)
+     *       map.putIfAbsent(key, newValue);
+     *    else
+     *       return null;
+     * }
+     * }&lt;/pre&gt;
+     *
+     * The default implementation may retry these steps when multiple
+     * threads attempt updates including potentially calling the remapping
+     * function multiple times.
+     * &#x5F53;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5C1D;&#x8BD5;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x4F1A;&#x591A;&#x6B21;&#x5C1D;&#x8BD5;&#x8FD9;&#x4E9B;&#x6B65;&#x9AA4;&#xFF0C;&#x5305;&#x62EC;&#x53EF;&#x80FD;&#x4E3A;&#x7ED9;&#x5B9A;&#x7684;key&#x91CD;&#x590D;&#x8C03;&#x7528;&#x8BE5;&#x91CD;&#x65B0;&#x6620;&#x5C04;&#x7684;function&#x3002;
+     *
+     * &lt;p&gt;This implementation assumes that the ConcurrentMap cannot contain null
+     * values and {<span class="hljs-doctag">@code</span> get()} returning null unambiguously means the key is
+     * absent. Implementations which support null values &lt;strong&gt;must&lt;/strong&gt;
+     * override this default implementation.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x5047;&#x5B9A;ConcurrentMap&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x4E3A;null&#x503C;&#x7684;value&#xFF0C;&#x5E76;&#x4E14;get()&#x8FD4;&#x56DE;null&#x660E;&#x786E;&#xFF08;unambiguously&#xFF09;&#x8868;&#x793A;key&#x4E0D;&#x5B58;&#x5728;&#xFF08;absent&#xFF09;&#x3002;
+     * &#x652F;&#x6301;value&#x4E3A;null&#x7684;&#x5B9E;&#x73B0;&#x5FC5;&#x987B;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x8BE5;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     *
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> ClassCastException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@since</span> 1.8
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">default</span> V <span class="hljs-title">compute</span><span class="hljs-params">(K key,
+            BiFunction&lt;? <span class="hljs-keyword">super</span> K, ? <span class="hljs-keyword">super</span> V, ? extends V&gt; remappingFunction)</span> </span>{
+        Objects.requireNonNull(remappingFunction);
+        V oldValue = get(key);
+        <span class="hljs-keyword">for</span>(;;) {
+            V newValue = remappingFunction.apply(key, oldValue);
+            <span class="hljs-keyword">if</span> (newValue == <span class="hljs-keyword">null</span>) {                                 <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x65B0;&#x503C;&#x4E3A;null&#xFF0C;&#x5C1D;&#x8BD5;&#x5220;&#x9664;&#x7ED9;&#x5B9A;key&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;</span>
+                <span class="hljs-comment">// delete mapping</span>
+                <span class="hljs-keyword">if</span> (oldValue != <span class="hljs-keyword">null</span> || containsKey(key)) {          <span class="hljs-comment">// &#x8003;&#x8651;&#x4E86;key&#x6620;&#x5C04;&#x7684;value&#x4E3A;null&#x7684;&#x60C5;&#x51B5;</span>
+                    <span class="hljs-comment">// something to remove</span>
+                    <span class="hljs-keyword">if</span> (remove(key, oldValue)) {
+                        <span class="hljs-comment">// removed the old value as expected</span>
+                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+                    }
+
+                    <span class="hljs-comment">// some other value replaced old value. try again. // &#x5C1D;&#x8BD5;&#x5931;&#x8D25;&#xFF0C;&#x83B7;&#x53D6;&#x7ED9;&#x5B9A;key&#x5F53;&#x524D;value&#x503C;&#x7EE7;&#x7EED;&#x5C1D;&#x8BD5;</span>
+                    oldValue = get(key);
+                } <span class="hljs-keyword">else</span> {
+                    <span class="hljs-comment">// nothing to do. Leave things as they were.</span>
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+                }
+            } <span class="hljs-keyword">else</span> {                                                   <span class="hljs-comment">// &#x65B0;&#x503C;&#x4E0D;&#x4E3A;null&#xFF0C;&#x5C1D;&#x8BD5;&#x66F4;&#x65B0;&#x7ED9;&#x5B9A;key&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;</span>
+                <span class="hljs-comment">// add or replace old mapping</span>
+                <span class="hljs-keyword">if</span> (oldValue != <span class="hljs-keyword">null</span>) {
+                    <span class="hljs-comment">// replace</span>
+                    <span class="hljs-keyword">if</span> (replace(key, oldValue, newValue)) {
+                        <span class="hljs-comment">// replaced as expected.</span>
+                        <span class="hljs-keyword">return</span> newValue;
+                    }
+
+                    <span class="hljs-comment">// some other value replaced old value. try again. // &#x5C1D;&#x8BD5;&#x5931;&#x8D25;&#xFF0C;&#x83B7;&#x53D6;&#x7ED9;&#x5B9A;key&#x5F53;&#x524D;value&#x503C;&#x7EE7;&#x7EED;&#x5C1D;&#x8BD5;</span>
+                    oldValue = get(key);
+                } <span class="hljs-keyword">else</span> {
+                    <span class="hljs-comment">// add (replace if oldValue was null)</span>
+                    <span class="hljs-keyword">if</span> ((oldValue = putIfAbsent(key, newValue)) == <span class="hljs-keyword">null</span>) { <span class="hljs-comment">// &#x539F;&#x503C;&#x4E3A;null&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x65B0;&#x589E;key&#x4E0E;&#x8BA1;&#x7B97;&#x540E;value&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;</span>
+                        <span class="hljs-comment">// replaced</span>
+                        <span class="hljs-keyword">return</span> newValue;
+                    }
+
+                    <span class="hljs-comment">// some other value replaced old value. try again.</span>
+                }
+            }
+        }
+    }
+
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     * merge&#x4E0E;compute&#x7684;&#x533A;&#x522B;&#x662F;&#xFF0C;merge&#x4F9D;&#x8D56;&#x7ED9;&#x5B9A;&#x7684;value&#x4E0E;&#x539F;value&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#xFF0C;compute&#x53EA;&#x57FA;&#x4E8E;&#x539F;value&#x8BA1;&#x7B97;
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * The default implementation is equivalent to performing the following
+     * steps for this {<span class="hljs-doctag">@code</span> map}, then returning the current value or
+     * {<span class="hljs-doctag">@code</span> null} if absent:
+     * &#x5BF9;&#x4E8E;&#x8BE5;map&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x7B49;&#x4EF7;&#x4E8E;&#x4E0B;&#x9762;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#xFF08;&#x539F;&#xFF09;value&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;key&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;null&#xFF1A;
+     *
+     * &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * V oldValue = map.get(key);
+     * V newValue = (oldValue == null) ? value :
+     *              remappingFunction.apply(oldValue, value);
+     * if (newValue == null)
+     *     map.remove(key);
+     * else
+     *     map.put(key, newValue);
+     * }&lt;/pre&gt;
+     *
+     * &lt;p&gt;The default implementation may retry these steps when multiple
+     * threads attempt updates including potentially calling the remapping
+     * function multiple times.
+     * &#x5F53;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5C1D;&#x8BD5;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x4F1A;&#x591A;&#x6B21;&#x5C1D;&#x8BD5;&#x8FD9;&#x4E9B;&#x6B65;&#x9AA4;&#xFF0C;&#x5305;&#x62EC;&#x53EF;&#x80FD;&#x4E3A;&#x7ED9;&#x5B9A;&#x7684;key&#x91CD;&#x590D;&#x8C03;&#x7528;&#x8BE5;&#x91CD;&#x65B0;&#x6620;&#x5C04;&#x7684;function&#x3002;
+     *
+     * &lt;p&gt;This implementation assumes that the ConcurrentMap cannot contain null
+     * values and {<span class="hljs-doctag">@code</span> get()} returning null unambiguously means the key is
+     * absent. Implementations which support null values &lt;strong&gt;must&lt;/strong&gt;
+     * override this default implementation.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x5047;&#x5B9A;ConcurrentMap&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x4E3A;null&#x503C;&#x7684;value&#xFF0C;&#x5E76;&#x4E14;get()&#x8FD4;&#x56DE;null&#x660E;&#x786E;&#xFF08;unambiguously&#xFF09;&#x8868;&#x793A;key&#x4E0D;&#x5B58;&#x5728;&#xFF08;absent&#xFF09;&#x3002;
+     * &#x652F;&#x6301;value&#x4E3A;null&#x7684;&#x5B9E;&#x73B0;&#x5FC5;&#x987B;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x8BE5;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x3002;
+     *
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> ClassCastException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@since</span> 1.8
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">default</span> V <span class="hljs-title">merge</span><span class="hljs-params">(K key, V value,
+            BiFunction&lt;? <span class="hljs-keyword">super</span> V, ? <span class="hljs-keyword">super</span> V, ? extends V&gt; remappingFunction)</span> </span>{
+        Objects.requireNonNull(remappingFunction);
+        Objects.requireNonNull(value);
+        V oldValue = get(key);
+        <span class="hljs-keyword">for</span> (;;) {
+            <span class="hljs-keyword">if</span> (oldValue != <span class="hljs-keyword">null</span>) {
+                V newValue = remappingFunction.apply(oldValue, value);
+                <span class="hljs-keyword">if</span> (newValue != <span class="hljs-keyword">null</span>) {
+                    <span class="hljs-keyword">if</span> (replace(key, oldValue, newValue))
+                        <span class="hljs-keyword">return</span> newValue;
+                } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (remove(key, oldValue)) {
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+                }
+                oldValue = get(key);
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">if</span> ((oldValue = putIfAbsent(key, value)) == <span class="hljs-keyword">null</span>) {
+                    <span class="hljs-keyword">return</span> value;
+                }
+            }
+        }
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ConcurrentHashMap.java.html" class="navigation navigation-prev " aria-label="Previous page: ConcurrentHashMap.Java">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Executor.java.html" class="navigation navigation-next " aria-label="Next page: Executor.Java">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ConcurrentMap.Java","level":"1.2.3.4","depth":3,"next":{"title":"Executor.Java","level":"1.2.3.5","depth":3,"path":"Doc/util/concurrent/Executor.java.md","ref":"Doc/util/concurrent/Executor.java.md","articles":[]},"previous":{"title":"ConcurrentHashMap.Java","level":"1.2.3.3","depth":3,"path":"Doc/util/concurrent/ConcurrentHashMap.java.md","ref":"Doc/util/concurrent/ConcurrentHashMap.java.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","splitter","code","-sharing","-lunr","-search","search-pro","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"summary":{},"splitter":{},"code":{"copyButtons":true},"search-pro":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"莫显辉","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*","description":"日常笔记"},"file":{"path":"Doc/util/concurrent/ConcurrentMap.java.md","mtime":"2021-08-20T08:45:58.902Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-30T05:59:23.144Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

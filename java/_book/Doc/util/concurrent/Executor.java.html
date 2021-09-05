@@ -1,0 +1,694 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Executor.Java · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="莫显辉">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ExecutorCompletionService.java.html" />
+    
+    
+    <link rel="prev" href="ConcurrentMap.java.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Doc</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../AbstractMap.java.html">
+            
+                <a href="../AbstractMap.java.html">
+            
+                    
+                    AbstractMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Map.java.html">
+            
+                <a href="../Map.java.html">
+            
+                    
+                    Map.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Concurrent
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="AbstractExecutorService.java.html">
+            
+                <a href="AbstractExecutorService.java.html">
+            
+                    
+                    AbstractExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="Callable.java.html">
+            
+                <a href="Callable.java.html">
+            
+                    
+                    Callable.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="ConcurrentHashMap.java.html">
+            
+                <a href="ConcurrentHashMap.java.html">
+            
+                    
+                    ConcurrentHashMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="ConcurrentMap.java.html">
+            
+                <a href="ConcurrentMap.java.html">
+            
+                    
+                    ConcurrentMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.5" data-path="Executor.java.html">
+            
+                <a href="Executor.java.html">
+            
+                    
+                    Executor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="ExecutorCompletionService.java.html">
+            
+                <a href="ExecutorCompletionService.java.html">
+            
+                    
+                    ExecutorCompletionService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="ExecutorService.java.html">
+            
+                <a href="ExecutorService.java.html">
+            
+                    
+                    ExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="Future.java.html">
+            
+                <a href="Future.java.html">
+            
+                    
+                    Future.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="FutureTask.java.html">
+            
+                <a href="FutureTask.java.html">
+            
+                    
+                    FutureTask.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="RunnableFuture.java.html">
+            
+                <a href="RunnableFuture.java.html">
+            
+                    
+                    RunnableFuture.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="ThreadPoolExecutor.java.html">
+            
+                <a href="ThreadPoolExecutor.java.html">
+            
+                    
+                    ThreadPoolExecutor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" >
+            
+                <span>
+            
+                    
+                    Locks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.12.1" data-path="locks/AbstractOwnableSynchronizer.java.html">
+            
+                <a href="locks/AbstractOwnableSynchronizer.java.html">
+            
+                    
+                    AbstractOwnableSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.2" data-path="locks/AbstractQueuedSynchronizer.java.html">
+            
+                <a href="locks/AbstractQueuedSynchronizer.java.html">
+            
+                    
+                    AbstractQueuedSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.3" data-path="locks/Condition.java.html">
+            
+                <a href="locks/Condition.java.html">
+            
+                    
+                    Condition.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.4" data-path="locks/Lock.java.html">
+            
+                <a href="locks/Lock.java.html">
+            
+                    
+                    Lock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.5" data-path="locks/ReentrantLock.java.html">
+            
+                <a href="locks/ReentrantLock.java.html">
+            
+                    
+                    ReentrantLock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../日志.html">
+            
+                <a href="../../日志.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Executor.Java</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="executor">Executor</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */</span>
+
+<span class="hljs-comment">/*
+ *
+ *
+ *
+ *
+ *
+ * Written by Doug Lea with assistance from members of JCP JSR-166
+ * Expert Group and released to the public domain, as explained at
+ * http://creativecommons.org/publicdomain/zero/1.0/
+ */</span>
+
+<span class="hljs-keyword">package</span> java.util.concurrent;
+
+<span class="hljs-comment">/**
+ * An object that executes submitted {<span class="hljs-doctag">@link</span> Runnable} tasks. This
+ * interface provides a way of decoupling task submission from the
+ * mechanics of how each task will be run, including details of thread
+ * use, scheduling, etc.  An {<span class="hljs-doctag">@code</span> Executor} is normally used
+ * instead of explicitly creating threads. For example, rather than
+ * invoking {<span class="hljs-doctag">@code</span> new Thread(new(RunnableTask())).start()} for each
+ * of a set of tasks, you might use:
+ * &#x4E00;&#x4E2A;&#x6267;&#x884C;&#x63D0;&#x4EA4;&#x7684;Runnable&#x4EFB;&#x52A1;&#x7684;&#x5BF9;&#x8C61;&#x3002;
+ * &#x8BE5;&#x63A5;&#x53E3;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5C06;&#x4EFB;&#x52A1;&#x63D0;&#x4EA4;&#x4E0E;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x5C06;&#x5982;&#x4F55;&#x8FD0;&#x884C;&#x7684;&#x673A;&#x5236;&#x5206;&#x79BB;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5305;&#x542B;&#x7EBF;&#x7A0B;&#x4F7F;&#x7528;&#x3001;&#x8C03;&#x5EA6;&#x7B49;&#x7EC6;&#x8282;&#x3002;
+ * Executor&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x66FF;&#x4EE3;&#x663E;&#x5F0F;&#xFF08;explicitly&#xFF09;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x3002;
+ * &#x4F8B;&#x5982;&#xFF1A;&#x4E0D;&#x60F3;&#x4E3A;&#x4E86;task&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x90FD;&#x8C03;&#x7528;new Thread(new(RunnableTask())).start()&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;
+ *
+ * &lt;pre&gt;
+ * Executor executor = &lt;em&gt;anExecutor&lt;/em&gt;;
+ * executor.execute(new RunnableTask1());
+ * executor.execute(new RunnableTask2());
+ * ...
+ * &lt;/pre&gt;
+ *
+ * However, the {<span class="hljs-doctag">@code</span> Executor} interface does not strictly
+ * require that execution be asynchronous. In the simplest case, an
+ * executor can run the submitted task immediately in the caller&apos;s
+ * thread:
+ * &#x4F46;&#x662F;&#xFF0C;Executor&#x63A5;&#x53E3;&#x5E76;&#x4E0D;&#x4E25;&#x683C;&#xFF08;strictly&#xFF09;&#x8981;&#x6C42;&#x6267;&#x884C;&#x662F;&#x5F02;&#x6B65;&#x7684;&#x3002;
+ * &#x4E3E;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;executor&#x53EF;&#x4EE5;&#x5728;&#x8C03;&#x7528;&#x8005;&#x7684;&#x7EBF;&#x7A0B;&#x91CC;&#x7ACB;&#x5373;&#x6267;&#x884C;task&#xFF1A;
+ *
+ *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+ * class DirectExecutor implements Executor {
+ *   public void execute(Runnable r) {
+ *     r.run(); // &#x6CA1;&#x6709;&#x901A;&#x8FC7;&#x4F20;&#x5165;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;&#x6267;&#x884C;&#xFF0C;&#x90A3;&#x4E48;run&#x5C31;&#x4F5C;&#x4E3A;&#x666E;&#x901A;&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x4E86;
+ *   }
+ * }}&lt;/pre&gt;
+ *
+ * More typically, tasks are executed in some thread other
+ * than the caller&apos;s thread.  The executor below spawns a new thread
+ * for each task.
+ * &#x901A;&#x5E38;&#x60C5;&#x51B5;&#xFF0C;task&#x5728;&#x8C03;&#x7528;&#x8005;&#x7EBF;&#x7A0B;&#x4E4B;&#x5916;&#xFF0C;&#x542F;&#x52A8;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x3002;
+ * &#x4E0B;&#x9762;&#x7684;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x4E3A;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7EBF;&#x7A0B;&#xFF1A;
+ *
+ *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+ * class ThreadPerTaskExecutor implements Executor {
+ *   public void execute(Runnable r) {
+ *     new Thread(r).start(); // &#x6BCF;&#x4E2A;run&#x65B9;&#x6CD5;&#x90FD;&#x4F1A;&#x5728;&#x4E0D;&#x540C;&#x7684;Thread&#x4E2D;&#x6267;&#x884C;
+ *   }
+ * }}&lt;/pre&gt;
+ *
+ * Many {<span class="hljs-doctag">@code</span> Executor} implementations impose some sort of
+ * limitation on how and when tasks are scheduled.  The executor below
+ * serializes the submission of tasks to a second executor,
+ * illustrating a composite executor.
+ * &#x8BB8;&#x591A;Executor&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5BF9;task&#x8C03;&#x5EA6;&#x7684;&#x65B9;&#x5F0F;&#x548C;&#x65F6;&#x95F4;&#x65BD;&#x52A0;&#xFF08;impose &#x5F3A;&#x52A0;&#xFF09;&#x4E86;&#x4E00;&#x4E9B;&#x9650;&#x5236;&#x3002;
+ * &#x4E0B;&#x9762;&#x7684;executor&#x5C06;&#x4EFB;&#x52A1;&#x7684;&#x63D0;&#x4EA4;&#x5E8F;&#x5217;&#x5316;&#x5230;&#x4E86;&#x7B2C;&#x4E8C;&#x4E2A;executor&#xFF0C;&#x8BF4;&#x660E;&#xFF08;illustrating&#xFF09;&#x4E86;&#x4E00;&#x4E2A;&#x590D;&#x5408;&#xFF08;composite&#xFF09;executor
+ *
+ *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+ * class SerialExecutor implements Executor {
+ *   final Queue&lt;Runnable&gt; tasks = new ArrayDeque&lt;Runnable&gt;();
+ *   final Executor executor; // &#x5185;&#x90E8;&#x6709;&#x4E00;&#x4E2A;Executor
+ *   Runnable active;
+ *
+ *   SerialExecutor(Executor executor) {
+ *     this.executor = executor;
+ *   }
+ *
+ *   public synchronized void execute(final Runnable r) {
+ *     tasks.offer(new Runnable() {
+ *       public void run() {
+ *         try {
+ *           r.run();
+ *         } finally {
+ *           scheduleNext();
+ *         }
+ *       }
+ *     });
+ *     if (active == null) {
+ *       scheduleNext();
+ *     }
+ *   }
+ *
+ *   protected synchronized void scheduleNext() {
+ *     if ((active = tasks.poll()) != null) {
+ *       executor.execute(active); // &#x672C;&#x7C7B;&#x7684;execute&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x4E2A;executor&#x7684;execute
+ *     }
+ *   }
+ * }}&lt;/pre&gt;
+ *
+ * The {<span class="hljs-doctag">@code</span> Executor} implementations provided in this package
+ * implement {<span class="hljs-doctag">@link</span> ExecutorService}, which is a more extensive
+ * interface.  The {<span class="hljs-doctag">@link</span> ThreadPoolExecutor} class provides an
+ * extensible thread pool implementation. The {<span class="hljs-doctag">@link</span> Executors} class
+ * provides convenient factory methods for these Executors.
+ * Executor&#x5728;&#x5305;&#x91CC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;ExecutorService&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;&#x8BE5;&#x7C7B;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x5E7F;&#x6CDB;&#x7684;&#x63A5;&#x53E3;&#x3002;
+ * ThreadPoolExecutor&#x7C7B;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x7EBF;&#x7A0B;&#x6C60;&#x5B9E;&#x73B0;&#x3002;
+ * Executors&#x7C7B;&#x4E3A;&#x8FD9;&#x4E9B;Executor&#x63D0;&#x4F9B;&#x4E86;&#x65B9;&#x4FBF;&#x7684;&#xFF08;convenient&#xFF09;&#x7684;&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x3002;
+ *
+ * &lt;p&gt;Memory consistency effects: Actions in a thread prior to
+ * submitting a {<span class="hljs-doctag">@code</span> Runnable} object to an {<span class="hljs-doctag">@code</span> Executor}
+ * &lt;a href=&quot;package-summary.html#MemoryVisibility&quot;&gt;&lt;i&gt;happen-before&lt;/i&gt;&lt;/a&gt;
+ * its execution begins, perhaps in another thread.
+ * &#x5185;&#x5B58;&#x4E00;&#x81F4;&#x6027;&#x5F71;&#x54CD;&#xFF1A;&#x5728;&#x7EBF;&#x7A0B;&#x63D0;&#x4EA4;Runnable&#x5BF9;&#x8C61;&#x7ED9;Executor&#x4E4B;&#x524D;&#xFF0C;&#x5185;&#x5B58;&#x53EF;&#x89C1;&#x6027;happen-before&#x6267;&#x884C;&#x4E4B;&#x524D;&#xFF0C;&#x53EF;&#x80FD;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#xFF08;&#x4E0D;&#x77E5;&#x9053;&#x5565;&#x610F;&#x601D;&#xFF09;
+ *
+ * <span class="hljs-doctag">@since</span> 1.5
+ * <span class="hljs-doctag">@author</span> Doug Lea
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Executor</span> </span>{
+
+    <span class="hljs-comment">/**
+     * Executes the given command at some time in the future.  The command
+     * may execute in a new thread, in a pooled thread, or in the calling
+     * thread, at the discretion of the {<span class="hljs-doctag">@code</span> Executor} implementation.
+     * &#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x547D;&#x4EE4;&#xFF08;&#x5B9E;&#x73B0;Runnable&#x63A5;&#x53E3;&#x7684;&#xFF09;&#x5728;&#x672A;&#x6765;&#x7684;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x3002;
+     * &#x8BE5;&#x547D;&#x4EE4;&#x53EF;&#x80FD;&#x5728;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x6216;&#x8005;&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6C60;&#x6267;&#x884C;&#xFF0C;&#x6216;&#x8005;&#x5728;&#x8C03;&#x7528;&#x8005;&#x7684;&#x7EBF;&#x7A0B;&#x91CC;&#x6267;&#x884C;&#xFF0C;&#x6267;&#x884C;&#x65B9;&#x5F0F;&#x7531;Executor&#x7684;&#x5B9E;&#x73B0;&#x6765;&#x51B3;&#x5B9A;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> command the runnable task
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException if this task cannot be
+     * accepted for execution
+     * <span class="hljs-doctag">@throws</span> NullPointerException if command is null
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">execute</span><span class="hljs-params">(Runnable command)</span></span>;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ConcurrentMap.java.html" class="navigation navigation-prev " aria-label="Previous page: ConcurrentMap.Java">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ExecutorCompletionService.java.html" class="navigation navigation-next " aria-label="Next page: ExecutorCompletionService.Java">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Executor.Java","level":"1.2.3.5","depth":3,"next":{"title":"ExecutorCompletionService.Java","level":"1.2.3.6","depth":3,"path":"Doc/util/concurrent/ExecutorCompletionService.java.md","ref":"Doc/util/concurrent/ExecutorCompletionService.java.md","articles":[]},"previous":{"title":"ConcurrentMap.Java","level":"1.2.3.4","depth":3,"path":"Doc/util/concurrent/ConcurrentMap.java.md","ref":"Doc/util/concurrent/ConcurrentMap.java.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","splitter","code","-sharing","-lunr","-search","search-pro","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"summary":{},"splitter":{},"code":{"copyButtons":true},"search-pro":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"莫显辉","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*","description":"日常笔记"},"file":{"path":"Doc/util/concurrent/Executor.java.md","mtime":"2021-07-29T02:23:08.335Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-30T05:59:23.144Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,981 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ExecutorService.Java · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="莫显辉">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Future.java.html" />
+    
+    
+    <link rel="prev" href="ExecutorCompletionService.java.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Doc</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../AbstractMap.java.html">
+            
+                <a href="../AbstractMap.java.html">
+            
+                    
+                    AbstractMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Map.java.html">
+            
+                <a href="../Map.java.html">
+            
+                    
+                    Map.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Concurrent
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="AbstractExecutorService.java.html">
+            
+                <a href="AbstractExecutorService.java.html">
+            
+                    
+                    AbstractExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="Callable.java.html">
+            
+                <a href="Callable.java.html">
+            
+                    
+                    Callable.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="ConcurrentHashMap.java.html">
+            
+                <a href="ConcurrentHashMap.java.html">
+            
+                    
+                    ConcurrentHashMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="ConcurrentMap.java.html">
+            
+                <a href="ConcurrentMap.java.html">
+            
+                    
+                    ConcurrentMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="Executor.java.html">
+            
+                <a href="Executor.java.html">
+            
+                    
+                    Executor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="ExecutorCompletionService.java.html">
+            
+                <a href="ExecutorCompletionService.java.html">
+            
+                    
+                    ExecutorCompletionService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.7" data-path="ExecutorService.java.html">
+            
+                <a href="ExecutorService.java.html">
+            
+                    
+                    ExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="Future.java.html">
+            
+                <a href="Future.java.html">
+            
+                    
+                    Future.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="FutureTask.java.html">
+            
+                <a href="FutureTask.java.html">
+            
+                    
+                    FutureTask.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="RunnableFuture.java.html">
+            
+                <a href="RunnableFuture.java.html">
+            
+                    
+                    RunnableFuture.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="ThreadPoolExecutor.java.html">
+            
+                <a href="ThreadPoolExecutor.java.html">
+            
+                    
+                    ThreadPoolExecutor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" >
+            
+                <span>
+            
+                    
+                    Locks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.12.1" data-path="locks/AbstractOwnableSynchronizer.java.html">
+            
+                <a href="locks/AbstractOwnableSynchronizer.java.html">
+            
+                    
+                    AbstractOwnableSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.2" data-path="locks/AbstractQueuedSynchronizer.java.html">
+            
+                <a href="locks/AbstractQueuedSynchronizer.java.html">
+            
+                    
+                    AbstractQueuedSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.3" data-path="locks/Condition.java.html">
+            
+                <a href="locks/Condition.java.html">
+            
+                    
+                    Condition.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.4" data-path="locks/Lock.java.html">
+            
+                <a href="locks/Lock.java.html">
+            
+                    
+                    Lock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.5" data-path="locks/ReentrantLock.java.html">
+            
+                <a href="locks/ReentrantLock.java.html">
+            
+                    
+                    ReentrantLock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../日志.html">
+            
+                <a href="../../日志.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >ExecutorService.Java</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="executorservice">ExecutorService</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */</span>
+
+<span class="hljs-comment">/*
+ *
+ *
+ *
+ *
+ *
+ * Written by Doug Lea with assistance from members of JCP JSR-166
+ * Expert Group and released to the public domain, as explained at
+ * http://creativecommons.org/publicdomain/zero/1.0/
+ */</span>
+
+<span class="hljs-keyword">package</span> java.util.concurrent;
+<span class="hljs-keyword">import</span> java.util.List;
+<span class="hljs-keyword">import</span> java.util.Collection;
+
+<span class="hljs-comment">/**
+ * An {<span class="hljs-doctag">@link</span> Executor} that provides methods to manage termination and
+ * methods that can produce a {<span class="hljs-doctag">@link</span> Future} for tracking progress of
+ * one or more asynchronous tasks.
+ * &#x4E00;&#x4E2A;Executor&#x63D0;&#x4F9B;&#x7BA1;&#x7406;&#x7EC8;&#x6B62;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x751F;&#x6210;Future&#x6765;&#x8DDF;&#x8E2A;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5F02;&#x6B65;&#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;&#x8FDB;&#x5EA6;&#x7684;&#x65B9;&#x6CD5;&#x3002;
+ *
+ * &lt;p&gt;An {<span class="hljs-doctag">@code</span> ExecutorService} can be shut down, which will cause
+ * it to reject new tasks.  Two different methods are provided for
+ * shutting down an {<span class="hljs-doctag">@code</span> ExecutorService}. The {<span class="hljs-doctag">@link</span> #shutdown}
+ * method will allow previously submitted tasks to execute before
+ * terminating, while the {<span class="hljs-doctag">@link</span> #shutdownNow} method prevents waiting
+ * tasks from starting and attempts to stop currently executing tasks.
+ * Upon termination, an executor has no tasks actively executing, no
+ * tasks awaiting execution, and no new tasks can be submitted.  An
+ * unused {<span class="hljs-doctag">@code</span> ExecutorService} should be shut down to allow
+ * reclamation of its resources.
+ * &#x53EF;&#x4EE5;&#x5173;&#x95ED;&#xFF08;shut down&#xFF09;ExecutorService&#xFF0C;&#x5C06;&#x5B83;&#x5BFC;&#x81F4;&#x62D2;&#x7EDD;&#x65B0;&#x4EFB;&#x52A1;&#x3002;
+ * &#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x6765;shutdownExecutorService&#x3002;
+ * 1&#x3001;shutdown&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x5141;&#x8BB8;&#x4E4B;&#x524D;&#x63D0;&#x4EA4;&#x7684;&#x4EFB;&#x52A1;&#x5728;&#x7EC8;&#x6B62;&#x4E4B;&#x524D;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;
+ * 2&#x3001;shutdownNow&#x65B9;&#x6CD5;&#xFF0C;&#x9632;&#x6B62;&#xFF08;prevent&#xFF09;&#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x5F00;&#x59CB;&#xFF0C;&#x5E76;&#x4E14;&#x5C1D;&#x8BD5;&#x7ED3;&#x675F;&#x5F53;&#x524D;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x3002;
+ * &#x7EC8;&#x6B62;&#x65F6;&#xFF0C;executor&#x6CA1;&#x6709;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x6CA1;&#x6709;&#x7B49;&#x5F85;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x6CA1;&#x6709;&#x65B0;&#x4EFB;&#x52A1;&#x53EF;&#x4EE5;&#x63D0;&#x4EA4;&#x3002;
+ * &#x5E94;&#x5173;&#x95ED;&#x672A;&#x4F7F;&#x7528;&#x7684;ExecutorService&#xFF0C;&#x4EE5;&#x56DE;&#x6536;&#x8D44;&#x6E90;&#x3002;
+ *
+ * &lt;p&gt;Method {<span class="hljs-doctag">@code</span> submit} extends base method {<span class="hljs-doctag">@link</span>
+ * Executor#execute(Runnable)} by creating and returning a {<span class="hljs-doctag">@link</span> Future}
+ * that can be used to cancel execution and/or wait for completion.
+ * Methods {<span class="hljs-doctag">@code</span> invokeAny} and {<span class="hljs-doctag">@code</span> invokeAll} perform the most
+ * commonly useful forms of bulk execution, executing a collection of
+ * tasks and then waiting for at least one, or all, to
+ * complete. (Class {<span class="hljs-doctag">@link</span> ExecutorCompletionService} can be used to
+ * write customized variants of these methods.)
+ * submit&#x65B9;&#x6CD5;&#x57FA;&#x4E8E;Executor#execute(Runnable)&#x65B9;&#x6CD5;&#x6269;&#x5C55;&#xFF0C;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x548C;&#x8FD4;&#x56DE;Future&#x5BF9;&#x8C61;&#xFF0C;Future&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x53D6;&#x6D88;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x5E76;&#x4E14;/&#x6216;&#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x3002;
+ * invokeAny&#x65B9;&#x6CD5;&#x548C;invokeAll&#x65B9;&#x6CD5;&#x6700;&#x5E38;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#xFF08;bulk&#xFF09;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#xFF0C;&#x6267;&#x884C;&#x4E00;&#x7EC4;&#x4EFB;&#x52A1;&#xFF0C;&#x7136;&#x540E;&#x7B49;&#x5F85;&#x81F3;&#x5C11;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x6240;&#x6709;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x3002;
+ *&#xFF08;ExecutorCompletionService&#x7C7B;&#x53EF;&#x7528;&#x4E8E;&#x7F16;&#x5199;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x53D8;&#x4F53;&#xFF08;variants &#x53D8;&#x79CD;&#xFF09;&#xFF09;
+ *
+ * &lt;p&gt;The {<span class="hljs-doctag">@link</span> Executors} class provides factory methods for the
+ * executor services provided in this package.
+ * &#x5728;&#x672C;&#x5305;&#x91CC;&#x7684;Executors&#x7C7B;&#x4E3A;executor&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x4E86;&#x5DE5;&#x5382;&#x65B9;&#x6CD5;
+ *
+ * &lt;h3&gt;Usage Examples&lt;/h3&gt;
+ * &#x7528;&#x4F8B;
+ *
+ * Here is a sketch of a network service in which threads in a thread
+ * pool service incoming requests. It uses the preconfigured {<span class="hljs-doctag">@link</span>
+ * Executors#newFixedThreadPool} factory method:
+ * &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x7684;&#x8349;&#x56FE;&#xFF0C;&#x5728;&#x7EBF;&#x7A0B;&#x6C60;&#x91CC;&#x7684;&#x7EBF;&#x7A0B;&#x670D;&#x52A1;&#x8FDB;&#x6765;&#x7684;&#x8BF7;&#x6C42;&#x3002;
+ * &#x4F7F;&#x7528;&#x9884;&#x914D;&#x7F6E;&#x7684;Executors#newFixedThreadPool&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#xFF1A;
+ *
+ *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+ * class NetworkService implements Runnable { // &#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5B9E;&#x73B0;Runnable&#x63A5;&#x53E3;&#xFF0C;&#x4E3A;&#x4E86;&#x8868;&#x660E;&#x8FD9;&#x662F;&#x4E2A;&#x8981;&#x6267;&#x884C;&#x7684;&#x7C7B;&#xFF1F;
+ *   private final ServerSocket serverSocket;
+ *   private final ExecutorService pool;
+ *
+ *   public NetworkService(int port, int poolSize)
+ *       throws IOException {
+ *     serverSocket = new ServerSocket(port);
+ *     pool = Executors.newFixedThreadPool(poolSize);
+ *   }
+ *
+ *   public void run() { // run the service
+ *     try {
+ *       for (;;) {
+ *         pool.execute(new Handler(serverSocket.accept()));
+ *       }
+ *     } catch (IOException ex) {
+ *       pool.shutdown();        // &#x8FD9;&#x91CC;&#x7ED9;&#x624B;&#x5DE5;shutdown&#x4E86;
+ *     }
+ *   }
+ * }
+ *
+ * class Handler implements Runnable {
+ *   private final Socket socket;
+ *   Handler(Socket socket) { this.socket = socket; }
+ *   public void run() {
+ *     // read and service request on socket
+ *   }
+ * }}&lt;/pre&gt;
+ *
+ * The following method shuts down an {<span class="hljs-doctag">@code</span> ExecutorService} in two phases,
+ * first by calling {<span class="hljs-doctag">@code</span> shutdown} to reject incoming tasks, and then
+ * calling {<span class="hljs-doctag">@code</span> shutdownNow}, if necessary, to cancel any lingering tasks:
+ * &#x63A5;&#x4E0B;&#x6765;&#x7684;&#x65B9;&#x6CD5;&#x4ECE;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#x505C;&#x6B62;ExecutorService&#xFF0C;
+ * 1&#x3001;&#x9996;&#x5148;&#x8C03;&#x7528;shutdown&#x65B9;&#x6CD5;&#x62D2;&#x7EDD;&#x4F20;&#x5165;&#x4EFB;&#x52A1;&#xFF08;&#x62D2;&#x7EDD;&#x65B0;&#x589E;&#x4EFB;&#x52A1;&#xFF09;
+ * 2&#x3001;&#x7136;&#x540E;&#x5728;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8C03;&#x7528;shutdownNow&#x65B9;&#x6CD5;&#xFF0C;&#x53D6;&#x6D88;&#x4EFB;&#x4F55;&#x5EF6;&#x8FDF;&#xFF08;linger&#xFF09;&#x4EFB;&#x52A1;
+ *
+ *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+ * void shutdownAndAwaitTermination(ExecutorService pool) {
+ *   pool.shutdown(); // Disable new tasks from being submitted
+ *   try {
+ *     // Wait a while for existing tasks to terminate
+ *     if (!pool.awaitTermination(60, TimeUnit.SECONDS)) {
+ *       pool.shutdownNow(); // Cancel currently executing tasks
+ *       // Wait a while for tasks to respond to being cancelled
+ *       if (!pool.awaitTermination(60, TimeUnit.SECONDS))
+ *           System.err.println(&quot;Pool did not terminate&quot;);
+ *     }
+ *   } catch (InterruptedException ie) {
+ *     // (Re-)Cancel if current thread also interrupted
+ *     pool.shutdownNow();
+ *     // Preserve interrupt status
+ *     Thread.currentThread().interrupt();
+ *   }
+ * }}&lt;/pre&gt;
+ *
+ * &lt;p&gt;Memory consistency effects: Actions in a thread prior to the
+ * submission of a {<span class="hljs-doctag">@code</span> Runnable} or {<span class="hljs-doctag">@code</span> Callable} task to an
+ * {<span class="hljs-doctag">@code</span> ExecutorService}
+ * &lt;a href=&quot;package-summary.html#MemoryVisibility&quot;&gt;&lt;i&gt;happen-before&lt;/i&gt;&lt;/a&gt;
+ * any actions taken by that task, which in turn &lt;i&gt;happen-before&lt;/i&gt; the
+ * result is retrieved via {<span class="hljs-doctag">@code</span> Future.get()}.
+ * &#x5185;&#x5B58;&#x4E00;&#x81F4;&#x6027;&#x5F71;&#x54CD;&#xFF1A;&#x5728;&#x5C06;Runnable&#x6216;&#x8005;Callable&#x4EFB;&#x52A1;&#x63D0;&#x4EA4;ExecutorService&#x4E4B;&#x524D;&#xFF0C;MemoryVisibility&#x53D1;&#x751F;&#x5728;&#x8BE5;&#x4EFB;&#x52A1;&#x91C7;&#x53D6;&#x7684;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x4E4B;&#x524D;&#xFF08;happen-before&#xFF09;
+ * &#x800C;&#x540E;&#x8005;&#x53C8;&#x53D1;&#x751F;&#x5728;&#x901A;&#x8FC7;Future.get()&#x68C0;&#x7D22;&#x7ED3;&#x679C;&#x4E4B;&#x524D;&#x3002;
+ *
+ * <span class="hljs-doctag">@since</span> 1.5
+ * <span class="hljs-doctag">@author</span> Doug Lea
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">ExecutorService</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Executor</span> </span>{
+
+    <span class="hljs-comment">/**
+     * Initiates an orderly shutdown in which previously submitted
+     * tasks are executed, but no new tasks will be accepted.
+     * Invocation has no additional effect if already shut down.
+     * &#x542F;&#x52A8;&#x6709;&#x5E8F;&#x7684;&#x5173;&#x95ED;&#xFF0C;&#x4E4B;&#x524D;&#x63D0;&#x4EA4;&#x7684;&#x4EFB;&#x52A1;&#x5C06;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x63A5;&#x53D7;&#x65B0;&#x7684;&#x4EFB;&#x52A1;&#x3002;
+     * &#x5982;&#x679C;&#x5DF2;&#x7ECF;shutdown&#x5173;&#x95ED;&#x4E86;&#xFF0C;&#x591A;&#x6B21;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x989D;&#x5916;&#x6548;&#x679C;&#xFF08;&#x6216;&#x8005;&#x8BF4;&#x5F71;&#x54CD;&#xFF09;&#x3002;
+     *
+     * &lt;p&gt;This method does not wait for previously submitted tasks to
+     * complete execution.  Use {<span class="hljs-doctag">@link</span> #awaitTermination awaitTermination}
+     * to do that.
+     * &#x8BE5;&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x7B49;&#x4E4B;&#x524D;&#x63D0;&#x4EA4;&#x7684;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x3002;
+     * &#x60F3;&#x8981;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#x7684;&#x8BDD;&#xFF0C;&#x4F7F;&#x7528;awaitTermination&#x65B9;&#x6CD5;
+     *
+     * <span class="hljs-doctag">@throws</span> SecurityException if a security manager exists and
+     *         shutting down this ExecutorService may manipulate
+     *         threads that the caller is not permitted to modify
+     *         because it does not hold {<span class="hljs-doctag">@link</span>
+     *         java.lang.RuntimePermission}{<span class="hljs-doctag">@code</span> (&quot;modifyThread&quot;)},
+     *         or the security manager&apos;s {<span class="hljs-doctag">@code</span> checkAccess} method
+     *         denies access.
+     *         &#x5982;&#x679C;&#x5B89;&#x5168;&#x7BA1;&#x7406;&#x5668;&#x5B58;&#x5728;&#xFF0C;&#x5E76;&#x4E14;&#x5173;&#x95ED;&#x8FD9;&#x4E2A;ExecutorService&#x53EF;&#x80FD;&#x4F1A;&#x64CD;&#x7EB5;&#x4E0D;&#x5141;&#x8BB8;&#x8C03;&#x7528;&#x8005;&#x4FEE;&#x6539;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6CA1;&#x6709;&#x6301;&#x6709;&#x4FEE;&#x6539;&#x7EBF;&#x7A0B;&#x7684;&#x6267;&#x884C;&#x6743;&#x9650;&#xFF08;RuntimePermission&#xFF09;&#xFF0C;
+     *         &#x6216;&#x8005;&#x5B89;&#x5168;&#x7BA1;&#x7406;&#x5668;&#x7684;checkAccess&#x65B9;&#x6CD5;&#x62D2;&#x7EDD;&#x8BBF;&#x95EE;&#x3002;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">shutdown</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * Attempts to stop all actively executing tasks, halts the
+     * processing of waiting tasks, and returns a list of the tasks
+     * that were awaiting execution.
+     * &#x5C1D;&#x8BD5;&#x505C;&#x6B62;&#x5168;&#x90E8;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x6D3B;&#x8DC3;&#x4EFB;&#x52A1;&#xFF0C;&#x505C;&#x6B62;&#xFF08;halt&#xFF09;&#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7B49;&#x5F85;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x5217;&#x8868;&#x3002;
+     *
+     * &lt;p&gt;This method does not wait for actively executing tasks to
+     * terminate.  Use {<span class="hljs-doctag">@link</span> #awaitTermination awaitTermination} to
+     * do that.
+     * &#x8BE5;&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x7B49;&#x5F85;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x505C;&#x6B62;&#x3002;&#xFF08;&#x505C;&#x6B62;&#x800C;&#x4E0D;&#x662F;&#x5B8C;&#x6210;&#xFF09;
+     * &#x5982;&#x679C;&#x60F3;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x4F7F;&#x7528;awaitTermination&#x65B9;&#x6CD5;
+     *
+     * &lt;p&gt;There are no guarantees beyond best-effort attempts to stop
+     * processing actively executing tasks.  For example, typical
+     * implementations will cancel via {<span class="hljs-doctag">@link</span> Thread#interrupt}, so any
+     * task that fails to respond to interrupts may never terminate.
+     * &#x4E0D;&#x4FDD;&#x8BC1;&#xFF0C;&#x9664;&#x4E86;&#x5C3D;&#x529B;&#x5C1D;&#x8BD5;&#x505C;&#x6B62;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5178;&#x578B;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x4E3A;&#x901A;&#x8FC7;interrupt&#x6765;&#x53D6;&#x6D88;&#xFF08;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x7EBF;&#x7A0B;&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x4EFB;&#x4F55;&#x672A;&#x80FD;&#x54CD;&#x5E94;&#x4E2D;&#x65AD;&#x7684;&#x4EFB;&#x52A1;&#x53EF;&#x80FD;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x7EC8;&#x6B62;&#x3002;
+     *&#xFF08;&#x610F;&#x601D;&#x5C31;&#x662F;&#x8C03;&#x7528;&#x4E86;shutdownNow&#x65B9;&#x6CD5;&#xFF0C;&#x53EA;&#x662F;&#x4F1A;&#x5C1D;&#x8BD5;&#x53BB;&#x53D6;&#x6D88;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x7528;interrupt&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x5982;&#x679C;&#x4EFB;&#x52A1;&#x4E0D;&#x54CD;&#x5E94;&#x4E2D;&#x65AD;&#xFF0C;&#x90A3;&#x4EFB;&#x52A1;&#x8FD8;&#x662F;&#x4F1A;&#x6B63;&#x5E38;&#x6267;&#x884C;&#xFF09;
+     *
+     * <span class="hljs-doctag">@return</span> list of tasks that never commenced execution
+     *         &#x4ECE;&#x672A;&#x5F00;&#x59CB;&#xFF08;commenced&#xFF09;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x5217;&#x8868;&#xFF08;&#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x5217;&#x8868;&#xFF09;
+     * <span class="hljs-doctag">@throws</span> SecurityException if a security manager exists and
+     *         shutting down this ExecutorService may manipulate
+     *         threads that the caller is not permitted to modify
+     *         because it does not hold {<span class="hljs-doctag">@link</span>
+     *         java.lang.RuntimePermission}{<span class="hljs-doctag">@code</span> (&quot;modifyThread&quot;)},
+     *         or the security manager&apos;s {<span class="hljs-doctag">@code</span> checkAccess} method
+     *         denies access.
+     */</span>
+    <span class="hljs-function">List&lt;Runnable&gt; <span class="hljs-title">shutdownNow</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * Returns {<span class="hljs-doctag">@code</span> true} if this executor has been shut down.
+     * &#x5982;&#x679C;&#x8BE5;executor&#x88AB;&#x5173;&#x95ED;&#x4E86;&#xFF0C;&#x8FD4;&#x56DE;true
+     *
+     * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if this executor has been shut down
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isShutdown</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * Returns {<span class="hljs-doctag">@code</span> true} if all tasks have completed following shut down.
+     * Note that {<span class="hljs-doctag">@code</span> isTerminated} is never {<span class="hljs-doctag">@code</span> true} unless
+     * either {<span class="hljs-doctag">@code</span> shutdown} or {<span class="hljs-doctag">@code</span> shutdownNow} was called first.
+     * &#x5982;&#x679C;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x4F34;&#x968F;&#x7740;shutdown&#x90FD;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x8FD4;&#x56DE;true
+     * &#x6CE8;&#x610F;&#xFF0C;&#x9664;&#x975E;shutdown()&#x6216;&#x8005;shutdownNow()&#x65B9;&#x6CD5;&#x9996;&#x5148;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5426;&#x5219;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x5E76;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE;true&#x3002;
+     *
+     * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if all tasks have completed following shut down
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isTerminated</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * Blocks until all tasks have completed execution after a shutdown
+     * request, or the timeout occurs, or the current thread is
+     * interrupted, whichever happens first.
+     * &#x5728;shutdown&#x8BF7;&#x6C42;&#x4E4B;&#x540E;&#x8FDB;&#x884C;&#x963B;&#x585E;&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x5904;&#x7406;&#xFF0C;&#x6216;&#x8005;&#x5904;&#x7406;&#x8D85;&#x65F6;&#xFF0C;&#x6216;&#x8005;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x88AB;&#x4E2D;&#x65AD;&#xFF0C;&#x4EE5;&#x5148;&#x53D1;&#x751F;&#x8005;&#x4E3A;&#x51C6;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> timeout the maximum time to wait
+     *        timeout&#x53C2;&#x6570;&#xFF0C;&#x6700;&#x5927;&#x7B49;&#x5F85;&#x65F6;&#x95F4;
+     * <span class="hljs-doctag">@param</span> unit the time unit of the timeout argument
+     * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if this executor terminated and
+     *         {<span class="hljs-doctag">@code</span> false} if the timeout elapsed before termination
+     *         true  &#x5982;&#x679C;executor&#x7EC8;&#x6B62;
+     *         false &#x5982;&#x679C;&#x5728;&#x7EC8;&#x6B62;&#x524D;&#x8D85;&#x65F6;
+     * <span class="hljs-doctag">@throws</span> InterruptedException if interrupted while waiting
+     *         &#x629B;&#x51FA;InterruptedException&#xFF0C;&#x5982;&#x679C;&#x5728;&#x7B49;&#x5F85;&#x65F6;&#x88AB;&#x4E2D;&#x65AD;&#x3002;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">awaitTermination</span><span class="hljs-params">(<span class="hljs-keyword">long</span> timeout, TimeUnit unit)</span>
+        <span class="hljs-keyword">throws</span> InterruptedException</span>;
+
+    <span class="hljs-comment">/**
+     * Submits a value-returning task for execution and returns a
+     * Future representing the pending results of the task. The
+     * Future&apos;s {<span class="hljs-doctag">@code</span> get} method will return the task&apos;s result upon
+     * successful completion.
+     * &#x63D0;&#x4EA4;&#x4E00;&#x4E2A;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x7B49;&#x5F85;task&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7684;Future&#x3002;
+     * Future&#x7684;get&#x65B9;&#x6CD5;&#x5C06;&#x5728;task&#x6267;&#x884C;&#x6210;&#x529F;&#x540E;&#x8FD4;&#x56DE;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x3002;
+     *
+     * &lt;p&gt;
+     * If you would like to immediately block waiting
+     * for a task, you can use constructions of the form
+     * {<span class="hljs-doctag">@code</span> result = exec.submit(aCallable).get();}
+     * &#x5982;&#x679C;&#x60F3;&#x7ACB;&#x5373;&#x963B;&#x585E;&#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x7ED3;&#x6784;&#x5F62;&#x5F0F;
+     * result=exec.submit(aCallable).get(); // &#x63D0;&#x4EA4;&#x4EFB;&#x52A1;&#xFF0C;&#x76F4;&#x63A5;get&#x7B49;&#x5F85;
+     *
+     * &lt;p&gt;Note: The {<span class="hljs-doctag">@link</span> Executors} class includes a set of methods
+     * that can convert some other common closure-like objects,
+     * for example, {<span class="hljs-doctag">@link</span> java.security.PrivilegedAction} to
+     * {<span class="hljs-doctag">@link</span> Callable} form so they can be submitted.
+     * &#x6CE8;&#x610F;&#xFF1A;Executors&#x7C7B;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x5E38;&#x89C1;&#x7684;&#x7C7B;&#x4F3C;&#x95ED;&#x5305;&#xFF08;closure-like&#xFF09;&#x7684;&#x5BF9;&#x8C61;&#xFF08;&#x4F8B;&#x5982;PrivilegedAction&#xFF09;&#x8F6C;&#x5316;&#x4E3A;Callable&#x5F62;&#x5F0F;&#xFF0C;
+     * &#x4EE5;&#x4FBF;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x88AB;&#x63D0;&#x4EA4;
+     *
+     * <span class="hljs-doctag">@param</span> task the task to submit
+     *        task &#x63D0;&#x4EA4;&#x7684;&#x4EFB;&#x52A1;
+     * <span class="hljs-doctag">@param</span> &lt;T&gt; the type of the task&apos;s result
+     *        &lt;T&gt; &#x6CDB;&#x578B;T&#x4EE3;&#x8868;&#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7C7B;&#x578B;
+     * <span class="hljs-doctag">@return</span> a Future representing pending completion of the task
+     *         Future&#x4EE3;&#x8868;&#x7B49;&#x5F85;task&#x7684;&#x6267;&#x884C;
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException if the task cannot be
+     *         scheduled for execution
+     *         RejectedExecutionException &#x5982;&#x679C;&#x8BE5;&#x4EFB;&#x52A1;&#x65E0;&#x6CD5;&#x88AB;execution&#x5B89;&#x6392;&#x6267;&#x884C;&#xFF08;&#x8C03;&#x5EA6;&#xFF09;
+     * <span class="hljs-doctag">@throws</span> NullPointerException if the task is null
+     */</span>
+    &lt;T&gt; <span class="hljs-function">Future&lt;T&gt; <span class="hljs-title">submit</span><span class="hljs-params">(Callable&lt;T&gt; task)</span></span>;
+
+    <span class="hljs-comment">/**
+     * Submits a Runnable task for execution and returns a Future
+     * representing that task. The Future&apos;s {<span class="hljs-doctag">@code</span> get} method will
+     * return the given result upon successful completion.
+     * &#x63D0;&#x4EA4;&#x4E00;&#x4E2A;Runnable&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x8BE5;&#x4EFB;&#x52A1;&#x7684;Future&#x3002;
+     * Future&#x7684;get&#x65B9;&#x6CD5;&#x5C06;&#x5728;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x7684;result&#xFF08;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x4F20;&#x5165;&#x7684;result&#xFF09;
+     *
+     * <span class="hljs-doctag">@param</span> task the task to submit
+     * <span class="hljs-doctag">@param</span> result the result to return
+     *        result &#x4EFB;&#x52A1;&#x6267;&#x884C;&#x7ED3;&#x675F;&#x540E;&#x7684;&#x8FD4;&#x56DE;&#x503C;
+     * <span class="hljs-doctag">@param</span> &lt;T&gt; the type of the result
+     * <span class="hljs-doctag">@return</span> a Future representing pending completion of the task
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException if the task cannot be
+     *         scheduled for execution
+     * <span class="hljs-doctag">@throws</span> NullPointerException if the task is null
+     */</span>
+    &lt;T&gt; <span class="hljs-function">Future&lt;T&gt; <span class="hljs-title">submit</span><span class="hljs-params">(Runnable task, T result)</span></span>;
+
+    <span class="hljs-comment">/**
+     * Submits a Runnable task for execution and returns a Future
+     * representing that task. The Future&apos;s {<span class="hljs-doctag">@code</span> get} method will
+     * return {<span class="hljs-doctag">@code</span> null} upon &lt;em&gt;successful&lt;/em&gt; completion.
+     * &#x63D0;&#x4EA4;&#x4E00;&#x4E2A;Runnable&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x8BE5;&#x4EFB;&#x52A1;&#x7684;Future&#x3002;
+     * Future&#x7684;get&#x65B9;&#x6CD5;&#x5728;&#x4EFB;&#x52A1;&#x6210;&#x529F;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x5C06;&#x8FD4;&#x56DE;null&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> task the task to submit
+     * <span class="hljs-doctag">@return</span> a Future representing pending completion of the task
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException if the task cannot be
+     *         scheduled for execution
+     * <span class="hljs-doctag">@throws</span> NullPointerException if the task is null
+     */</span>
+    Future&lt;?&gt; submit(Runnable task);
+
+    <span class="hljs-comment">/**
+     * Executes the given tasks, returning a list of Futures holding
+     * their status and results when all complete.
+     * {<span class="hljs-doctag">@link</span> Future#isDone} is {<span class="hljs-doctag">@code</span> true} for each
+     * element of the returned list.
+     * Note that a &lt;em&gt;completed&lt;/em&gt; task could have
+     * terminated either normally or by throwing an exception.
+     * The results of this method are undefined if the given
+     * collection is modified while this operation is in progress.
+     * &#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x8FD4;&#x56DE;Future&#x5217;&#x8868;&#x6301;&#x6709;&#x5F53;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x90FD;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x72B6;&#x6001;&#x548C;&#x7ED3;&#x679C;&#x3002;&#xFF08;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x7B49;&#x5F85;wait&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x90FD;&#x5B8C;&#x6210;&#xFF09;
+     * Future&#x7684;isDone&#x65B9;&#x6CD5;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x5217;&#x8868;&#x5143;&#x7D20;&#x90FD;&#x662F;true&#x3002;
+     * &#x6CE8;&#x610F;&#xFF0C;&#x5DF2;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x53EF;&#x80FD;&#x662F;&#x6B63;&#x5E38;&#x7EC8;&#x6B62;&#x6216;&#x8005;&#x662F;&#x629B;&#x51FA;&#x4E86;&#x5F02;&#x5E38;&#x3002;
+     * &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7684;&#x96C6;&#x5408;&#x5728;&#x6B64;&#x64CD;&#x4F5C;&#x671F;&#x95F4;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x672A;&#x5B9A;&#x4E49;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> tasks the collection of tasks
+     * <span class="hljs-doctag">@param</span> &lt;T&gt; the type of the values returned from the tasks
+     * <span class="hljs-doctag">@return</span> a list of Futures representing the tasks, in the same
+     *         sequential order as produced by the iterator for the
+     *         given task list, each of which has completed
+     * &#x8FD4;&#x56DE;&#x503C;  &#x4EE3;&#x8868;&#x4EFB;&#x52A1;&#x7684;Future&#x5217;&#x8868;&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x7684;task&#x5217;&#x8868;&#x8FED;&#x4EE3;&#x5668;&#x751F;&#x6210;&#x76F8;&#x540C;&#x987A;&#x5E8F;&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x90FD;&#x5DF2;&#x5B8C;&#x6210;&#x3002;&#xFF08;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x7B49;&#x5F85;&#x6240;&#x6709;&#x96C6;&#x5408;&#x91CC;&#x7684;&#x4EFB;&#x52A1;&#x90FD;&#x6267;&#x884C;&#x5B8C;&#x6210;&#xFF09;
+     * <span class="hljs-doctag">@throws</span> InterruptedException if interrupted while waiting, in
+     *         which case unfinished tasks are cancelled
+     *         InterruptedException&#xFF0C;&#x5982;&#x679C;&#x5728;&#x7B49;&#x5F85;&#x65F6;&#x4E2D;&#x65AD;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x5C06;&#x53D6;&#x6D88;&#x3002;
+     * <span class="hljs-doctag">@throws</span> NullPointerException if tasks or any of its elements are {<span class="hljs-doctag">@code</span> null}
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException if any task cannot be
+     *         scheduled for execution
+     */</span>
+    &lt;T&gt; List&lt;Future&lt;T&gt;&gt; invokeAll(Collection&lt;? extends Callable&lt;T&gt;&gt; tasks)
+        <span class="hljs-keyword">throws</span> InterruptedException;
+
+    <span class="hljs-comment">/**
+     * Executes the given tasks, returning a list of Futures holding
+     * their status and results
+     * when all complete or the timeout expires, whichever happens first.
+     * {<span class="hljs-doctag">@link</span> Future#isDone} is {<span class="hljs-doctag">@code</span> true} for each
+     * element of the returned list.
+     * Upon return, tasks that have not completed are cancelled.
+     * Note that a &lt;em&gt;completed&lt;/em&gt; task could have
+     * terminated either normally or by throwing an exception.
+     * The results of this method are undefined if the given
+     * collection is modified while this operation is in progress.
+     * &#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Future&#x5217;&#x8868;&#xFF0C;&#x6301;&#x6709;&#x5F53;&#x6240;&#x6709;task&#x5B8C;&#x6210;&#xFF0C;&#x6216;&#x8005;&#x53D1;&#x751F;&#x8D85;&#x65F6;&#xFF08;&#x4EE5;&#x5148;&#x53D1;&#x751F;&#x7684;&#x4E3A;&#x51C6;&#xFF09;&#x540E;&#x7684;&#x72B6;&#x6001;&#x4E0E;&#x7ED3;&#x679C;&#x3002;
+     * Future&#x7684;Done&#x65B9;&#x6CD5;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x662F;true&#x3002;
+     * &#x8FD4;&#x56DE;&#x540E;&#xFF0C;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x5C06;&#x88AB;&#x53D6;&#x6D88;&#x3002;&#xFF08;&#x5728;&#x8FD0;&#x884C;&#x8D85;&#x65F6;&#x65F6;&#xFF0C;&#x5BF9;&#x4E8E;&#x8FD8;&#x6CA1;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x5C31;&#x76F4;&#x63A5;&#x53D6;&#x6D88;&#xFF09;
+     * &#x6CE8;&#x610F;&#xFF0C;&#x5DF2;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x53EF;&#x80FD;&#x662F;&#x6B63;&#x5E38;&#x7EC8;&#x6B62;&#x6216;&#x8005;&#x662F;&#x629B;&#x51FA;&#x4E86;&#x5F02;&#x5E38;&#x3002;
+     * &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7684;&#x96C6;&#x5408;&#x5728;&#x6B64;&#x64CD;&#x4F5C;&#x671F;&#x95F4;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x672A;&#x5B9A;&#x4E49;
+     *
+     * <span class="hljs-doctag">@param</span> tasks the collection of tasks
+     * <span class="hljs-doctag">@param</span> timeout the maximum time to wait
+     * <span class="hljs-doctag">@param</span> unit the time unit of the timeout argument
+     * <span class="hljs-doctag">@param</span> &lt;T&gt; the type of the values returned from the tasks
+     * <span class="hljs-doctag">@return</span> a list of Futures representing the tasks, in the same
+     *         sequential order as produced by the iterator for the
+     *         given task list. If the operation did not time out,
+     *         each task will have completed. If it did time out, some
+     *         of these tasks will not have completed.
+     *         &#x5982;&#x679C;&#x6CA1;&#x6709;&#x8D85;&#x65F6;&#x64CD;&#x4F5C;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EFB;&#x52A1;&#x90FD;&#x5C06;&#x5B8C;&#x6210;&#x3002;
+     *         &#x5982;&#x679C;&#x6709;&#x8D85;&#x65F6;&#xFF0C;&#x4E00;&#x4E9B;&#x4EFB;&#x52A1;&#x5C06;&#x65E0;&#x6CD5;&#x5B8C;&#x6210;&#x3002;
+     * <span class="hljs-doctag">@throws</span> InterruptedException if interrupted while waiting, in
+     *         which case unfinished tasks are cancelled
+     * <span class="hljs-doctag">@throws</span> NullPointerException if tasks, any of its elements, or
+     *         unit are {<span class="hljs-doctag">@code</span> null}
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException if any task cannot be scheduled
+     *         for execution
+     */</span>
+    &lt;T&gt; List&lt;Future&lt;T&gt;&gt; invokeAll(Collection&lt;? extends Callable&lt;T&gt;&gt; tasks,
+                                  <span class="hljs-keyword">long</span> timeout, TimeUnit unit)
+        <span class="hljs-keyword">throws</span> InterruptedException;
+
+    <span class="hljs-comment">/**
+     * Executes the given tasks, returning the result
+     * of one that has completed successfully (i.e., without throwing
+     * an exception), if any do. Upon normal or exceptional return,
+     * tasks that have not completed are cancelled.
+     * The results of this method are undefined if the given
+     * collection is modified while this operation is in progress.
+     * &#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x8FD4;&#x56DE;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x7ED3;&#x679C;&#xFF08;&#x5373;&#x6CA1;&#x6709;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#x3002;
+     * &#x5728;&#x6B63;&#x5E38;&#x6216;&#x8005;&#x5F02;&#x5E38;&#x8FD4;&#x56DE;&#x65F6;&#xFF0C;&#x672A;&#x5B8C;&#x6210;&#x7684;task&#x5C06;&#x88AB;&#x53D6;&#x6D88;&#x3002;&#xFF08;&#x610F;&#x601D;&#x662F;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x6709;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x6267;&#x884C;&#x5B8C;&#xFF0C;&#x5176;&#x4ED6;&#x4EFB;&#x52A1;&#x5C31;&#x90FD;&#x53D6;&#x6D88;&#xFF1F;&#xFF1F;&#xFF1F;&#x8FD9;&#x5927;&#x6982;&#x5C31;&#x662F;invokeAny&#xFF08;&#x6267;&#x884C;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#xFF09;&#x7684;&#x542B;&#x4E49;&#xFF09;
+     * &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7684;&#x96C6;&#x5408;&#x5728;&#x6B64;&#x64CD;&#x4F5C;&#x671F;&#x95F4;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x672A;&#x5B9A;&#x4E49;
+     *
+     * <span class="hljs-doctag">@param</span> tasks the collection of tasks
+     * <span class="hljs-doctag">@param</span> &lt;T&gt; the type of the values returned from the tasks
+     * <span class="hljs-doctag">@return</span> the result returned by one of the tasks
+     * &#x8FD4;&#x56DE;&#x503C;  &#x8FD4;&#x56DE;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;
+     * <span class="hljs-doctag">@throws</span> InterruptedException if interrupted while waiting
+     * <span class="hljs-doctag">@throws</span> NullPointerException if tasks or any element task
+     *         subject to execution is {<span class="hljs-doctag">@code</span> null}
+     * <span class="hljs-doctag">@throws</span> IllegalArgumentException if tasks is empty
+     * <span class="hljs-doctag">@throws</span> ExecutionException if no task successfully completes
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException if tasks cannot be scheduled
+     *         for execution
+     */</span>
+    &lt;T&gt; <span class="hljs-function">T <span class="hljs-title">invokeAny</span><span class="hljs-params">(Collection&lt;? extends Callable&lt;T&gt;&gt; tasks)</span>
+        <span class="hljs-keyword">throws</span> InterruptedException, ExecutionException</span>;
+
+    <span class="hljs-comment">/**
+     * Executes the given tasks, returning the result
+     * of one that has completed successfully (i.e., without throwing
+     * an exception), if any do before the given timeout elapses.
+     * Upon normal or exceptional return, tasks that have not
+     * completed are cancelled.
+     * The results of this method are undefined if the given
+     * collection is modified while this operation is in progress.
+     * &#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x96C6;&#x5408;&#xFF0C;&#x8FD4;&#x56DE;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x7ED3;&#x679C;&#xFF08;&#x5373;&#x6CA1;&#x6709;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x8D85;&#x65F6;&#x4E4B;&#x524D;&#x6709;&#x7684;&#x8BDD;&#x3002;
+     * &#x5728;&#x6B63;&#x5E38;&#x6216;&#x8005;&#x5F02;&#x5E38;&#x8FD4;&#x56DE;&#x65F6;&#xFF0C;&#x672A;&#x5B8C;&#x6210;&#x7684;task&#x5C06;&#x88AB;&#x53D6;&#x6D88;&#x3002;&#xFF08;&#x610F;&#x601D;&#x662F;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x6709;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x6267;&#x884C;&#x5B8C;&#xFF0C;&#x5176;&#x4ED6;&#x4EFB;&#x52A1;&#x5C31;&#x90FD;&#x53D6;&#x6D88;&#xFF1F;&#xFF1F;&#xFF1F;&#xFF09;
+     * &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7684;&#x96C6;&#x5408;&#x5728;&#x6B64;&#x64CD;&#x4F5C;&#x671F;&#x95F4;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x672A;&#x5B9A;&#x4E49;
+     *
+     * <span class="hljs-doctag">@param</span> tasks the collection of tasks
+     * <span class="hljs-doctag">@param</span> timeout the maximum time to wait
+     * <span class="hljs-doctag">@param</span> unit the time unit of the timeout argument
+     * <span class="hljs-doctag">@param</span> &lt;T&gt; the type of the values returned from the tasks
+     * <span class="hljs-doctag">@return</span> the result returned by one of the tasks
+     * <span class="hljs-doctag">@throws</span> InterruptedException if interrupted while waiting
+     * <span class="hljs-doctag">@throws</span> NullPointerException if tasks, or unit, or any element
+     *         task subject to execution is {<span class="hljs-doctag">@code</span> null}
+     * <span class="hljs-doctag">@throws</span> TimeoutException if the given timeout elapses before
+     *         any task successfully completes
+     * <span class="hljs-doctag">@throws</span> ExecutionException if no task successfully completes
+     * <span class="hljs-doctag">@throws</span> RejectedExecutionException if tasks cannot be scheduled
+     *         for execution
+     */</span>
+    &lt;T&gt; <span class="hljs-function">T <span class="hljs-title">invokeAny</span><span class="hljs-params">(Collection&lt;? extends Callable&lt;T&gt;&gt; tasks,
+                    <span class="hljs-keyword">long</span> timeout, TimeUnit unit)</span>
+        <span class="hljs-keyword">throws</span> InterruptedException, ExecutionException, TimeoutException</span>;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ExecutorCompletionService.java.html" class="navigation navigation-prev " aria-label="Previous page: ExecutorCompletionService.Java">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Future.java.html" class="navigation navigation-next " aria-label="Next page: Future.Java">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ExecutorService.Java","level":"1.2.3.7","depth":3,"next":{"title":"Future.Java","level":"1.2.3.8","depth":3,"path":"Doc/util/concurrent/Future.java.md","ref":"Doc/util/concurrent/Future.java.md","articles":[]},"previous":{"title":"ExecutorCompletionService.Java","level":"1.2.3.6","depth":3,"path":"Doc/util/concurrent/ExecutorCompletionService.java.md","ref":"Doc/util/concurrent/ExecutorCompletionService.java.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","splitter","code","-sharing","-lunr","-search","search-pro","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"summary":{},"splitter":{},"code":{"copyButtons":true},"search-pro":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"莫显辉","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*","description":"日常笔记"},"file":{"path":"Doc/util/concurrent/ExecutorService.java.md","mtime":"2021-07-29T02:23:02.165Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-30T05:59:23.144Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

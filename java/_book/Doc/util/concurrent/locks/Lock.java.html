@@ -1,0 +1,995 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lock.Java · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="莫显辉">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ReentrantLock.java.html" />
+    
+    
+    <link rel="prev" href="Condition.java.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Doc</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../AbstractMap.java.html">
+            
+                <a href="../../AbstractMap.java.html">
+            
+                    
+                    AbstractMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../Map.java.html">
+            
+                <a href="../../Map.java.html">
+            
+                    
+                    Map.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Concurrent
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../AbstractExecutorService.java.html">
+            
+                <a href="../AbstractExecutorService.java.html">
+            
+                    
+                    AbstractExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../Callable.java.html">
+            
+                <a href="../Callable.java.html">
+            
+                    
+                    Callable.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../ConcurrentHashMap.java.html">
+            
+                <a href="../ConcurrentHashMap.java.html">
+            
+                    
+                    ConcurrentHashMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../ConcurrentMap.java.html">
+            
+                <a href="../ConcurrentMap.java.html">
+            
+                    
+                    ConcurrentMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../Executor.java.html">
+            
+                <a href="../Executor.java.html">
+            
+                    
+                    Executor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../ExecutorCompletionService.java.html">
+            
+                <a href="../ExecutorCompletionService.java.html">
+            
+                    
+                    ExecutorCompletionService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="../ExecutorService.java.html">
+            
+                <a href="../ExecutorService.java.html">
+            
+                    
+                    ExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="../Future.java.html">
+            
+                <a href="../Future.java.html">
+            
+                    
+                    Future.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="../FutureTask.java.html">
+            
+                <a href="../FutureTask.java.html">
+            
+                    
+                    FutureTask.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="../RunnableFuture.java.html">
+            
+                <a href="../RunnableFuture.java.html">
+            
+                    
+                    RunnableFuture.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="../ThreadPoolExecutor.java.html">
+            
+                <a href="../ThreadPoolExecutor.java.html">
+            
+                    
+                    ThreadPoolExecutor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" >
+            
+                <span>
+            
+                    
+                    Locks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.12.1" data-path="AbstractOwnableSynchronizer.java.html">
+            
+                <a href="AbstractOwnableSynchronizer.java.html">
+            
+                    
+                    AbstractOwnableSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.2" data-path="AbstractQueuedSynchronizer.java.html">
+            
+                <a href="AbstractQueuedSynchronizer.java.html">
+            
+                    
+                    AbstractQueuedSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.3" data-path="Condition.java.html">
+            
+                <a href="Condition.java.html">
+            
+                    
+                    Condition.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.12.4" data-path="Lock.java.html">
+            
+                <a href="Lock.java.html">
+            
+                    
+                    Lock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.5" data-path="ReentrantLock.java.html">
+            
+                <a href="ReentrantLock.java.html">
+            
+                    
+                    ReentrantLock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../日志.html">
+            
+                <a href="../../../日志.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >Lock.Java</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lock">Lock</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */</span>
+
+<span class="hljs-comment">/*
+ *
+ *
+ *
+ *
+ *
+ * Written by Doug Lea with assistance from members of JCP JSR-166
+ * Expert Group and released to the public domain, as explained at
+ * http://creativecommons.org/publicdomain/zero/1.0/
+ */</span>
+
+<span class="hljs-keyword">package</span> java.util.concurrent.locks;
+<span class="hljs-keyword">import</span> java.util.concurrent.TimeUnit;
+
+<span class="hljs-comment">/**
+ * {<span class="hljs-doctag">@code</span> Lock} implementations provide more extensive locking
+ * operations than can be obtained using {<span class="hljs-doctag">@code</span> synchronized} methods
+ * and statements.  They allow more flexible structuring, may have
+ * quite different properties, and may support multiple associated
+ * {<span class="hljs-doctag">@link</span> Condition} objects.
+ * &#x76F8;&#x6BD4;&#x4F7F;&#x7528;synchronized&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x8BED;&#x53E5;&#x83B7;&#x5F97;&#x7684;&#x9501;&#x64CD;&#x4F5C;&#xFF0C;Lock&#x7684;&#x5B9E;&#x73B0;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x5E7F;&#x6CDB;&#x7684;&#x9501;&#x64CD;&#x4F5C;&#x3002;
+ * &#x5B83;&#x5141;&#x8BB8;&#x66F4;&#x7075;&#x6D3B;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x53EF;&#x80FD;&#x5177;&#x6709;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x80FD;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x5173;&#x8054;Condition&#x5BF9;&#x8C61;
+ * &#x7B80;&#x5355;&#x8BF4;&#x4E00;&#x4E0B;&#xFF0C;synchronized methods &#x6307;&#x7684;&#x662F; public synchronized getV()&#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#x7684;
+ * synchronized statements&#x6307;&#x7684;&#x662F; public getV() { synchronized(this) { ... }} &#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#x7684;
+ *
+ * &lt;p&gt;A lock is a tool for controlling access to a shared resource by
+ * multiple threads. Commonly, a lock provides exclusive access to a
+ * shared resource: only one thread at a time can acquire the lock and
+ * all access to the shared resource requires that the lock be
+ * acquired first. However, some locks may allow concurrent access to
+ * a shared resource, such as the read lock of a {<span class="hljs-doctag">@link</span> ReadWriteLock}.
+ * Lock&#x662F;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#xFF0C;&#x7528;&#x6765;&#x5728;&#x591A;&#x7EBF;&#x7A0B;&#x573A;&#x666F;&#x4E0B;&#x5BF9;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#xFF08;&#x8BBF;&#x95EE;&#x5305;&#x542B;&#x8BFB;&#x5199;&#xFF09;&#x7684;&#x9650;&#x5236;&#x3002;
+ * &#x901A;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;lock&#x63D0;&#x4F9B;&#x5BF9;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x7684;&#x72EC;&#x5360;&#x8BBF;&#x95EE;&#xFF1A;&#x5728;&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x9501;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x5BF9;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x7684;&#x8BBF;&#x95EE;&#x90FD;&#x5FC5;&#x987B;&#x5148;&#x83B7;&#x53D6;&#x5230;&#x9501;
+ * &#x7136;&#x800C;&#xFF0C;&#x4E00;&#x4E9B;lock&#xFF08;&#x7684;&#x5B9E;&#x73B0;&#xFF09;&#x53EF;&#x80FD;&#x652F;&#x6301;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#xFF0C;&#x4F8B;&#x5982;&#x8BFB;&#x9501;&#xFF08;ReadWriteLock&#xFF09;
+ *
+ * &#x4E0B;&#x9762;&#x5F00;&#x59CB;&#x8BF4;&#x660E;synchronized&#x7684;&#x7279;&#x6027;&#x4E0E;&#x4E0D;&#x8DB3;&#xFF1A;
+ * &lt;p&gt;The use of {<span class="hljs-doctag">@code</span> synchronized} methods or statements provides
+ * access to the implicit monitor lock associated with every object, but
+ * forces all lock acquisition and release to occur in a block-structured way:
+ * when multiple locks are acquired they must be released in the opposite
+ * order, and all locks must be released in the same lexical scope in which
+ * they were acquired.
+ * &#x4F7F;&#x7528;synchronized&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x8BED;&#x53E5;&#x63D0;&#x4F9B;&#x5BF9;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x7684;&#x9690;&#x5F0F;&#x76D1;&#x89C6;&#x5668;&#x9501;&#x8BBF;&#x95EE;&#xFF0C;&#x4F46;&#x662F;&#x5F3A;&#x5236;&#x6240;&#x6709;&#x9501;&#x7684;&#x83B7;&#x53D6;&#x4E0E;&#x91CA;&#x653E;&#x90FD;&#x6309;&#x5757;&#x7ED3;&#x6784;&#xFF08;block-structured&#xFF09;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#xFF1A;
+ * &#x5F53;&#x83B7;&#x53D6;&#x591A;&#x4E2A;&#x9501;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x6309;&#x76F8;&#x53CD;&#x7684;&#x987A;&#x5E8F;&#x8FDB;&#x884C;&#x91CA;&#x653E;&#xFF0C;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x5728;&#x4E0E;&#x83B7;&#x53D6;&#x9501;&#x540C;&#x4E00;&#x4E2A;&#x8BCD;&#x6CD5;&#x8303;&#x56F4;&#x5185;&#x91CA;&#x653E;&#x9501;&#x3002;
+ *
+ * &lt;p&gt;While the scoping mechanism for {<span class="hljs-doctag">@code</span> synchronized} methods
+ * and statements makes it much easier to program with monitor locks,
+ * and helps avoid many common programming errors involving locks,
+ * there are occasions where you need to work with locks in a more
+ * flexible way. For example, some algorithms for traversing
+ * concurrently accessed data structures require the use of
+ * &amp;quot;hand-over-hand&amp;quot; or &amp;quot;chain locking&amp;quot;: you
+ * acquire the lock of node A, then node B, then release A and acquire
+ * C, then release B and acquire D and so on.  Implementations of the
+ * {<span class="hljs-doctag">@code</span> Lock} interface enable the use of such techniques by
+ * allowing a lock to be acquired and released in different scopes,
+ * and allowing multiple locks to be acquired and released in any
+ * order.
+ * &#x5C3D;&#x7BA1;synchronized&#x65B9;&#x6CD5;&#x4E0E;&#x8BED;&#x53E5;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x673A;&#x5236;&#x4F7F;&#x5F97;&#x4F7F;&#x7528;&#x76D1;&#x89C6;&#x5668;&#x9501;&#x53D8;&#x6210;&#x53D8;&#x5F97;&#x5BB9;&#x6613;&#xFF0C;
+ * &#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x907F;&#x514D;&#x8BB8;&#x591A;&#x6D89;&#x53CA;&#x5230;&#x9501;&#x7684;&#x5E38;&#x89C1;&#x7F16;&#x7A0B;&#x9519;&#x8BEF;&#xFF0C;&#x4F46;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#xFF08;occasion&#xFF09;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x66F4;&#x7075;&#x6D3B;&#x7684;&#x9501;&#x65B9;&#x5F0F;&#x3002;
+ * &#x4F8B;&#x5982;&#x4E00;&#x4E9B;&#x904D;&#x5386;&#xFF08;traverse&#xFF09;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x7B97;&#x6CD5;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4EA4;&#x6362;&#x9501;&#xFF08;hand-over-hand&#xFF09;&#x6216;&#x8005;&#x94FE;&#x9501;&#xFF08;chain locking&#xFF09;&#xFF0C;&#x5411;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;
+ * &#x6309;&#x8FD9;&#x6837;&#x7684;&#x987A;&#x5E8F;&#x64CD;&#x4F5C;&#x9501;&#xFF1A;&#x52A0;&#x9501;&#x8282;&#x70B9;A--&gt;&#x52A0;&#x9501;&#x8282;&#x70B9;B--&gt;&#x89E3;&#x9501;&#x8282;&#x70B9;A--&gt;&#x52A0;&#x9501;&#x8282;&#x70B9;C--&gt;&#x89E3;&#x9501;&#x8282;&#x70B9;B--&gt;&#x52A0;&#x9501;&#x8282;&#x70B9;D&#x8FD9;&#x6837;
+ * Lock&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x786E;&#x4FDD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x6280;&#x672F;&#xFF1A;&#x5141;&#x8BB8;&#x5728;&#x4E0D;&#x540C;&#x8303;&#x56F4;&#x5185;&#x83B7;&#x53D6;&#x548C;&#x91CA;&#x653E;&#x9501;&#xFF0C;&#x5E76;&#x5141;&#x8BB8;&#x4EE5;&#x4EFB;&#x610F;&#x987A;&#x5E8F;&#x83B7;&#x53D6;&#x548C;&#x91CA;&#x653E;&#x591A;&#x4E2A;&#x9501;
+ *
+ * &lt;p&gt;With this increased flexibility comes additional
+ * responsibility. The absence of block-structured locking removes the
+ * automatic release of locks that occurs with {<span class="hljs-doctag">@code</span> synchronized}
+ * methods and statements. In most cases, the following idiom
+ * should be used:
+ * &#x968F;&#x7740;&#x7075;&#x6D3B;&#x6027;&#x7684;&#x63D0;&#x9AD8;&#xFF0C;&#x8D23;&#x4EFB;&#xFF08;responsibility&#xFF09;&#x4E5F;&#x968F;&#x4E4B;&#xFF08;comes&#x5E26;&#x6765;&#xFF09;&#x589E;&#x52A0;&#x3002;
+ * &#x5757;&#x7ED3;&#x6784;&#x9501;&#x7684;&#x7F3A;&#x5931;&#x6D88;&#x9664;&#x4E86;synchronized&#x65B9;&#x6CD5;&#x4E0E;&#x8BED;&#x53E5;&#x4E2D;&#x53D1;&#x751F;&#x7684;&#x9501;&#x81EA;&#x52A8;&#x91CA;&#x653E;&#xFF08;Lock&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x91CA;&#x653E;&#x9501;&#xFF09;
+ * &#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E94;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x4E60;&#x60EF;&#x7528;&#x6CD5;
+ *
+ *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+ * Lock l = ...;
+ * l.lock();
+ * try {
+ *   // access the resource protected by this lock
+ * } finally {
+ *   l.unlock(); // &#x624B;&#x5DE5;&#x91CA;&#x653E;
+ * }}&lt;/pre&gt;
+ *
+ * When locking and unlocking occur in different scopes, care must be
+ * taken to ensure that all code that is executed while the lock is
+ * held is protected by try-finally or try-catch to ensure that the
+ * lock is released when necessary.
+ * &#x5F53;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x83B7;&#x5F97;&#x9501;&#x4E0E;&#x91CA;&#x653E;&#x9501;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x6CE8;&#x610F;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x5728;&#x6301;&#x6709;&#x9501;&#x671F;&#x95F4;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x88AB;try-finally&#x6216;&#x8005;try-catch&#x4FDD;&#x62A4;&#xFF08;&#x5305;&#x88F9;&#xFF09;&#xFF0C;&#x786E;&#x4FDD;&#x5728;&#x5FC5;&#x8981;&#x65F6;&#x523B;&#x53EF;&#x4EE5;&#x91CA;&#x653E;&#x9501;
+ *
+ * &lt;p&gt;{<span class="hljs-doctag">@code</span> Lock} implementations provide additional functionality
+ * over the use of {<span class="hljs-doctag">@code</span> synchronized} methods and statements by
+ * providing a non-blocking attempt to acquire a lock ({<span class="hljs-doctag">@link</span>
+ * #tryLock()}), an attempt to acquire the lock that can be
+ * interrupted ({<span class="hljs-doctag">@link</span> #lockInterruptibly}, and an attempt to acquire
+ * the lock that can timeout ({<span class="hljs-doctag">@link</span> #tryLock(long, TimeUnit)}).
+ * Lock&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x76F8;&#x8F83;&#x4E8E;synchronized&#x65B9;&#x6CD5;&#x4E0E;&#x8BED;&#x53E5;&#x63D0;&#x4F9B;&#x4E86;&#x989D;&#x5916;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;
+ * tryLock()&#xFF0C;&#x975E;&#x963B;&#x585E;&#x524D;&#x63D0;&#x4E0B;&#x5C1D;&#x8BD5;&#x83B7;&#x53D6;&#x9501;
+ * lockInterruptibly&#xFF0C;&#x5C1D;&#x8BD5;&#x83B7;&#x53D6;&#x53EF;&#x4EE5;&#x4E2D;&#x65AD;&#x7684;&#x9501;
+ * tryLock(long, TimeUnit)&#xFF0C;&#x6709;&#x6700;&#x5927;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x7684;&#x5C1D;&#x8BD5;&#x83B7;&#x53D6;&#x9501;
+ *
+ * &lt;p&gt;A {<span class="hljs-doctag">@code</span> Lock} class can also provide behavior and semantics
+ * that is quite different from that of the implicit monitor lock,
+ * such as guaranteed ordering, non-reentrant usage, or deadlock
+ * detection. If an implementation provides such specialized semantics
+ * then the implementation must document those semantics.
+ * Lock&#x7C7B;&#x8FD8;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x4E0E;&#x9690;&#x5F0F;&#x76D1;&#x89C6;&#x5668;&#x9501;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x884C;&#x4E3A;&#x4E0E;&#x8BED;&#x4E49;&#xFF0C;&#x4F8B;&#x5982;&#x4FDD;&#x8BC1;&#x6392;&#x5E8F;&#xFF0C;&#x4E0D;&#x53EF;&#x91CD;&#x5165;&#x4F7F;&#x7528;&#xFF0C;&#x6216;&#x8005;&#x6B7B;&#x9501;&#x68C0;&#x6D4B;&#x3002;
+ * &#x5982;&#x679C;&#x5B9E;&#x73B0;&#x7C7B;&#x63D0;&#x4F9B;&#x8FD9;&#x4E9B;&#x4E13;&#x95E8;&#x7684;&#x8BED;&#x4E49;&#xFF0C;&#x90A3;&#x4E48;&#x5B9E;&#x73B0;&#x7C7B;&#x5FC5;&#x987B;&#x5728;&#x6587;&#x6863;&#x4E2D;&#x8BB0;&#x5F55;&#x8FD9;&#x4E9B;&#x8BED;&#x4E49;&#x3002;&#xFF08;&#x770B;&#x8D77;&#x6765;&#x662F;&#x5BF9;&#x4EE3;&#x7801;&#x8BF4;&#x660E;&#x7684;&#x9650;&#x5236;&#xFF09;
+ *
+ * &lt;p&gt;Note that {<span class="hljs-doctag">@code</span> Lock} instances are just normal objects and can
+ * themselves be used as the target in a {<span class="hljs-doctag">@code</span> synchronized} statement.
+ * Acquiring the
+ * monitor lock of a {<span class="hljs-doctag">@code</span> Lock} instance has no specified relationship
+ * with invoking any of the {<span class="hljs-doctag">@link</span> #lock} methods of that instance.
+ * It is recommended that to avoid confusion you never use {<span class="hljs-doctag">@code</span> Lock}
+ * instances in this way, except within their own implementation.
+ * &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;Lock&#x7684;&#x5B9E;&#x4F8B;&#x53EA;&#x662F;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x4ED6;&#x4EEC;&#x81EA;&#x8EAB;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x505A;synchronized statement&#x7684;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#xFF08;synchronized(lock1){...}&#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#xFF09;&#x3002;
+ * &#x83B7;&#x53D6;Lock&#x5B9E;&#x4F8B;&#x7684;&#x76D1;&#x89C6;&#x5668;&#x9501;&#x4E0E;&#x8C03;&#x7528;lock&#x5B9E;&#x4F8B;&#x7684;&#x4EFB;&#x4F55;&#x9501;&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x7279;&#x5B9A;&#x7684;&#x5173;&#x7CFB;&#x3002;
+ * &#x4E3A;&#x907F;&#x514D;&#x6DF7;&#x6DC6;&#xFF0C;&#x5EFA;&#x8BAE;&#x4E0D;&#x8981;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;Lock&#x5B9E;&#x4F8B;&#xFF0C;&#x9664;&#x975E;&#x5728;&#x4ED6;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x73B0;&#x91CC;&#x3002;
+ *
+ * &lt;p&gt;Except where noted, passing a {<span class="hljs-doctag">@code</span> null} value for any
+ * parameter will result in a {<span class="hljs-doctag">@link</span> NullPointerException} being
+ * thrown.
+ * &#x9664;&#x975E;&#x53E6;&#x6709;&#x8BF4;&#x660E;&#xFF0C;&#x4F20;&#x9012;null&#x503C;&#x7ED9;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x629B;&#x51FA;NullPointException&#x5F02;&#x5E38;
+ *
+ * &lt;h3&gt;Memory Synchronization&lt;/h3&gt;
+ * &#x5185;&#x5B58;&#x540C;&#x6B65;
+ *
+ * &lt;p&gt;All {<span class="hljs-doctag">@code</span> Lock} implementations &lt;em&gt;must&lt;/em&gt; enforce the same
+ * memory synchronization semantics as provided by the built-in monitor
+ * lock, as described in
+ * &lt;a href=&quot;https://docs.oracle.com/javase/specs/jls/se7/html/jls-17.html#jls-17.4&quot;&gt;
+ * The Java Language Specification (17.4 Memory Model)&lt;/a&gt;:
+ * &#x5F3A;&#x5236;&#x6240;&#x6709;Lock&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#x90FD;&#x5FC5;&#x987B;&#x4E0E;&#x5185;&#x7F6E;&#x76D1;&#x89C6;&#x5668;&#x9501;&#x63D0;&#x4F9B;&#x7684;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5185;&#x5B58;&#x9501;&#x8BED;&#x4E49;&#xFF0C;&#x5982;&#x8FD9;&#x4E2A;&#x94FE;&#x63A5;&#x91CC;&#x7684;&#x6240;&#x8FF0;
+ * 
+ * &lt;ul&gt;
+ * &lt;li&gt;A successful {<span class="hljs-doctag">@code</span> lock} operation has the same memory
+ * synchronization effects as a successful &lt;em&gt;Lock&lt;/em&gt; action.
+ * &lt;li&gt;A successful {<span class="hljs-doctag">@code</span> unlock} operation has the same
+ * memory synchronization effects as a successful &lt;em&gt;Unlock&lt;/em&gt; action.
+ * &lt;/ul&gt;
+ * &#xFF08;&#x4E0D;&#x77E5;&#x9053;&#x8FD9;&#x53E5;&#x8BDD;&#x5B9E;&#x9645;&#x542B;&#x4E49;&#xFF09;
+ * &#x6210;&#x529F;&#x7684;Lock&#x52A8;&#x4F5C;&#x4E0E;&#x6210;&#x529F;&#x7684;lock&#x64CD;&#x4F5C;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5185;&#x5B58;&#x540C;&#x6B65;&#x6548;&#x679C;
+ * &#x6210;&#x529F;&#x7684;Unlock&#x52A8;&#x4F5C;&#x4E0E;&#x6210;&#x529F;&#x7684;unlock&#x64CD;&#x4F5C;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5185;&#x5B58;&#x540C;&#x6B65;&#x6548;&#x679C;
+ *
+ * Unsuccessful locking and unlocking operations, and reentrant
+ * locking/unlocking operations, do not require any memory
+ * synchronization effects.
+ * &#x4E0D;&#x6210;&#x529F;&#x7684;&#x52A0;&#x9501;/&#x89E3;&#x9501;&#x64CD;&#x4F5C;&#xFF0C;&#x548C;&#x53EF;&#x91CD;&#x5165;&#x7684;&#x52A0;&#x9501;/&#x89E3;&#x9501;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x8981;&#x6C42;&#x4EFB;&#x4F55;&#x5185;&#x5B58;&#x540C;&#x6B65;&#x6548;&#x679C;
+ *
+ * &lt;h3&gt;Implementation Considerations&lt;/h3&gt;
+ * &#x5B9E;&#x73B0;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;
+ *
+ * &lt;p&gt;The three forms of lock acquisition (interruptible,
+ * non-interruptible, and timed) may differ in their performance
+ * characteristics, ordering guarantees, or other implementation
+ * qualities.  Further, the ability to interrupt the &lt;em&gt;ongoing&lt;/em&gt;
+ * acquisition of a lock may not be available in a given {<span class="hljs-doctag">@code</span> Lock}
+ * class.  Consequently, an implementation is not required to define
+ * exactly the same guarantees or semantics for all three forms of
+ * lock acquisition, nor is it required to support interruption of an
+ * ongoing lock acquisition.  An implementation is required to clearly
+ * document the semantics and guarantees provided by each of the
+ * locking methods. It must also obey the interruption semantics as
+ * defined in this interface, to the extent that interruption of lock
+ * acquisition is supported: which is either totally, or only on
+ * method entry.
+ * &#x9501;&#x83B7;&#x53D6;&#xFF08;acquisition&#xFF09;&#x7684;&#x4E09;&#x79CD;&#x5F62;&#x5F0F;&#xFF08;&#x53EF;&#x4E2D;&#x65AD;&#xFF0C;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#xFF0C;&#x548C;&#x6709;&#x65F6;&#x9650;&#x7684;&#xFF09;&#x53EF;&#x80FD;&#x6709;&#x7740;&#x4E0D;&#x540C;&#x7684;&#x884C;&#x4E3A;&#x7279;&#x5F81;&#xFF0C;&#x987A;&#x5E8F;&#x4FDD;&#x8BC1;&#xFF0C;&#x4E0E;&#x5176;&#x4ED6;&#x7684;&#x5B9E;&#x73B0;&#x8D28;&#x91CF;&#x3002;
+ * &#x6B64;&#x5916;&#xFF0C;&#x4E2D;&#x65AD;&#x6B63;&#x5728;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x64CD;&#x4F5C;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x5728;&#x7ED9;&#x5B9A;&#x7684;Lock&#x5B9E;&#x73B0;&#x4E2D;&#x53EF;&#x80FD;&#x4E0D;&#x652F;&#x6301;&#x3002;
+ * &#x56E0;&#x6B64;&#xFF0C;&#x5E76;&#x4E0D;&#x8981;&#x6C42;&#x5B9E;&#x73B0;&#x7C7B;&#x4E3A;&#x4E09;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x9501;&#x83B7;&#x53D6;&#xFF08;lock acquisition&#xFF09;&#x5B9A;&#x4E49;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x4FDD;&#x8BC1;&#x6216;&#x8005;&#x8BED;&#x4E49;&#xFF0C;&#x4E5F;&#x4E0D;&#x8981;&#x6C42;&#x652F;&#x6301;&#x4E2D;&#x65AD;&#x6B63;&#x5728;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x64CD;&#x4F5C;&#x3002;
+ * &#x8981;&#x6C42;&#x5B9E;&#x73B0;&#x7C7B;&#x6E05;&#x695A;&#x7684;&#x8BB0;&#x5F55;&#x63D0;&#x4F9B;&#x7684;&#x6BCF;&#x4E2A;locking&#x65B9;&#x6CD5;&#x5BF9;&#x5E94;&#x7684;&#x8BED;&#x4E49;&#x548C;&#x4FDD;&#x8BC1;&#x3002;
+ * &#x540C;&#x65F6;&#xFF0C;&#x5B9E;&#x73B0;&#x7C7B;&#x4E5F;&#x9700;&#x8981;&#x9075;&#x5FAA;&#x5728;Lock&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x4E2D;&#x65AD;&#x8BED;&#x4E49;&#xFF0C;&#x4EE5;&#x652F;&#x6301;&#x9501;&#x83B7;&#x53D6;&#x7684;&#x4E2D;&#x65AD;&#xFF1A;&#x8981;&#x4E48;&#x5B8C;&#x5168;&#x652F;&#x6301;&#xFF0C;&#x8981;&#x4E48;&#x53EA;&#x5728;&#x65B9;&#x6CD5;&#x5165;&#x53E3;
+ *
+ * &lt;p&gt;As interruption generally implies cancellation, and checks for
+ * interruption are often infrequent, an implementation can favor responding
+ * to an interrupt over normal method return. This is true even if it can be
+ * shown that the interrupt occurred after another action may have unblocked
+ * the thread. An implementation should document this behavior.
+ * &#x4E2D;&#x65AD;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#xFF08;implies&#xFF09;&#x53D6;&#x6D88;&#xFF0C;&#x5E76;&#x4E14;&#x4E2D;&#x65AD;&#x68C0;&#x67E5;&#x901A;&#x5E38;&#x5F88;&#x5C11;&#x53D1;&#x751F;&#xFF0C;&#x56E0;&#x6B64;&#x5B9E;&#x73B0;&#x7C7B;&#x53EF;&#x4EE5;&#x504F;&#x5411;&#x4E8E;&#x54CD;&#x5E94;&#x4E2D;&#x65AD;&#x800C;&#x4E0D;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x3002;
+ * &#x5373;&#x4F7F;&#x53EF;&#x4EE5;&#x8BC1;&#x660E; &#x4E2D;&#x65AD;&#x53D1;&#x751F;&#x5728; &#x53E6;&#x4E00;&#x4E2A;&#x52A8;&#x4F5C;&#x5DF2;&#x7ECF;&#x89E3;&#x9664;&#x4E86;&#x672C;&#x7EBF;&#x7A0B;&#x963B;&#x585E;&#x4E4B;&#x540E;&#xFF0C;&#x4E5F;&#x662F;&#x5982;&#x6B64;&#x3002;&#x5B9E;&#x73B0;&#x7C7B;&#x4E2D;&#x5E94;&#x8BE5;&#x8BB0;&#x5F55;&#x4E0B;&#x8BE5;&#x884C;&#x4E3A;
+ *
+ * <span class="hljs-doctag">@see</span> ReentrantLock
+ * <span class="hljs-doctag">@see</span> Condition
+ * <span class="hljs-doctag">@see</span> ReadWriteLock
+ *
+ * <span class="hljs-doctag">@since</span> 1.5
+ * <span class="hljs-doctag">@author</span> Doug Lea
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Lock</span> </span>{
+
+    <span class="hljs-comment">/**
+     * Acquires the lock.
+     *
+     * &lt;p&gt;If the lock is not available then the current thread becomes
+     * disabled for thread scheduling purposes and lies dormant until the
+     * lock has been acquired.
+     * &#x5982;&#x679C;&#x4E0D;&#x80FD;&#x83B7;&#x53D6;&#x5230;&#x9501;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5C06;&#x88AB;&#x7981;&#x6B62;&#x7528;&#x4E8E;&#x7EBF;&#x7A0B;&#x8C03;&#x5EA6;&#x76EE;&#x7684;&#x5E76;&#x5904;&#x4E8E;&#xFF08;lie&#xFF09;&#x4F11;&#x7720;&#xFF08;dormant&#x86F0;&#x4F0F;&#xFF09;&#x72B6;&#x6001;&#xFF0C;&#x76F4;&#x5230;&#x80FD;&#x591F;&#x83B7;&#x53D6;&#x5230;&#x9501;
+     *
+     * &lt;p&gt;&lt;b&gt;Implementation Considerations&lt;/b&gt;
+     * &#x5B9E;&#x73B0;&#x6CE8;&#x610F;&#x4E8B;&#x9879;
+     *
+     * &lt;p&gt;A {<span class="hljs-doctag">@code</span> Lock} implementation may be able to detect erroneous use
+     * of the lock, such as an invocation that would cause deadlock, and
+     * may throw an (unchecked) exception in such circumstances.  The
+     * circumstances and the exception type must be documented by that
+     * {<span class="hljs-doctag">@code</span> Lock} implementation.
+     * Lock&#x7684;&#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x80FD;&#x591F;&#x68C0;&#x6D4B;&#x5230;&#x9501;&#x7684;&#x9519;&#x8BEF;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x5BFC;&#x81F4;&#x6B7B;&#x9501;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x548C;&#x5728;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#xFF08;circumstances&#xFF09;&#x4E0B;&#x53EF;&#x80FD;&#x629B;&#x51FA;&#xFF08;&#x672A;&#x68C0;&#x67E5;&#xFF09;&#x5F02;&#x5E38;&#x3002;
+     * &#x5728;Lock&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#x5FC5;&#x987B;&#x8BB0;&#x5F55;&#x4E0B;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x548C;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#x3002;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">lock</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * Acquires the lock unless the current thread is
+     * {<span class="hljs-doctag">@linkplain</span> Thread#interrupt interrupted}.
+     * &#x9664;&#x975E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x88AB;&#x4E2D;&#x65AD;&#xFF08;interrupted&#xFF09;&#xFF0C;&#x5426;&#x5219;&#x83B7;&#x53D6;&#x9501;
+     *
+     * &lt;p&gt;Acquires the lock if it is available and returns immediately.
+     * &#x5982;&#x679C;&#x53EF;&#x7528;&#xFF0C;&#x5219;&#x83B7;&#x53D6;&#x9501;&#x5E76;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x3002;
+     *
+     * &lt;p&gt;If the lock is not available then the current thread becomes
+     * disabled for thread scheduling purposes and lies dormant until
+     * one of two things happens:
+     * &#x5982;&#x679C;&#x9501;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5C06;&#x88AB;&#x7981;&#x6B62;&#x7528;&#x6237;&#x7EBF;&#x7A0B;&#x8C03;&#x5EA6;&#x76EE;&#x7684;&#x5E76;&#x5904;&#x4E8E;&#x4F11;&#x7720;&#x72B6;&#x6001;&#xFF0C;&#x76F4;&#x5230;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4E4B;&#x4E00;&#x53D1;&#x751F;&#xFF1A;&#xFF08;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x5C31;&#x662F;1.&#x8981;&#x4E48;&#x83B7;&#x53D6;&#x5230;&#x4E86;&#x9501;&#xFF0C;2.&#x8981;&#x4E48;&#x5728;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x4E2D;&#x65AD;&#x4E86;&#xFF0C;&#x800C;&#x6B63;&#x597D;&#x652F;&#x6301;&#x4E2D;&#x65AD;&#x8FD9;&#x4E2A;&#x83B7;&#x53D6;&#x9501;&#x64CD;&#x4F5C;&#xFF09;
+     *
+     * &lt;ul&gt;
+     * &lt;li&gt;The lock is acquired by the current thread; or
+     * &lt;li&gt;Some other thread {<span class="hljs-doctag">@linkplain</span> Thread#interrupt interrupts} the
+     * current thread, and interruption of lock acquisition is supported.
+     * &lt;/ul&gt;
+     * 1.&#x9501;&#x88AB;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x83B7;&#x53D6;&#xFF1B;
+     * 2.&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7684;&#x4E00;&#x4E9B;&#x7EBF;&#x7A0B;&#x4E2D;&#x65AD;&#x4E86;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x5728;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x88AB;&#x4E2D;&#x65AD;&#x3002;
+     *
+     * &#x4E0B;&#x9762;&#x89E3;&#x91CA;&#x5982;&#x679C;&#x83B7;&#x53D6;&#x9501;&#x8FC7;&#x7A0B;&#x4E2D;&#x88AB;&#x4E2D;&#x65AD;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;
+     * &lt;p&gt;If the current thread:
+     * &lt;ul&gt;
+     * &lt;li&gt;has its interrupted status set on entry to this method; or
+     * &lt;li&gt;is {<span class="hljs-doctag">@linkplain</span> Thread#interrupt interrupted} while acquiring the
+     * lock, and interruption of lock acquisition is supported,
+     * &lt;/ul&gt;
+     * then {<span class="hljs-doctag">@link</span> InterruptedException} is thrown and the current thread&apos;s
+     * interrupted status is cleared.
+     * &#x5982;&#x679C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF1A;
+     * 1. &#x5728;&#x8FDB;&#x5165;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x65F6;&#x8BBE;&#x7F6E;&#x4E86;&#x4E2D;&#x65AD;&#x72B6;&#x6001;
+     * 2. &#x6216;&#x8005;&#x5728;&#x83B7;&#x53D6;&#x9501;&#x65F6;&#x88AB;&#x4E2D;&#x65AD;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x8FC7;&#x7A0B;&#x88AB;&#x4E2D;&#x65AD;&#x3002;
+     * &#x90A3;&#x4E48;&#x5C06;&#x629B;&#x51FA;InterruptedException&#xFF0C;&#x5E76;&#x4E14;&#x6E05;&#x9664;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E2D;&#x65AD;&#x72B6;&#x6001;
+     *
+     * &lt;p&gt;&lt;b&gt;Implementation Considerations&lt;/b&gt;
+     * &#x5B9E;&#x73B0;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;
+     *
+     * &lt;p&gt;The ability to interrupt a lock acquisition in some
+     * implementations may not be possible, and if possible may be an
+     * expensive operation.  The programmer should be aware that this
+     * may be the case. An implementation should document when this is
+     * the case.
+     * &#x4E2D;&#x65AD;&#x9501;&#x7684;&#x83B7;&#x53D6;&#x7684;&#x80FD;&#x529B;&#x5728;&#x4E00;&#x4E9B;&#x5B9E;&#x73B0;&#x4E2D;&#x662F;&#x4E0D;&#x53EF;&#x80FD;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x53EF;&#x80FD;&#xFF0C;&#x4E5F;&#x4F1A;&#x662F;&#x4E2A;&#x6602;&#x8D35;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x6BD4;&#x8F83;&#x8D39;&#x65F6;&#x7B49;&#xFF09;&#x3002;
+     * &#x7A0B;&#x5E8F;&#x5458;&#x5E94;&#x5F53;&#x610F;&#x8BC6;&#x5230;&#x8FD9;&#x662F;&#x53EF;&#x80FD;&#x7684;&#x60C5;&#x51B5;&#x3002;
+     * &#x5B9E;&#x73B0;&#x5E94;&#x5F53;&#x8BB0;&#x5F55;&#x4E0B;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x3002;
+     *
+     * &lt;p&gt;An implementation can favor responding to an interrupt over
+     * normal method return.
+     * &#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x503E;&#x5411;&#x4E8E;&#x54CD;&#x5E94;&#x4E2D;&#x65AD;&#x800C;&#x4E0D;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x3002;
+     *
+     * &lt;p&gt;A {<span class="hljs-doctag">@code</span> Lock} implementation may be able to detect
+     * erroneous use of the lock, such as an invocation that would
+     * cause deadlock, and may throw an (unchecked) exception in such
+     * circumstances.  The circumstances and the exception type must
+     * be documented by that {<span class="hljs-doctag">@code</span> Lock} implementation.
+     * &#xFF08;&#x8DDF;&#x4E0A;&#x9762;&#x4E00;&#x6837;&#xFF0C;&#x8BB0;&#x5F97;&#x68C0;&#x6D4B;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;&#x7684;&#x6B7B;&#x9501;&#x7B49;&#x9519;&#x8BEF;&#x4F7F;&#x7528;&#x9501;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x8BB0;&#x5F55;&#xFF09;
+     *
+     * <span class="hljs-doctag">@throws</span> InterruptedException if the current thread is
+     *         interrupted while acquiring the lock (and interruption
+     *         of lock acquisition is supported)
+     * &#x629B;&#x51FA;InterruptedException&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5728;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x4E2D;&#x65AD;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">lockInterruptibly</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> InterruptedException</span>;
+
+    <span class="hljs-comment">/**
+     * Acquires the lock only if it is free at the time of invocation.
+     * &#x53EA;&#x6709;&#x5728;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x5F53;&#x524D;&#x9501;&#x7A7A;&#x95F2;&#x624D;&#x4F1A;&#x83B7;&#x53D6;&#x5230;&#x9501;&#xFF08;&#x8DDF;&#x4E0A;&#x9762;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x8C03;&#x7528;&#x65F6;&#x9501;&#x88AB;&#x5360;&#x7528;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E0D;&#x4F1A;&#x8FDB;&#x5165;&#x4F11;&#x7720;&#xFF0C;&#x800C;&#x662F;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#xFF09;
+     *
+     * &lt;p&gt;Acquires the lock if it is available and returns immediately
+     * with the value {<span class="hljs-doctag">@code</span> true}.
+     * If the lock is not available then this method will return
+     * immediately with the value {<span class="hljs-doctag">@code</span> false}.
+     * &#x5982;&#x679C;&#x53EF;&#x7528;&#x90A3;&#x4E48;&#x4F1A;&#x83B7;&#x53D6;&#x9501;&#xFF08;&#x52A0;&#x9501;&#xFF09;&#x5E76;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;true
+     * &#x5982;&#x679C;&#x9501;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;false&#xFF08;&#x6CA1;&#x6709;&#x4F11;&#x7720;&#xFF09;
+     *
+     * &lt;p&gt;A typical usage idiom for this method would be: &#xFF08;typical usage idiom&#x5178;&#x578B;&#x4F7F;&#x7528;&#x4E60;&#x60EF;&#xFF09;
+     *  &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * Lock lock = ...;
+     * if (lock.tryLock()) {
+     *   try {
+     *     // manipulate protected state
+     *   } finally {
+     *     lock.unlock(); // tryLock()&#x6210;&#x529F;&#x4E5F;&#x4F1A;&#x52A0;&#x9501;&#xFF0C;&#x8BB0;&#x5F97;&#x663E;&#x5F0F;&#x91CA;&#x653E;&#x9501;
+     *   }
+     * } else {
+     *   // perform alternative actions // &#x6267;&#x884C;&#x66FF;&#x4EE3;&#x64CD;&#x4F5C;
+     * }}&lt;/pre&gt;
+     *
+     * This usage ensures that the lock is unlocked if it was acquired, and
+     * doesn&apos;t try to unlock if the lock was not acquired.
+     * &#x8FD9;&#x79CD;&#x7528;&#x6CD5;&#x786E;&#x4FDD;&#x5728;&#x83B7;&#x53D6;&#x5230;&#x9501;&#x540E;&#x6B63;&#x786E;&#x91CA;&#x653E;&#x9501;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x4F1A;&#x5728;&#x83B7;&#x53D6;&#x9501;&#x5931;&#x8D25;&#x540E;&#x5C1D;&#x8BD5;&#x91CA;&#x653E;&#x9501;&#x3002;
+     *
+     * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if the lock was acquired and
+     *         {<span class="hljs-doctag">@code</span> false} otherwise
+     * &#x8FD9;&#x4E2A;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">tryLock</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * Acquires the lock if it is free within the given waiting time and the
+     * current thread has not been {<span class="hljs-doctag">@linkplain</span> Thread#interrupt interrupted}.
+     * &#x5728;&#x7ED9;&#x5B9A;&#x7684;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x91CC;&#xFF0C;&#x5982;&#x679C;&#x9501;&#x7A7A;&#x95F2;&#x5E76;&#x4E14;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x6CA1;&#x6709;&#x88AB;&#x4E2D;&#x65AD;&#xFF0C;&#x5219;&#x4F1A;&#x83B7;&#x53D6;&#x9501;&#xFF08;&#x52A0;&#x9501;&#xFF09;&#x3002;
+     *
+     * &lt;p&gt;If the lock is available this method returns immediately
+     * with the value {<span class="hljs-doctag">@code</span> true}.
+     * If the lock is not available then
+     * the current thread becomes disabled for thread scheduling
+     * purposes and lies dormant until one of three things happens:
+     * &lt;ul&gt;
+     * &lt;li&gt;The lock is acquired by the current thread; or
+     * &lt;li&gt;Some other thread {<span class="hljs-doctag">@linkplain</span> Thread#interrupt interrupts} the
+     * current thread, and interruption of lock acquisition is supported; or
+     * &lt;li&gt;The specified waiting time elapses
+     * &lt;/ul&gt;
+     * &#x5982;&#x679C;&#x80FD;&#x591F;&#x83B7;&#x53D6;&#x9501;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;true
+     * &#x5982;&#x679C;&#x9501;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5C06;&#x7981;&#x6B62;&#x4F5C;&#x4E3A;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#x76EE;&#x6807;&#x5E76;&#x8FDB;&#x5165;&#x4F11;&#x7720;&#xFF0C;&#x76F4;&#x5230;&#x4EE5;&#x4E0B;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#x4E4B;&#x4E00;&#x53D1;&#x751F;&#xFF1A;
+     * 1. &#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x83B7;&#x53D6;&#x5230;&#x8BE5;&#x9501;
+     * 2. &#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x7EBF;&#x7A0B;&#x4E2D;&#x65AD;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x4E2D;&#x65AD;&#x83B7;&#x53D6;&#x9501;&#x64CD;&#x4F5C;
+     * 3. &#x5230;&#x8FBE;&#x4E86;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#xFF08;&#x7B49;&#x5F85;&#x8D85;&#x65F6;&#xFF09;
+     *
+     * &#x4E0B;&#x9762;&#x4F1A;&#x9488;&#x5BF9;&#x4E0A;&#x9762;&#x8BF4;&#x7684;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x8BF4;&#x660E;
+     * &lt;p&gt;If the lock is acquired then the value {<span class="hljs-doctag">@code</span> true} is returned.
+     * &#x5982;&#x679C;&#x6210;&#x529F;&#x83B7;&#x53D6;&#x5230;&#x9501;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;true
+     *
+     * &lt;p&gt;If the current thread:
+     * &lt;ul&gt;
+     * &lt;li&gt;has its interrupted status set on entry to this method; or
+     * &lt;li&gt;is {<span class="hljs-doctag">@linkplain</span> Thread#interrupt interrupted} while acquiring
+     * the lock, and interruption of lock acquisition is supported,
+     * &lt;/ul&gt;
+     * then {<span class="hljs-doctag">@link</span> InterruptedException} is thrown and the current thread&apos;s
+     * interrupted status is cleared.
+     * &#x5982;&#x679C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF1A;
+     * 1. &#x5728;&#x8FDB;&#x5165;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x65F6;&#x8BBE;&#x7F6E;&#x4E86;&#x4E2D;&#x65AD;&#x72B6;&#x6001;
+     * 2. &#x6216;&#x8005;&#x5728;&#x83B7;&#x53D6;&#x9501;&#x65F6;&#x88AB;&#x4E2D;&#x65AD;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x4E2D;&#x65AD;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x64CD;&#x4F5C;
+     * &#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x629B;&#x51FA;InterruptedException&#x5F02;&#x5E38;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x6E05;&#x7406;&#x4E2D;&#x65AD;&#x72B6;&#x6001;
+     *
+     * &lt;p&gt;If the specified waiting time elapses then the value {<span class="hljs-doctag">@code</span> false}
+     * is returned.
+     * If the time is
+     * less than or equal to zero, the method will not wait at all.
+     * &#x5982;&#x679C;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x8FC7;&#x53BB;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x8FD4;&#x56DE;false
+     * &#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x53C2;&#x6570;&lt;=0&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x65B9;&#x6CD5;&#x6839;&#x672C;&#x4E0D;&#x4F1A;&#x7B49;&#x5F85;&#xFF08;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&lt;=0&#x7684;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x7B49;&#x5F85;&#xFF09;
+     *
+     * &lt;p&gt;&lt;b&gt;Implementation Considerations&lt;/b&gt;
+     * &#x6CE8;&#x610F;&#x4E8B;&#x9879;
+     * &lt;p&gt;The ability to interrupt a lock acquisition in some implementations
+     * may not be possible, and if possible may
+     * be an expensive operation.
+     * The programmer should be aware that this may be the case. An
+     * implementation should document when this is the case.
+     * &#x4E0E;lockInterruptibly()&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x4E00;&#x6837;&#xFF1A;
+     * &#x4E2D;&#x65AD;&#x9501;&#x7684;&#x83B7;&#x53D6;&#x7684;&#x80FD;&#x529B;&#x5728;&#x4E00;&#x4E9B;&#x5B9E;&#x73B0;&#x4E2D;&#x662F;&#x4E0D;&#x53EF;&#x80FD;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x53EF;&#x80FD;&#xFF0C;&#x4E5F;&#x4F1A;&#x662F;&#x4E2A;&#x6602;&#x8D35;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x6BD4;&#x8F83;&#x8D39;&#x65F6;&#x7B49;&#xFF09;&#x3002;
+     * &#x7A0B;&#x5E8F;&#x5458;&#x5E94;&#x5F53;&#x610F;&#x8BC6;&#x5230;&#x8FD9;&#x662F;&#x53EF;&#x80FD;&#x7684;&#x60C5;&#x51B5;&#x3002;
+     * &#x5B9E;&#x73B0;&#x5E94;&#x5F53;&#x8BB0;&#x5F55;&#x4E0B;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#x3002;
+     * 
+     * &lt;p&gt;An implementation can favor responding to an interrupt over normal
+     * method return, or reporting a timeout.
+     * &#x66F4;&#x503E;&#x5411;&#x4E8E;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x800C;&#x4E0D;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#xFF0C;&#x6216;&#x8005;&#x62A5;&#x544A;&#x8D85;&#x65F6;
+     * 
+     * &lt;p&gt;A {<span class="hljs-doctag">@code</span> Lock} implementation may be able to detect
+     * erroneous use of the lock, such as an invocation that would cause
+     * deadlock, and may throw an (unchecked) exception in such circumstances.
+     * The circumstances and the exception type must be documented by that
+     * {<span class="hljs-doctag">@code</span> Lock} implementation.
+     * &#x540C;&#x6837;&#x9700;&#x8981;&#x68C0;&#x6D4B;&#x6B7B;&#x9501;&#x7B49;&#x9519;&#x8BEF;&#x4F7F;&#x7528;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5E76;&#x4E14;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;
+     *
+     * <span class="hljs-doctag">@param</span> time the maximum time to wait for the lock // &#x6700;&#x5927;&#x7B49;&#x5F85;&#x65F6;&#x95F4;
+     * <span class="hljs-doctag">@param</span> unit the time unit of the {<span class="hljs-doctag">@code</span> time} argument // &#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x7684;&#x65F6;&#x95F4;&#x5355;&#x4F4D;
+     * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if the lock was acquired and {<span class="hljs-doctag">@code</span> false}
+     *         if the waiting time elapsed before the lock was acquired
+     *
+     * <span class="hljs-doctag">@throws</span> InterruptedException if the current thread is interrupted
+     *         while acquiring the lock (and interruption of lock
+     *         acquisition is supported)
+     * &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5982;&#x679C;&#x54CD;&#x5E94;&#x4E2D;&#x65AD;&#x4E5F;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">tryLock</span><span class="hljs-params">(<span class="hljs-keyword">long</span> time, TimeUnit unit)</span> <span class="hljs-keyword">throws</span> InterruptedException</span>;
+
+    <span class="hljs-comment">/**
+     * Releases the lock.
+     * &#x91CA;&#x653E;&#x9501;&#xFF08;&#x89E3;&#x9501;&#xFF09;
+     *
+     * &lt;p&gt;&lt;b&gt;Implementation Considerations&lt;/b&gt;
+     * &#x6CE8;&#x610F;&#x4E8B;&#x9879;
+     * &lt;p&gt;A {<span class="hljs-doctag">@code</span> Lock} implementation will usually impose
+     * restrictions on which thread can release a lock (typically only the
+     * holder of the lock can release it) and may throw
+     * an (unchecked) exception if the restriction is violated.
+     * Any restrictions and the exception
+     * type must be documented by that {<span class="hljs-doctag">@code</span> Lock} implementation.
+     * &#x901A;&#x5E38;&#x4F1A;&#x5BF9;&#x53EF;&#x4EE5;&#x91CA;&#x653E;&#x9501;&#x7684;&#x7EBF;&#x7A0B;&#x52A0;&#x4EE5;&#x9650;&#x5236;&#xFF08;restrictions&#xFF09;&#xFF08;&#x901A;&#x5E38;&#x53EA;&#x6709;&#x9501;&#x7684;&#x6301;&#x6709;&#x8005;&#xFF08;&#x6301;&#x6709;&#x8BE5;&#x9501;&#x7684;&#x7EBF;&#x7A0B;&#xFF09;&#x624D;&#x53EF;&#x4EE5;&#x91CA;&#x653E;&#x5B83;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x8FDD;&#x53CD;&#x9650;&#x5236;&#x53EF;&#x80FD;&#x4F1A;&#x629B;&#x51FA;&#xFF08;&#x672A;&#x68C0;&#x67E5;&#xFF09;&#x7684;&#x5F02;&#x5E38;
+     * &#x5FC5;&#x987B;&#x8BB0;&#x5F55;&#x4E0B;&#x4EFB;&#x4F55;&#x9650;&#x5236;&#x4E0E;&#x5F02;&#x5E38;&#x60C5;&#x51B5;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">unlock</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-comment">/**
+     * Returns a new {<span class="hljs-doctag">@link</span> Condition} instance that is bound to this
+     * {<span class="hljs-doctag">@code</span> Lock} instance.
+     * &#x8FD4;&#x56DE;&#x7ED1;&#x5B9A;&#x5230;&#x6B64;Lock&#x5B9E;&#x4F8B;&#x7684;&#x65B0;Condition&#x5B9E;&#x4F8B;
+     * &#x8FD9;&#x4E2A;&#x5728;AQS&#x4E2D;&#x6709;&#x4F7F;&#x7528;&#x5230;&#xFF0C;&#x5230;&#x90A3;&#x91CC;&#x5728;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x89C2;&#x5BDF;
+     *
+     * &lt;p&gt;Before waiting on the condition the lock must be held by the
+     * current thread.
+     * A call to {<span class="hljs-doctag">@link</span> Condition#await()} will atomically release the lock
+     * before waiting and re-acquire the lock before the wait returns.
+     * &#x5728;&#x7B49;&#x5F85;&#x6761;&#x4EF6;&#x4E4B;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x7531;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x6765;&#x6301;&#x6709;&#x9501;&#x3002;
+     * &#x8C03;&#x7528;wait()&#x5C06;&#x5728;&#x7B49;&#x5F85;&#x4E4B;&#x524D;&#x81EA;&#x52A8;&#x91CA;&#x653E;&#x9501;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x7B49;&#x5F85;&#x8FD4;&#x56DE;&#x4E4B;&#x524D;&#x91CD;&#x65B0;&#x83B7;&#x53D6;&#x9501;
+     * &#xFF08;&#x8FD9;&#x4E2A;&#x5F88;&#x5173;&#x952E;&#xFF0C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x8C03;&#x7528;wait()&#x6765;&#x4E3B;&#x52A8;&#x91CA;&#x653E;&#x9501;&#x5E76;&#x4F11;&#x7720;&#xFF0C;&#x76F4;&#x5230;&#x7B49;&#x5F85;&#x7ED3;&#x675F;&#xFF08;&#x6BD4;&#x5982;&#x7B49;&#x5F85;&#x7684;&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x4E86;&#xFF09;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4F1A;&#x91CD;&#x65B0;&#x83B7;&#x53D6;&#x5230;&#x9501;&#x6765;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;
+     *
+     * &lt;p&gt;&lt;b&gt;Implementation Considerations&lt;/b&gt;
+     * &#x6CE8;&#x610F;&#x4E8B;&#x9879;
+     * &lt;p&gt;The exact operation of the {<span class="hljs-doctag">@link</span> Condition} instance depends on
+     * the {<span class="hljs-doctag">@code</span> Lock} implementation and must be documented by that
+     * implementation.
+     * Condition&#x5B9E;&#x4F8B;&#x7684;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x53D6;&#x51B3;&#x4E8E;Lock&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x7531;&#x5B9E;&#x73B0;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#x3002;
+     *
+     * <span class="hljs-doctag">@return</span> A new {<span class="hljs-doctag">@link</span> Condition} instance for this {<span class="hljs-doctag">@code</span> Lock} instance
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException if this {<span class="hljs-doctag">@code</span> Lock}
+     *         implementation does not support conditions
+     * &#x5982;&#x679C;Lock&#x5B9E;&#x73B0;&#x4E0D;&#x652F;&#x6301;conditions&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;UnsupporttedOperationException&#x5F02;&#x5E38;
+     */</span>
+    <span class="hljs-function">Condition <span class="hljs-title">newCondition</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Condition.java.html" class="navigation navigation-prev " aria-label="Previous page: Condition.Java">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ReentrantLock.java.html" class="navigation navigation-next " aria-label="Next page: ReentrantLock.Java">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lock.Java","level":"1.2.3.12.4","depth":4,"next":{"title":"ReentrantLock.Java","level":"1.2.3.12.5","depth":4,"path":"Doc/util/concurrent/locks/ReentrantLock.java.md","ref":"Doc/util/concurrent/locks/ReentrantLock.java.md","articles":[]},"previous":{"title":"Condition.Java","level":"1.2.3.12.3","depth":4,"path":"Doc/util/concurrent/locks/Condition.java.md","ref":"Doc/util/concurrent/locks/Condition.java.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","splitter","code","-sharing","-lunr","-search","search-pro","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"summary":{},"splitter":{},"code":{"copyButtons":true},"search-pro":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"莫显辉","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*","description":"日常笔记"},"file":{"path":"Doc/util/concurrent/locks/Lock.java.md","mtime":"2021-07-29T05:55:05.514Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-30T05:59:23.144Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

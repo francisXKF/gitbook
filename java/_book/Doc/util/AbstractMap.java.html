@@ -1,0 +1,1521 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AbstractMap.Java · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="莫显辉">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Map.java.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Doc</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="AbstractMap.java.html">
+            
+                <a href="AbstractMap.java.html">
+            
+                    
+                    AbstractMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Map.java.html">
+            
+                <a href="Map.java.html">
+            
+                    
+                    Map.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Concurrent
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="concurrent/AbstractExecutorService.java.html">
+            
+                <a href="concurrent/AbstractExecutorService.java.html">
+            
+                    
+                    AbstractExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="concurrent/Callable.java.html">
+            
+                <a href="concurrent/Callable.java.html">
+            
+                    
+                    Callable.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="concurrent/ConcurrentHashMap.java.html">
+            
+                <a href="concurrent/ConcurrentHashMap.java.html">
+            
+                    
+                    ConcurrentHashMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="concurrent/ConcurrentMap.java.html">
+            
+                <a href="concurrent/ConcurrentMap.java.html">
+            
+                    
+                    ConcurrentMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="concurrent/Executor.java.html">
+            
+                <a href="concurrent/Executor.java.html">
+            
+                    
+                    Executor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="concurrent/ExecutorCompletionService.java.html">
+            
+                <a href="concurrent/ExecutorCompletionService.java.html">
+            
+                    
+                    ExecutorCompletionService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="concurrent/ExecutorService.java.html">
+            
+                <a href="concurrent/ExecutorService.java.html">
+            
+                    
+                    ExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="concurrent/Future.java.html">
+            
+                <a href="concurrent/Future.java.html">
+            
+                    
+                    Future.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="concurrent/FutureTask.java.html">
+            
+                <a href="concurrent/FutureTask.java.html">
+            
+                    
+                    FutureTask.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="concurrent/RunnableFuture.java.html">
+            
+                <a href="concurrent/RunnableFuture.java.html">
+            
+                    
+                    RunnableFuture.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="concurrent/ThreadPoolExecutor.java.html">
+            
+                <a href="concurrent/ThreadPoolExecutor.java.html">
+            
+                    
+                    ThreadPoolExecutor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" >
+            
+                <span>
+            
+                    
+                    Locks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.12.1" data-path="concurrent/locks/AbstractOwnableSynchronizer.java.html">
+            
+                <a href="concurrent/locks/AbstractOwnableSynchronizer.java.html">
+            
+                    
+                    AbstractOwnableSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.2" data-path="concurrent/locks/AbstractQueuedSynchronizer.java.html">
+            
+                <a href="concurrent/locks/AbstractQueuedSynchronizer.java.html">
+            
+                    
+                    AbstractQueuedSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.3" data-path="concurrent/locks/Condition.java.html">
+            
+                <a href="concurrent/locks/Condition.java.html">
+            
+                    
+                    Condition.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.4" data-path="concurrent/locks/Lock.java.html">
+            
+                <a href="concurrent/locks/Lock.java.html">
+            
+                    
+                    Lock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.5" data-path="concurrent/locks/ReentrantLock.java.html">
+            
+                <a href="concurrent/locks/ReentrantLock.java.html">
+            
+                    
+                    ReentrantLock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../日志.html">
+            
+                <a href="../日志.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >AbstractMap.Java</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="abstractmap">AbstractMap</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ * Copyright (c) 1997, 2013, Oracle and/or its affiliates. All rights reserved.
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */</span>
+
+<span class="hljs-keyword">package</span> java.util;
+<span class="hljs-keyword">import</span> java.util.Map.Entry;
+
+<span class="hljs-comment">/**
+ * This class provides a skeletal implementation of the &lt;tt&gt;Map&lt;/tt&gt;
+ * interface, to minimize the effort required to implement this interface.
+ * &#x8BE5;&#x7C7B;&#x5BF9;Map&#x63A5;&#x53E3;&#x63D0;&#x4F9B;&#x4E86;&#x9AA8;&#x67B6;&#x5B9E;&#x73B0;&#xFF0C;&#x4EE5;&#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x5B9E;&#x73B0;Map&#x63A5;&#x53E3;&#x6240;&#x9700;&#x8981;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;&#x3002;
+ *
+ * &lt;p&gt;To implement an unmodifiable map, the programmer needs only to extend this
+ * class and provide an implementation for the &lt;tt&gt;entrySet&lt;/tt&gt; method, which
+ * returns a set-view of the map&apos;s mappings.  Typically, the returned set
+ * will, in turn, be implemented atop &lt;tt&gt;AbstractSet&lt;/tt&gt;.  This set should
+ * not support the &lt;tt&gt;add&lt;/tt&gt; or &lt;tt&gt;remove&lt;/tt&gt; methods, and its iterator
+ * should not support the &lt;tt&gt;remove&lt;/tt&gt; method.
+ * &#x5B9E;&#x73B0;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;&#x7684;map&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x4EC5;&#x9700;&#x8981;&#x6269;&#x5C55;&#x672C;&#x7C7B;&#x5E76;&#x4E14;&#x63D0;&#x4F9B;&#x5BF9;entrySet&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;entrySet&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;map&#x7684;&#x6620;&#x5C04;set&#x96C6;&#x5408;&#x89C6;&#x56FE;&#x3002;
+ * &#x901A;&#x5E38;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;set&#x96C6;&#x5408;&#x5C06;&#x4F9D;&#x6B21;&#x5728;AbstractSet&#x4E4B;&#x4E0A;&#x5B9E;&#x73B0;&#x3002;
+ * &#x8BE5;set&#x96C6;&#x5408;&#x5C06;&#x4E0D;&#x652F;&#x6301;add&#x3001;remove&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x7684;&#x8FED;&#x4EE3;&#x5668;&#x4E0D;&#x652F;&#x6301;remove&#x65B9;&#x6CD5;&#x3002;
+ *
+ * &lt;p&gt;To implement a modifiable map, the programmer must additionally override
+ * this class&apos;s &lt;tt&gt;put&lt;/tt&gt; method (which otherwise throws an
+ * &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt;), and the iterator returned by
+ * &lt;tt&gt;entrySet().iterator()&lt;/tt&gt; must additionally implement its
+ * &lt;tt&gt;remove&lt;/tt&gt; method.
+ * &#x5B9E;&#x73B0;&#x53EF;&#x4FEE;&#x6539;&#x7684;map&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x5FC5;&#x987B;&#x989D;&#x5916;&#x8986;&#x76D6;&#xFF08;override &#x91CD;&#x5199;&#xFF09;&#x672C;&#x7C7B;&#x7684;put&#x65B9;&#x6CD5;&#xFF08;&#x5426;&#x5219;&#x5C06;&#x629B;&#x51FA;UnsupportedOperationException&#xFF09;&#xFF0C;
+ * &#x5E76;&#x4E14;&#x901A;&#x8FC7;entrySet()/iterator()&#x8FD4;&#x56DE;&#x7684;&#x8FED;&#x4EE3;&#x5668;&#x5FC5;&#x987B;&#x989D;&#x5916;&#x5B9E;&#x73B0;&#x5B83;&#x7684;remove&#x65B9;&#x6CD5;&#x3002;
+ *
+ * &lt;p&gt;The programmer should generally provide a void (no argument) and map
+ * constructor, as per the recommendation in the &lt;tt&gt;Map&lt;/tt&gt; interface
+ * specification.
+ * &#x6839;&#x636E;Map&#x63A5;&#x53E3;&#x7684;&#x5EFA;&#x8BAE;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x901A;&#x5E38;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;void&#xFF08;&#x65E0;&#x53C2;&#x6570;&#xFF09;&#x548C;&#x4E00;&#x4E2A;map&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;
+ * (Map&#x63A5;&#x53E3;&#x7684;&#x5EFA;&#x8BAE;&#xFF1A;&#x6240;&#x6709;&#x901A;&#x7528;&#x76EE;&#x7684;&#x7684;map&#x5B9E;&#x73B0;&#x7C7B;&#x90FD;&#x5E94;&#x8BE5;&#x652F;&#x6301;&#x4E24;&#x79CD;&#x201C;&#x6807;&#x51C6;&#x201D;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x65E0;&#x53C2;&#xFF0C;&#x4E00;&#x79CD;&#x662F;map&#xFF08;&#x4F1A;&#x62F7;&#x8D1D;&#x6210;&#x7B49;&#x6548;map&#xFF09;)
+ *
+ * &lt;p&gt;The documentation for each non-abstract method in this class describes its
+ * implementation in detail.  Each of these methods may be overridden if the
+ * map being implemented admits a more efficient implementation.
+ * &#x5BF9;&#x4E8E;&#x5728;&#x672C;&#x7C7B;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x975E;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x6587;&#x6863;&#x63CF;&#x8FF0;&#x4E86;&#x4ED6;&#x4EEC;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x3002;
+ * &#x6BCF;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x53EF;&#x80FD;&#x88AB;&#x8986;&#x76D6;&#xFF0C;&#x5982;&#x679C;&#x6B63;&#x5728;&#x5B9E;&#x73B0;&#x7684;map&#x5141;&#x8BB8;&#x66F4;&#x6709;&#x6548;&#x7684;&#x5B9E;&#x73B0;&#x3002;
+ *
+ * &lt;p&gt;This class is a member of the
+ * &lt;a href=&quot;{<span class="hljs-doctag">@docRoot</span>}/../technotes/guides/collections/index.html&quot;&gt;
+ * Java Collections Framework&lt;/a&gt;.
+ * &#x672C;&#x7C7B;&#x5C5E;&#x4E8E;Java Collection Framework
+ *
+ * <span class="hljs-doctag">@param</span> &lt;K&gt; the type of keys maintained by this map
+ * <span class="hljs-doctag">@param</span> &lt;V&gt; the type of mapped values
+ *
+ * <span class="hljs-doctag">@author</span>  Josh Bloch
+ * <span class="hljs-doctag">@author</span>  Neal Gafter
+ * <span class="hljs-doctag">@see</span> Map
+ * <span class="hljs-doctag">@see</span> Collection
+ * <span class="hljs-doctag">@since</span> 1.2
+ */</span>
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AbstractMap</span>&lt;<span class="hljs-title">K</span>,<span class="hljs-title">V</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Map</span>&lt;<span class="hljs-title">K</span>,<span class="hljs-title">V</span>&gt; </span>{
+    <span class="hljs-comment">/**
+     * Sole constructor.  (For invocation by subclass constructors, typically
+     * implicit.)
+     * &#x552F;&#x4E00;&#x6784;&#x9020;&#x5668;&#x3002;&#xFF08;&#x5BF9;&#x4E8E;&#x5B50;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x9690;&#x5F0F;&#x7684;&#xFF09;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-title">AbstractMap</span><span class="hljs-params">()</span> </span>{
+    }
+
+    <span class="hljs-comment">// Query Operations</span>
+    <span class="hljs-comment">// &#x67E5;&#x8BE2;&#x64CD;&#x4F5C;</span>
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     * &#x7EE7;&#x627F;&#x6587;&#x6863;
+     * &#x6CE8;&#x610F;&#xFF0C;{<span class="hljs-doctag">@inheritDoc</span>}&#x8868;&#x660E;
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * &#x5B9E;&#x73B0;&#x89C4;&#x8303;
+     * This implementation returns &lt;tt&gt;entrySet().size()&lt;/tt&gt;.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x8FD4;&#x56DE;entrySet().size()
+     *
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> entrySet().size();
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation returns &lt;tt&gt;size() == 0&lt;/tt&gt;.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> size() == <span class="hljs-number">0</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation iterates over &lt;tt&gt;entrySet()&lt;/tt&gt; searching
+     * for an entry with the specified value.  If such an entry is found,
+     * &lt;tt&gt;true&lt;/tt&gt; is returned.  If the iteration terminates without
+     * finding such an entry, &lt;tt&gt;false&lt;/tt&gt; is returned.  Note that this
+     * implementation requires linear time in the size of the map.
+     * &#x6B64;&#x5B9E;&#x73B0;&#x901A;&#x8FC7;&#x904D;&#x5386;entrySet()&#x6765;&#x641C;&#x7D22;&#x5177;&#x6709;&#x6307;&#x5B9A;value&#x7684;entry&#x3002;
+     * &#x5982;&#x679C;&#x641C;&#x5230;&#x5BF9;&#x5E94;&#x7684;entry&#xFF0C;&#x8FD4;&#x56DE;true&#x3002;
+     * &#x5982;&#x679C;&#x8FED;&#x4EE3;&#x7ED3;&#x675F;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;entry&#xFF0C;&#x8FD4;&#x56DE;false&#x3002;
+     * &#x6CE8;&#x610F;&#xFF0C;&#x8BE5;&#x5B9E;&#x73B0;&#x6240;&#x9700;&#x8981;&#x7684;&#x65F6;&#x95F4;&#x4E0E;map&#x7684;&#x5927;&#x5C0F;&#x6210;&#x7EBF;&#x6027;&#x76F8;&#x5173;&#x3002;
+     *
+     * <span class="hljs-doctag">@throws</span> ClassCastException   {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">containsValue</span><span class="hljs-params">(Object value)</span> </span>{
+        Iterator&lt;Entry&lt;K,V&gt;&gt; i = entrySet().iterator(); <span class="hljs-comment">// &#xFF08;&#x8FD9;&#x4E2A;&#x8FED;&#x4EE3;&#x5668;&#x5BF9;&#x8C61;&#x7F29;&#x5199;&#x6210;i&#x770B;&#x5446;&#x4E86;&#xFF09;</span>
+        <span class="hljs-keyword">if</span> (value==<span class="hljs-keyword">null</span>) {                             <span class="hljs-comment">// &#x533A;&#x5206;null&#x4E0E;&#x975E;null&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5206;&#x522B;&#x8FDB;&#x884C;&#x904D;&#x5386;</span>
+            <span class="hljs-keyword">while</span> (i.hasNext()) {
+                Entry&lt;K,V&gt; e = i.next();
+                <span class="hljs-keyword">if</span> (e.getValue()==<span class="hljs-keyword">null</span>)
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">while</span> (i.hasNext()) {
+                Entry&lt;K,V&gt; e = i.next();
+                <span class="hljs-keyword">if</span> (value.equals(e.getValue()))
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+            }
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation iterates over &lt;tt&gt;entrySet()&lt;/tt&gt; searching
+     * for an entry with the specified key.  If such an entry is found,
+     * &lt;tt&gt;true&lt;/tt&gt; is returned.  If the iteration terminates without
+     * finding such an entry, &lt;tt&gt;false&lt;/tt&gt; is returned.  Note that this
+     * implementation requires linear time in the size of the map; many
+     * implementations will override this method.
+     * &#x6B64;&#x5B9E;&#x73B0;&#x901A;&#x8FC7;&#x904D;&#x5386;entrySet()&#x6765;&#x641C;&#x7D22;&#x5177;&#x6709;&#x6307;&#x5B9A;key&#x7684;entry&#x3002;
+     * &#x5982;&#x679C;&#x641C;&#x5230;&#x5BF9;&#x5E94;&#x7684;entry&#xFF0C;&#x8FD4;&#x56DE;true&#x3002;
+     * &#x5982;&#x679C;&#x8FED;&#x4EE3;&#x7ED3;&#x675F;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;entry&#xFF0C;&#x8FD4;&#x56DE;false&#x3002;
+     * &#x6CE8;&#x610F;&#xFF0C;&#x8BE5;&#x5B9E;&#x73B0;&#x6240;&#x9700;&#x8981;&#x7684;&#x65F6;&#x95F4;&#x4E0E;map&#x7684;&#x5927;&#x5C0F;&#x6210;&#x7EBF;&#x6027;&#x76F8;&#x5173;&#x3002;
+     * &#x8BB8;&#x591A;&#x5B9E;&#x73B0;&#x4F1A;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;&#xFF08;&#x56E0;&#x4E3A;&#x6709;&#x5F88;&#x591A;&#x5BF9;&#x63D0;&#x9AD8;key&#x67E5;&#x8BE2;&#x6548;&#x7387;&#x505A;&#x7684;&#x4F18;&#x5316;&#xFF09;
+     *
+     * <span class="hljs-doctag">@throws</span> ClassCastException   {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">containsKey</span><span class="hljs-params">(Object key)</span> </span>{
+        Iterator&lt;Map.Entry&lt;K,V&gt;&gt; i = entrySet().iterator();
+        <span class="hljs-keyword">if</span> (key==<span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">while</span> (i.hasNext()) {
+                Entry&lt;K,V&gt; e = i.next();
+                <span class="hljs-keyword">if</span> (e.getKey()==<span class="hljs-keyword">null</span>)
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">while</span> (i.hasNext()) {
+                Entry&lt;K,V&gt; e = i.next();
+                <span class="hljs-keyword">if</span> (key.equals(e.getKey()))
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+            }
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation iterates over &lt;tt&gt;entrySet()&lt;/tt&gt; searching
+     * for an entry with the specified key.  If such an entry is found,
+     * the entry&apos;s value is returned.  If the iteration terminates without
+     * finding such an entry, &lt;tt&gt;null&lt;/tt&gt; is returned.  Note that this
+     * implementation requires linear time in the size of the map; many
+     * implementations will override this method.
+     * &#x6B64;&#x5B9E;&#x73B0;&#x901A;&#x8FC7;&#x904D;&#x5386;entrySet()&#x6765;&#x641C;&#x7D22;&#x5177;&#x6709;&#x6307;&#x5B9A;key&#x7684;entry&#x3002;
+     * &#x5982;&#x679C;&#x641C;&#x5230;&#x5BF9;&#x5E94;&#x7684;entry&#xFF0C;&#x8FD4;&#x56DE;&#x8BE5;entry&#x7684;value&#x503C;&#x3002;
+     * &#x5982;&#x679C;&#x8FED;&#x4EE3;&#x7ED3;&#x675F;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;entry&#xFF0C;&#x8FD4;&#x56DE;null&#x3002;
+     * &#x6CE8;&#x610F;&#xFF0C;&#x8BE5;&#x5B9E;&#x73B0;&#x6240;&#x9700;&#x8981;&#x7684;&#x65F6;&#x95F4;&#x4E0E;map&#x7684;&#x5927;&#x5C0F;&#x6210;&#x7EBF;&#x6027;&#x76F8;&#x5173;&#x3002;
+     * &#x8BB8;&#x591A;&#x5B9E;&#x73B0;&#x4F1A;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;&#xFF08;&#x5BF9;key&#x7684;&#x8BBF;&#x95EE;&#x4F18;&#x5316;&#xFF09;
+     *
+     * <span class="hljs-doctag">@throws</span> ClassCastException            {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException          {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">get</span><span class="hljs-params">(Object key)</span> </span>{
+        Iterator&lt;Entry&lt;K,V&gt;&gt; i = entrySet().iterator();
+        <span class="hljs-keyword">if</span> (key==<span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">while</span> (i.hasNext()) {
+                Entry&lt;K,V&gt; e = i.next();
+                <span class="hljs-keyword">if</span> (e.getKey()==<span class="hljs-keyword">null</span>)
+                    <span class="hljs-keyword">return</span> e.getValue();
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">while</span> (i.hasNext()) {
+                Entry&lt;K,V&gt; e = i.next();
+                <span class="hljs-keyword">if</span> (key.equals(e.getKey()))
+                    <span class="hljs-keyword">return</span> e.getValue();
+            }
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+    }
+
+
+    <span class="hljs-comment">// Modification Operations</span>
+    <span class="hljs-comment">// &#x4FEE;&#x6539;&#x64CD;&#x4F5C;</span>
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation always throws an
+     * &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt;.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x603B;&#x662F;&#x629B;&#x51FA;UnsupportedOperationException&#x3002;&#xFF08;&#x5565;&#x539F;&#x56E0;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;entry&#x6765;put&#x4E48;&#xFF1F;&#xFF1F;&#xFF1F;&#xFF09;
+     *
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> ClassCastException            {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException          {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> IllegalArgumentException      {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">put</span><span class="hljs-params">(K key, V value)</span> </span>{
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation iterates over &lt;tt&gt;entrySet()&lt;/tt&gt; searching for an
+     * entry with the specified key.  If such an entry is found, its value is
+     * obtained with its &lt;tt&gt;getValue&lt;/tt&gt; operation, the entry is removed
+     * from the collection (and the backing map) with the iterator&apos;s
+     * &lt;tt&gt;remove&lt;/tt&gt; operation, and the saved value is returned.  If the
+     * iteration terminates without finding such an entry, &lt;tt&gt;null&lt;/tt&gt; is
+     * returned.  Note that this implementation requires linear time in the
+     * size of the map; many implementations will override this method.
+     * &#x6B64;&#x5B9E;&#x73B0;&#x901A;&#x8FC7;&#x904D;&#x5386;entrySet()&#x6765;&#x641C;&#x7D22;&#x5177;&#x6709;&#x6307;&#x5B9A;key&#x7684;entry&#x3002;
+     * &#x5982;&#x679C;&#x641C;&#x5230;&#x5BF9;&#x5E94;&#x7684;entry&#xFF0C;&#x5219;&#x901A;&#x8FC7;getValue&#x64CD;&#x4F5C;&#x83B7;&#x53D6;&#x8BE5;key&#x5BF9;&#x5E94;&#x7684;value&#x503C;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x8FED;&#x4EE3;&#x5668;&#x7684;remove&#x64CD;&#x4F5C;&#x5C06;&#x8BE5;entry&#x4ECE;&#x96C6;&#x5408;&#x4E2D;&#xFF08;&#x4E5F;&#x4F1A;&#x53CD;&#x6620;&#x5230;map&#x4E0A;&#xFF09;&#x79FB;&#x9664;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x521A;&#x4FDD;&#x5B58;&#x7684;value&#x503C;&#x3002;
+     * &#x5982;&#x679C;&#x904D;&#x5386;&#x7ED3;&#x675F;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;entry&#xFF0C;&#x8FD4;&#x56DE;null&#x3002;
+     * &#x6CE8;&#x610F;&#xFF0C;&#x8BE5;&#x5B9E;&#x73B0;&#x6240;&#x9700;&#x8981;&#x7684;&#x65F6;&#x95F4;&#x4E0E;map&#x7684;&#x5927;&#x5C0F;&#x6210;&#x7EBF;&#x6027;&#x76F8;&#x5173;&#x3002;
+     * &#x8BB8;&#x591A;&#x5B9E;&#x73B0;&#x4F1A;&#x91CD;&#x5199;&#xFF08;override&#xFF09;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;&#xFF08;&#x5BF9;key&#x7684;&#x8BBF;&#x95EE;&#x4F18;&#x5316;&#xFF09;
+     *
+     * &lt;p&gt;Note that this implementation throws an
+     * &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt; if the &lt;tt&gt;entrySet&lt;/tt&gt;
+     * iterator does not support the &lt;tt&gt;remove&lt;/tt&gt; method and this map
+     * contains a mapping for the specified key.
+     * &#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;entrySet&#x8FED;&#x4EE3;&#x5668;&#x4E0D;&#x652F;&#x6301;remove&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x8BE5;map&#x5305;&#x542B;&#x7ED9;&#x5B9A;key&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x5219;&#x629B;&#x51FA;UnsupportedOperationException&#x3002;
+     *
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> ClassCastException            {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException          {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">remove</span><span class="hljs-params">(Object key)</span> </span>{
+        Iterator&lt;Entry&lt;K,V&gt;&gt; i = entrySet().iterator();
+        Entry&lt;K,V&gt; correctEntry = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">if</span> (key==<span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">while</span> (correctEntry==<span class="hljs-keyword">null</span> &amp;&amp; i.hasNext()) {  <span class="hljs-comment">// &#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;entry&#x7ED3;&#x675F;</span>
+                Entry&lt;K,V&gt; e = i.next();
+                <span class="hljs-keyword">if</span> (e.getKey()==<span class="hljs-keyword">null</span>)
+                    correctEntry = e;                     <span class="hljs-comment">// &#x4FDD;&#x5B58;&#x5BF9;&#x5E94;&#x7684;entry</span>
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">while</span> (correctEntry==<span class="hljs-keyword">null</span> &amp;&amp; i.hasNext()) {
+                Entry&lt;K,V&gt; e = i.next();
+                <span class="hljs-keyword">if</span> (key.equals(e.getKey()))
+                    correctEntry = e;
+            }
+        }
+
+        <span class="hljs-comment">// &#x4E0D;&#x5728;&#x904D;&#x5386;&#x65F6;&#x76F4;&#x63A5;&#x4FDD;&#x5B58;oldValue&#x7684;&#x503C;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x4FDD;&#x5B58;entry&#x518D;&#x83B7;&#x53D6;value&#x503C;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;oldValue&#x4E3A;null&#x65F6;&#x4E0D;&#x597D;&#x5224;&#x65AD;map&#x4E2D;&#x662F;&#x5426;&#x5B58;&#x5728;&#x7ED9;&#x5B9A;key&#xFF1F;&#xFF1F;&#xFF1F;&#x90A3;&#x4E3A;&#x5565;&#x4E0D;&#x7528;findFlag+oldValue&#x8FD9;&#x79CD;&#x4E1C;&#x897F;&#xFF1F;&#xFF1F;&#xFF1F;</span>
+        V oldValue = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">if</span> (correctEntry !=<span class="hljs-keyword">null</span>) {
+            oldValue = correctEntry.getValue();           <span class="hljs-comment">// &#x901A;&#x8FC7;entry&#x83B7;&#x53D6;&#x7ED9;&#x5B9A;key&#x5BF9;&#x5E94;&#x7684;value</span>
+            i.remove();                                   <span class="hljs-comment">// &#x901A;&#x8FC7;&#x8FED;&#x4EE3;&#x5668;&#x5220;&#x9664;&#x8BE5;entry</span>
+        }
+        <span class="hljs-keyword">return</span> oldValue;
+    }
+
+
+    <span class="hljs-comment">// Bulk Operations</span>
+    <span class="hljs-comment">// &#x6279;&#x91CF;&#x64CD;&#x4F5C;</span>
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation iterates over the specified map&apos;s
+     * &lt;tt&gt;entrySet()&lt;/tt&gt; collection, and calls this map&apos;s &lt;tt&gt;put&lt;/tt&gt;
+     * operation once for each entry returned by the iteration.
+     * &#x672C;&#x5B9E;&#x73B0;&#x901A;&#x8FC7;&#x8FED;&#x4EE3;&#x7ED9;&#x5B9A;map&#xFF08;mapA&#xFF09;&#x7684;entrySet()&#x96C6;&#x5408;&#xFF0C;&#x5E76;&#x5BF9;&#x901A;&#x8FC7;&#x8FED;&#x4EE3;&#x8FD4;&#x56DE;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;entry&#x8C03;&#x7528;&#x8BE5;map&#xFF08;mapB&#xFF09;&#x7684;put&#x64CD;&#x4F5C;&#x3002;
+     *
+     * &lt;p&gt;Note that this implementation throws an
+     * &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt; if this map does not support
+     * the &lt;tt&gt;put&lt;/tt&gt; operation and the specified map is nonempty.
+     * &#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x8BE5;map&#x4E0D;&#x652F;&#x6301;put&#x64CD;&#x4F5C;&#x5E76;&#x4E14;&#x7ED9;&#x5B9A;map&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x629B;&#x51FA;UnsupportedOperationException&#x3002;
+     *
+     *
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> ClassCastException            {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> NullPointerException          {<span class="hljs-doctag">@inheritDoc</span>}
+     * <span class="hljs-doctag">@throws</span> IllegalArgumentException      {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">putAll</span><span class="hljs-params">(Map&lt;? extends K, ? extends V&gt; m)</span> </span>{
+        <span class="hljs-keyword">for</span> (Map.Entry&lt;? extends K, ? extends V&gt; e : m.entrySet())
+            put(e.getKey(), e.getValue());                           <span class="hljs-comment">// &#x904D;&#x5386;&#x7ED9;&#x5B9A;map&#xFF0C;&#x5C06;&#x6BCF;&#x4E2A;entry&#x90FD;&#x52A0;&#x5165;&#x5230;&#x5F53;&#x524D;map&#x4E2D;</span>
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation calls &lt;tt&gt;entrySet().clear()&lt;/tt&gt;.
+     * &#x672C;&#x5B9E;&#x73B0;&#x8C03;&#x7528;entrySet().clear()
+     *
+     * &lt;p&gt;Note that this implementation throws an
+     * &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt; if the &lt;tt&gt;entrySet&lt;/tt&gt;
+     * does not support the &lt;tt&gt;clear&lt;/tt&gt; operation.
+     * &#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;entrySet&#x4E0D;&#x652F;&#x6301;clear&#x64CD;&#x4F5C;&#xFF0C;&#x5219;&#x629B;&#x51FA;UnsupportedOperationException&#x3002;
+     *
+     * <span class="hljs-doctag">@throws</span> UnsupportedOperationException {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clear</span><span class="hljs-params">()</span> </span>{
+        entrySet().clear();
+    }
+
+
+    <span class="hljs-comment">// Views</span>
+    <span class="hljs-comment">// &#x89C6;&#x56FE;</span>
+
+    <span class="hljs-comment">/**
+     * Each of these fields are initialized to contain an instance of the
+     * appropriate view the first time this view is requested.  The views are
+     * stateless, so there&apos;s no reason to create more than one of each.
+     * &#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x8BE5;&#x89C6;&#x56FE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x90FD;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x5305;&#x542B;&#x76F8;&#x5E94;&#xFF08;appropriate&#xFF09;&#x89C6;&#x56FE;&#x7684;&#x5B9E;&#x4F8B;&#x3002;
+     * &#x89C6;&#x56FE;&#x662F;&#x65E0;&#x72B6;&#x6001;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x89C6;&#x56FE;&#x3002;
+     *
+     * &lt;p&gt;Since there is no synchronization performed while accessing these fields,
+     * it is expected that java.util.Map view classes using these fields have
+     * no non-final fields (or any fields at all except for outer-this). Adhering
+     * to this rule would make the races on these fields benign.
+     * &#x7531;&#x4E8E;&#x5728;&#x8BBF;&#x95EE;&#x8FD9;&#x4E9B;&#x5B57;&#x6BB5;&#x7684;&#x65F6;&#x5019;&#x6CA1;&#x6709;&#xFF08;&#x9650;&#x5236;&#xFF09;&#x540C;&#x6B65;&#x6267;&#x884C;&#xFF0C;&#x56E0;&#x6B64;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x5B57;&#x6BB5;&#x7684;java.util.Map&#x89C6;&#x56FE;&#x5E94;&#x8BE5;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x975E;final&#x5B57;&#x6BB5;&#xFF08;&#x6216;&#x9664;&#x4E86;outer-this&#x4E4B;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x5B57;&#x6BB5;&#xFF09;&#x3002;
+     * &#x9075;&#x5B88;&#x8FD9;&#x4E00;&#x89C4;&#x5219;&#x5C06;&#x4F7F;&#x5F97;&#x5728;&#x8FD9;&#x4E9B;&#x5B57;&#x6BB5;&#x4E0A;&#x7684;&#x7ADE;&#x4E89;&#x53D8;&#x5F97;&#x826F;&#x6027;&#x3002;
+     * &#xFF08;&#x5FC5;&#x987B;&#x4F7F;&#x7528;final&#x6765;&#x4FEE;&#x9970;&#x5F15;&#x7528;&#x4E0B;&#x9762;&#x8FD9;&#x4E9B;&#x89C6;&#x56FE;&#x7684;field&#xFF1F;&#xFF1F;&#xFF1F;&#xFF09;
+     *
+     * &lt;p&gt;It is also imperative that implementations read the field only once,
+     * as in:
+     * &#x5B9E;&#x73B0;&#x53EA;&#x8BFB;&#x53D6;&#x8BE5;&#x5B57;&#x6BB5;&#x4E00;&#x6B21;&#x4E5F;&#x662F;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x3002;&#xFF08;&#x4EC5;&#x6709;&#x4E00;&#x6B21;&#x8BFB;&#x53D6;&#x8D4B;&#x503C;&#xFF09;
+     *
+     * &lt;pre&gt; {<span class="hljs-doctag">@code</span>
+     * public Set&lt;K&gt; keySet() {
+     *   Set&lt;K&gt; ks = keySet;  // single racy read
+     *   if (ks == null) {
+     *     ks = new KeySet();
+     *     keySet = ks;
+     *   }
+     *   return ks;
+     * }
+     *}&lt;/pre&gt;
+     */</span>
+    <span class="hljs-keyword">transient</span> Set&lt;K&gt;        keySet; <span class="hljs-comment">// transient&#x4FEE;&#x9970;&#xFF0C;&#x4E0D;&#x4F1A;&#x88AB;&#x5E8F;&#x5217;&#x5316;</span>
+    <span class="hljs-keyword">transient</span> Collection&lt;V&gt; values;
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation returns a set that subclasses {<span class="hljs-doctag">@link</span> AbstractSet}.
+     * The subclass&apos;s iterator method returns a &quot;wrapper object&quot; over this
+     * map&apos;s &lt;tt&gt;entrySet()&lt;/tt&gt; iterator.  The &lt;tt&gt;size&lt;/tt&gt; method
+     * delegates to this map&apos;s &lt;tt&gt;size&lt;/tt&gt; method and the
+     * &lt;tt&gt;contains&lt;/tt&gt; method delegates to this map&apos;s
+     * &lt;tt&gt;containsKey&lt;/tt&gt; method.
+     * &#x8FD4;&#x56DE;AbstractSet&#x7684;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#x3002;
+     * &#x8BE5;&#x5B50;&#x7C7B;&#x7684;&#x8FED;&#x4EE3;&#x5668;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x8BE5;map&#x7684;entrySet()&#x8FED;&#x4EE3;&#x5668;&#x4E0A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x201C;&#x5305;&#x88C5;&#x5668;&#x5BF9;&#x8C61;&#x201D;&#x3002;&#xFF08;&#x501F;&#x7528;&#x4E86;&#x8BE5;map&#x7684;entrySet()&#x8FED;&#x4EE3;&#x5668;&#xFF09;
+     * size&#x65B9;&#x6CD5;&#x59D4;&#x6258;&#x7ED9;&#x8BE5;map&#x7684;size&#x65B9;&#x6CD5;&#xFF0C;contains&#x65B9;&#x6CD5;&#x59D4;&#x6258;&#x7ED9;&#x8BE5;map&#x7684;containsKey&#x65B9;&#x6CD5;&#x3002;&#xFF08;&#x90FD;&#x662F;&#x501F;&#x7528;&#xFF09;
+     *
+     * &lt;p&gt;The set is created the first time this method is called,
+     * and returned in response to all subsequent calls.  No synchronization
+     * is performed, so there is a slight chance that multiple calls to this
+     * method will not all return the same set.
+     * &#x8BE5;set&#x5728;&#x9996;&#x6B21;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x65F6;&#x521B;&#x5EFA;&#xFF08;&#x5E76;&#x8FD4;&#x56DE;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x540E;&#x7EED;&#x7684;&#x8C03;&#x7528;&#x4E2D;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x3002;
+     * &#x6CA1;&#x6709;&#x540C;&#x6B65;&#x6267;&#x884C;&#xFF08;&#x7684;&#x9650;&#x5236;&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#xFF08;slight chance&#x6709;&#x5FAE;&#x5F31;&#x7684;&#x673A;&#x4F1A;&#xFF09;&#x591A;&#x6B21;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x603B;&#x8FD4;&#x56DE;&#x76F8;&#x540C;set&#x3002;
+     *
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Set&lt;K&gt; <span class="hljs-title">keySet</span><span class="hljs-params">()</span> </span>{
+        Set&lt;K&gt; ks = keySet;
+        <span class="hljs-keyword">if</span> (ks == <span class="hljs-keyword">null</span>) {                                                       <span class="hljs-comment">// &#x5982;&#x679C;ks&#x975E;&#x7A7A;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x503C;&#xFF08;&#x53EF;&#x80FD;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#xFF0C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x5E76;&#x53D1;&#x7684;&#x95EE;&#x9898;&#xFF09;</span>
+            ks = <span class="hljs-keyword">new</span> AbstractSet&lt;K&gt;() {
+                <span class="hljs-function"><span class="hljs-keyword">public</span> Iterator&lt;K&gt; <span class="hljs-title">iterator</span><span class="hljs-params">()</span> </span>{                                 <span class="hljs-comment">// AbstractSet&#x7EE7;&#x627F;&#x7684;AbstractConllection&#xFF08;&#x5B83;&#x53C8;&#x5B9E;&#x73B0;&#x7684;Collection&#xFF09;&#xFF0C;&#x5B9E;&#x73B0;&#x7C7B;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;iterator&#x65B9;&#x6CD5;&#x3002;</span>
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Iterator&lt;K&gt;() {
+                        <span class="hljs-keyword">private</span> Iterator&lt;Entry&lt;K,V&gt;&gt; i = entrySet().iterator(); <span class="hljs-comment">// &#x8C03;&#x7528;&#x8BE5;map&#x7684;entrySet()&#x8FED;&#x4EE3;&#x5668;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x4E86;&#x5305;&#x88C5;&#x3002;</span>
+
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">hasNext</span><span class="hljs-params">()</span> </span>{
+                            <span class="hljs-keyword">return</span> i.hasNext();
+                        }
+
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> K <span class="hljs-title">next</span><span class="hljs-params">()</span> </span>{
+                            <span class="hljs-keyword">return</span> i.next().getKey();                           <span class="hljs-comment">// &#x56E0;&#x4E3A;&#x8BE5;&#x65B9;&#x6CD5;&#x662F;keySet&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x4ECE;entrySet&#x4E2D;&#x53D6;&#x51FA;key&#x6765;&#x8FD4;&#x56DE;</span>
+                        }
+
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">remove</span><span class="hljs-params">()</span> </span>{
+                            i.remove();
+                        }
+                    };
+                }
+
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span> </span>{
+                    <span class="hljs-keyword">return</span> AbstractMap.<span class="hljs-keyword">this</span>.size();                             <span class="hljs-comment">// &#x8C03;&#x7528;&#x8BE5;map&#x7684;size&#x65B9;&#x6CD5;&#xFF08;&#x8868;&#x660E;key&#x7684;&#x4E2A;&#x6570;&#x4E0E;&#x8BE5;map&#x7684;&#x4E2A;&#x6570;&#x662F;&#x76F8;&#x7B49;&#x7684;&#xFF09;</span>
+                }
+
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{
+                    <span class="hljs-keyword">return</span> AbstractMap.<span class="hljs-keyword">this</span>.isEmpty();
+                }
+
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clear</span><span class="hljs-params">()</span> </span>{
+                    AbstractMap.<span class="hljs-keyword">this</span>.clear();                                   <span class="hljs-comment">// keySet&#x7684;clear&#x4F1A;&#x5C06;&#x6574;&#x4E2A;map&#x8FDB;&#x884C;clear</span>
+                }
+
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Object k)</span> </span>{
+                    <span class="hljs-keyword">return</span> AbstractMap.<span class="hljs-keyword">this</span>.containsKey(k);                     <span class="hljs-comment">// key&#x7684;contains&#x662F;&#x901A;&#x8FC7;&#x8C03;&#x7528;map&#x7684;containsKey&#x6765;&#x5B9E;&#x73B0;&#x7684;</span>
+                }
+            };
+            keySet = ks;
+        }
+        <span class="hljs-keyword">return</span> ks;
+    }
+
+    <span class="hljs-comment">/**
+     * {<span class="hljs-doctag">@inheritDoc</span>}
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation returns a collection that subclasses {<span class="hljs-doctag">@link</span>
+     * AbstractCollection}.  The subclass&apos;s iterator method returns a
+     * &quot;wrapper object&quot; over this map&apos;s &lt;tt&gt;entrySet()&lt;/tt&gt; iterator.
+     * The &lt;tt&gt;size&lt;/tt&gt; method delegates to this map&apos;s &lt;tt&gt;size&lt;/tt&gt;
+     * method and the &lt;tt&gt;contains&lt;/tt&gt; method delegates to this map&apos;s
+     * &lt;tt&gt;containsValue&lt;/tt&gt; method.
+     * &#x8FD4;&#x56DE;AbstractCollection&#x7684;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#x3002;
+     * &#x8BE5;&#x5B50;&#x7C7B;&#x7684;&#x8FED;&#x4EE3;&#x5668;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x8BE5;map&#x7684;entrySet()&#x8FED;&#x4EE3;&#x5668;&#x4E0A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x201C;&#x5305;&#x88C5;&#x5668;&#x5BF9;&#x8C61;&#x201D;&#x3002;&#xFF08;&#x501F;&#x7528;&#x4E86;&#x8BE5;map&#x7684;entrySet()&#x8FED;&#x4EE3;&#x5668;&#xFF09;
+     * size&#x65B9;&#x6CD5;&#x59D4;&#x6258;&#x7ED9;&#x8BE5;map&#x7684;size&#x65B9;&#x6CD5;&#xFF0C;contains&#x65B9;&#x6CD5;&#x59D4;&#x6258;&#x7ED9;&#x8BE5;map&#x7684;containsKey&#x65B9;&#x6CD5;&#x3002;&#xFF08;&#x90FD;&#x662F;&#x501F;&#x7528;&#xFF09;
+     *
+     * &lt;p&gt;The collection is created the first time this method is called, and
+     * returned in response to all subsequent calls.  No synchronization is
+     * performed, so there is a slight chance that multiple calls to this
+     * method will not all return the same collection.
+     * &#x8BE5;collection&#x5728;&#x9996;&#x6B21;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x65F6;&#x521B;&#x5EFA;&#xFF08;&#x5E76;&#x8FD4;&#x56DE;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x540E;&#x7EED;&#x7684;&#x8C03;&#x7528;&#x4E2D;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x3002;
+     * &#x6CA1;&#x6709;&#x540C;&#x6B65;&#x6267;&#x884C;&#xFF08;&#x7684;&#x9650;&#x5236;&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#xFF08;slight chance&#x6709;&#x5FAE;&#x5F31;&#x7684;&#x673A;&#x4F1A;&#xFF09;&#x591A;&#x6B21;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x603B;&#x8FD4;&#x56DE;&#x76F8;&#x540C;set&#x3002;
+     *
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Collection&lt;V&gt; <span class="hljs-title">values</span><span class="hljs-params">()</span> </span>{
+        Collection&lt;V&gt; vals = values;
+        <span class="hljs-keyword">if</span> (vals == <span class="hljs-keyword">null</span>) {                                                      <span class="hljs-comment">// &#x5982;&#x679C;vals&#x975E;&#x7A7A;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x503C;&#xFF08;&#x53EF;&#x80FD;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#xFF0C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x5E76;&#x53D1;&#x7684;&#x95EE;&#x9898;&#xFF09;</span>
+            vals = <span class="hljs-keyword">new</span> AbstractCollection&lt;V&gt;() {
+                <span class="hljs-function"><span class="hljs-keyword">public</span> Iterator&lt;V&gt; <span class="hljs-title">iterator</span><span class="hljs-params">()</span> </span>{                                  <span class="hljs-comment">// AbstractConllection&#xFF08;&#x5B83;&#x53C8;&#x5B9E;&#x73B0;&#x7684;Collection&#xFF09;&#xFF0C;&#x5B9E;&#x73B0;&#x7C7B;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;iterator&#x65B9;&#x6CD5;&#x3002;</span>
+                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Iterator&lt;V&gt;() {
+                        <span class="hljs-keyword">private</span> Iterator&lt;Entry&lt;K,V&gt;&gt; i = entrySet().iterator();  <span class="hljs-comment">// &#x8C03;&#x7528;&#x8BE5;map&#x7684;entrySet()&#x8FED;&#x4EE3;&#x5668;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x4E86;&#x5305;&#x88C5;&#x3002;</span>
+
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">hasNext</span><span class="hljs-params">()</span> </span>{
+                            <span class="hljs-keyword">return</span> i.hasNext();
+                        }
+
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">next</span><span class="hljs-params">()</span> </span>{
+                            <span class="hljs-keyword">return</span> i.next().getValue();                           <span class="hljs-comment">// &#x56E0;&#x4E3A;&#x8BE5;&#x65B9;&#x6CD5;&#x662F;values&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x4ECE;entrySet&#x4E2D;&#x53D6;&#x51FA;value&#x6765;&#x8FD4;&#x56DE;</span>
+                        }
+
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">remove</span><span class="hljs-params">()</span> </span>{
+                            i.remove();
+                        }
+                    };
+                }
+
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">size</span><span class="hljs-params">()</span> </span>{
+                    <span class="hljs-keyword">return</span> AbstractMap.<span class="hljs-keyword">this</span>.size();                               <span class="hljs-comment">// &#x7528;map&#x7684;size&#x8FD4;&#x56DE;&#xFF0C;&#x4E0E;keySet()&#x4E00;&#x6837;</span>
+                }
+
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{
+                    <span class="hljs-keyword">return</span> AbstractMap.<span class="hljs-keyword">this</span>.isEmpty();
+                }
+
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">clear</span><span class="hljs-params">()</span> </span>{
+                    AbstractMap.<span class="hljs-keyword">this</span>.clear();                                    <span class="hljs-comment">// &#x8C03;&#x7528;values&#x7684;clear&#x4E5F;&#x4F1A;&#x5C06;&#x6574;&#x4E2A;map&#x7ED9;clear</span>
+                }
+
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Object v)</span> </span>{
+                    <span class="hljs-keyword">return</span> AbstractMap.<span class="hljs-keyword">this</span>.containsValue(v);                    <span class="hljs-comment">// contains&#x662F;&#x901A;&#x8FC7;map&#x7684;containsValue(v)&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;</span>
+                }
+            };
+            values = vals;
+        }
+        <span class="hljs-keyword">return</span> vals;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> Set&lt;Entry&lt;K,V&gt;&gt; entrySet(); <span class="hljs-comment">// &#x9700;&#x8981;&#x5B9E;&#x73B0;&#x7C7B;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;</span>
+
+
+    <span class="hljs-comment">// Comparison and hashing</span>
+    <span class="hljs-comment">// &#x6BD4;&#x8F83;&#x4E0E;hash</span>
+
+    <span class="hljs-comment">/**
+     * Compares the specified object with this map for equality.  Returns
+     * &lt;tt&gt;true&lt;/tt&gt; if the given object is also a map and the two maps
+     * represent the same mappings.  More formally, two maps &lt;tt&gt;m1&lt;/tt&gt; and
+     * &lt;tt&gt;m2&lt;/tt&gt; represent the same mappings if
+     * &lt;tt&gt;m1.entrySet().equals(m2.entrySet())&lt;/tt&gt;.  This ensures that the
+     * &lt;tt&gt;equals&lt;/tt&gt; method works properly across different implementations
+     * of the &lt;tt&gt;Map&lt;/tt&gt; interface.
+     * &#x6BD4;&#x8F83;&#x7ED9;&#x5B9A;&#x7684;object&#x4E0E;&#x8BE5;map&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3002;
+     * &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7684;object&#x4E5F;&#x662F;&#x4E2A;map&#xFF0C;&#x5E76;&#x4E14;&#x4E0E;&#x8BE5;map&#x4EE3;&#x8868;&#x76F8;&#x540C;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;true&#x3002;
+     * &#x66F4;&#x6B63;&#x5F0F;&#x7684;&#x8BF4;&#x6CD5;&#xFF0C;&#x4E24;&#x4E2A;map&#xFF1A;m1&#x4E0E;m2&#x4EE3;&#x8868;&#x76F8;&#x540C;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;m1.entrySet().equals(m2.entrySet())&#x3002;
+     * &#x8FD9;&#x786E;&#x4FDD;&#x4E86;equals&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5728;Map&#x63A5;&#x53E3;&#x7684;&#x4E0D;&#x540C;&#x5B9E;&#x73B0;&#x4E2D;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation first checks if the specified object is this map;
+     * if so it returns &lt;tt&gt;true&lt;/tt&gt;.  Then, it checks if the specified
+     * object is a map whose size is identical to the size of this map; if
+     * not, it returns &lt;tt&gt;false&lt;/tt&gt;.  If so, it iterates over this map&apos;s
+     * &lt;tt&gt;entrySet&lt;/tt&gt; collection, and checks that the specified map
+     * contains each mapping that this map contains.  If the specified map
+     * fails to contain such a mapping, &lt;tt&gt;false&lt;/tt&gt; is returned.  If the
+     * iteration completes, &lt;tt&gt;true&lt;/tt&gt; is returned.
+     * &#x8BE5;&#x5B9E;&#x73B0;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x7ED9;&#x5B9A;&#x7684;object&#x662F;&#x5426;&#x4E3A;&#x8BE5;&#xFF08;&#x672C;&#xFF09;map&#xFF1B;&#x5982;&#x679C;&#x662F;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;true&#x3002;
+     * &#x7136;&#x540E;&#xFF0C;&#x68C0;&#x67E5;&#x7ED9;&#x5B9A;&#x7684;map&#x662F;&#x5426;&#x662F;&#x5927;&#x5C0F;&#x4E0E;&#x8BE5;map&#x4E00;&#x81F4;&#x7684;map&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x662F;&#xFF0C;&#x8FD4;&#x56DE;false&#x3002;
+     * &#x5982;&#x679C;&#x76F8;&#x540C;&#xFF0C;&#x8FED;&#x4EE3;&#x904D;&#x5386;&#x8BE5;map&#x7684;entrySet&#x96C6;&#x5408;&#xFF0C;&#x68C0;&#x67E5;&#x7ED9;&#x5B9A;&#x7684;map&#x662F;&#x5426;&#x5305;&#x542B;&#x8BE5;map&#x542B;&#x6709;&#x7684;&#x6240;&#x6709;&#x6620;&#x5C04;&#x3002;
+     * &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7684;map&#x672A;&#x5305;&#x542B;&#x8FD9;&#x6837;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x8FD4;&#x56DE;false&#x3002;
+     * &#x5982;&#x679C;&#x8FED;&#x4EE3;&#x5B8C;&#x6210;&#xFF0C;&#x8FD4;&#x56DE;true&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> o object to be compared for equality with this map
+     * <span class="hljs-doctag">@return</span> &lt;tt&gt;true&lt;/tt&gt; if the specified object is equal to this map
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Object o)</span> </span>{
+        <span class="hljs-keyword">if</span> (o == <span class="hljs-keyword">this</span>)                                             <span class="hljs-comment">// &#x9996;&#x5148;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+
+        <span class="hljs-keyword">if</span> (!(o <span class="hljs-keyword">instanceof</span> Map))                                   <span class="hljs-comment">// 2&#x3001;&#x5224;&#x65AD;&#x7ED9;&#x5B9A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x4E3A;map&#x7C7B;&#x578B;</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        Map&lt;?,?&gt; m = (Map&lt;?,?&gt;) o;
+        <span class="hljs-keyword">if</span> (m.size() != size())                                    <span class="hljs-comment">// 3&#x3001;&#x5C06;&#x7ED9;&#x5B9A;&#x5BF9;&#x8C61;&#x5F3A;&#x8F6C;&#x6210;map&#xFF0C;&#x5224;&#x65AD;&#x7ED9;&#x5B9A;&#x5BF9;&#x8C61;&#x7684;size&#x662F;&#x5426;&#x4E0E;&#x672C;map&#x7684;size&#x76F8;&#x540C;</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+
+        <span class="hljs-keyword">try</span> {
+            Iterator&lt;Entry&lt;K,V&gt;&gt; i = entrySet().iterator();         <span class="hljs-comment">// 4&#x3001;&#x8FED;&#x4EE3;&#x904D;&#x5386;&#x672C;map&#x7684;entry&#xFF0C;&#x8FDB;&#x884C;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x95F4;&#x7684;key&#x3001;value&#x6BD4;&#x8F83;</span>
+            <span class="hljs-keyword">while</span> (i.hasNext()) {
+                Entry&lt;K,V&gt; e = i.next();
+                K key = e.getKey();
+                V value = e.getValue();
+                <span class="hljs-keyword">if</span> (value == <span class="hljs-keyword">null</span>) {
+                    <span class="hljs-keyword">if</span> (!(m.get(key)==<span class="hljs-keyword">null</span> &amp;&amp; m.containsKey(key)))  <span class="hljs-comment">// 5&#x3001;&#x5982;&#x679C;&#x672C;entry&#x7684;value&#x4E3A;null&#xFF0C;&#x5224;&#x65AD;&#x7ED9;&#x5B9A;&#x7684;&#x5BF9;&#x8C61;&#x8BE5;key&#x5BF9;&#x5E94;&#x7684;value&#x662F;&#x5426;&#x4E3A;null&#xFF08;containsKey&#x662F;&#x4E3A;&#x4E86;&#x5728;get&#x4E3A;null&#x65F6;&#xFF0C;&#x786E;&#x8BA4;key&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF09;</span>
+                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+                } <span class="hljs-keyword">else</span> {
+                    <span class="hljs-keyword">if</span> (!value.equals(m.get(key)))                  <span class="hljs-comment">// 6&#x3001;&#x5982;&#x679C;&#x672C;entry&#x7684;value&#x4E0D;&#x4E3A;null&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x5BF9;&#x8C61;&#x7684;get(key)&#x6765;&#x6BD4;&#x8F83;value&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3002;&#xFF08;&#x80FD;get&#x5230;&#x975E;null&#x7684;&#x8BF4;&#x660E;key&#x662F;&#x5B58;&#x5728;&#x7684;&#xFF09;</span>
+                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+                }
+            }
+        } <span class="hljs-keyword">catch</span> (ClassCastException unused) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        } <span class="hljs-keyword">catch</span> (NullPointerException unused) {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        }
+
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * Returns the hash code value for this map.  The hash code of a map is
+     * defined to be the sum of the hash codes of each entry in the map&apos;s
+     * &lt;tt&gt;entrySet()&lt;/tt&gt; view.  This ensures that &lt;tt&gt;m1.equals(m2)&lt;/tt&gt;
+     * implies that &lt;tt&gt;m1.hashCode()==m2.hashCode()&lt;/tt&gt; for any two maps
+     * &lt;tt&gt;m1&lt;/tt&gt; and &lt;tt&gt;m2&lt;/tt&gt;, as required by the general contract of
+     * {<span class="hljs-doctag">@link</span> Object#hashCode}.
+     * &#x8FD4;&#x56DE;&#x8BE5;map&#x7684;hash&#x503C;&#x3002;
+     * map&#x7684;hash&#x503C;&#xFF0C;&#x662F;&#x7531;map&#x4E2D;entrySet()&#x89C6;&#x56FE;&#x91CC;&#x6BCF;&#x4E00;&#x4E2A;entry&#x7684;hash&#x503C;&#x76F8;&#x52A0;&#x5F97;&#x5230;&#x7684;&#x3002;
+     * &#x786E;&#x4FDD;&#x4E86;&#x5BF9;&#x4EFB;&#x610F;&#x4E24;&#x4E2A;map&#xFF1A;m1&#x4E0E;m2&#xFF0C;&#x5F53;m1.equals(m2)&#x6210;&#x7ACB;&#x65F6;m1.hashCode()==m2.hashCode()&#x4E5F;&#x6210;&#x7ACB;&#xFF0C;&#x7B26;&#x5408;Object#hashCode&#x7684;&#x666E;&#x904D;&#x8981;&#x6C42;&#x3002;
+     *
+     * <span class="hljs-doctag">@implSpec</span>
+     * This implementation iterates over &lt;tt&gt;entrySet()&lt;/tt&gt;, calling
+     * {<span class="hljs-doctag">@link</span> Map.Entry#hashCode hashCode()} on each element (entry) in the
+     * set, and adding up the results.
+     * &#x6B64;&#x5B9E;&#x73B0;&#x8FED;&#x4EE3;entrySet()&#xFF0C;&#x5BF9;&#x5728;set&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;entry&#x5143;&#x7D20;&#x8C03;&#x7528;Map.Entry#hashCode&#x7684;hashCode()&#xFF0C;&#x76F8;&#x52A0;&#x5F97;&#x5230;&#x7ED3;&#x679C;&#x3002;
+     *
+     * <span class="hljs-doctag">@return</span> the hash code value for this map
+     * <span class="hljs-doctag">@see</span> Map.Entry#hashCode()
+     * <span class="hljs-doctag">@see</span> Object#equals(Object)
+     * <span class="hljs-doctag">@see</span> Set#equals(Object)
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">hashCode</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">int</span> h = <span class="hljs-number">0</span>;
+        Iterator&lt;Entry&lt;K,V&gt;&gt; i = entrySet().iterator();
+        <span class="hljs-keyword">while</span> (i.hasNext())
+            h += i.next().hashCode();   <span class="hljs-comment">// &#x8FED;&#x4EE3;&#x76F8;&#x52A0;&#x6BCF;&#x4E2A;entry&#x7684;hash&#x503C;&#xFF0C;&#x7ED3;&#x679C;&#x5C31;&#x4F5C;&#x4E3A;&#x8BE5;map&#x7684;hash&#x503C;</span>
+        <span class="hljs-keyword">return</span> h;
+    }
+
+    <span class="hljs-comment">/**
+     * Returns a string representation of this map.  The string representation
+     * consists of a list of key-value mappings in the order returned by the
+     * map&apos;s &lt;tt&gt;entrySet&lt;/tt&gt; view&apos;s iterator, enclosed in braces
+     * (&lt;tt&gt;&quot;{}&quot;&lt;/tt&gt;).  Adjacent mappings are separated by the characters
+     * &lt;tt&gt;&quot;, &quot;&lt;/tt&gt; (comma and space).  Each key-value mapping is rendered as
+     * the key followed by an equals sign (&lt;tt&gt;&quot;=&quot;&lt;/tt&gt;) followed by the
+     * associated value.  Keys and values are converted to strings as by
+     * {<span class="hljs-doctag">@link</span> String#valueOf(Object)}.
+     * &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x8BE5;map&#x7684;string&#x3002;
+     * string&#x7684;&#x8868;&#x73B0;&#x5F62;&#x5F0F;&#x4E3A;&#x5305;&#x542B;key-value&#x6620;&#x5C04;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6309;&#x7167;map&#x7684;entrySet&#x89C6;&#x56FE;&#x987A;&#x5E8F;&#x6392;&#x5217;&#xFF0C;&#x62EC;&#x5728;{}&#x4E2D;&#x3002;
+     * &#x76F8;&#x90BB;&#xFF08;adjacent &#x76F8;&#x90BB;&#xFF09;&#x7684;&#x6620;&#x5C04;&#x901A;&#x8FC7;&#x201C;, &#x201D;&#x5206;&#x9694;&#xFF08;&#x9017;&#x53F7;&#x4E0E;&#x7A7A;&#x683C;&#xFF09;&#x3002;
+     * &#x6BCF;&#x4E2A;key-value&#x6620;&#x5C04;&#x7684;&#x6E32;&#x67D3;&#x90FD;&#x662F;key&#x540E;&#x9762;&#x8DDF;&#x7740;&#x7B49;&#x53F7;&#x201C;=&#x201D;&#xFF0C;&#x518D;&#x8DDF;&#x7740;&#x5BF9;&#x5E94;&#x7684;value&#x503C;&#x3002;
+     * key&#x548C;value&#x901A;&#x8FC7;String#valueOf(Object)&#x8F6C;&#x5316;&#x6210;string&#x7C7B;&#x578B;&#x3002;
+     *
+     * <span class="hljs-doctag">@return</span> a string representation of this map
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
+        Iterator&lt;Entry&lt;K,V&gt;&gt; i = entrySet().iterator();
+        <span class="hljs-keyword">if</span> (! i.hasNext())
+            <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;{}&quot;</span>;
+
+        StringBuilder sb = <span class="hljs-keyword">new</span> StringBuilder();             <span class="hljs-comment">// &#x7528;StringBuilder&#x6765;&#x6784;&#x5EFA;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6CA1;&#x6709;&#x540C;&#x6B65;&#x4FDD;&#x8BC1;&#xFF08;&#x5E76;&#x53D1;&#x8FD8;&#x662F;&#x7528;StringBuffer&#x5427;&#xFF09;&#xFF08;This class provides an API compatible with StringBuffer, but with no guarantee of synchronization. &#xFF09;</span>
+        sb.append(<span class="hljs-string">&apos;{&apos;</span>);
+        <span class="hljs-keyword">for</span> (;;) {
+            Entry&lt;K,V&gt; e = i.next();
+            K key = e.getKey();
+            V value = e.getValue();
+            sb.append(key   == <span class="hljs-keyword">this</span> ? <span class="hljs-string">&quot;(this Map)&quot;</span> : key);  <span class="hljs-comment">// &#x5224;&#x65AD;&#x4E86;&#x4E00;&#x4E0B;&#x662F;&#x5426;&#x662F;this&#xFF0C;&#x662F;&#x7684;&#x8BDD;&#x5C31;&#x4E0D;&#x5D4C;&#x5957;&#x8BE5;map.toString()&#x4E86;&#xFF08;&#x56E0;&#x4E3A;&#x8C03;&#x7528;this.toString()&#x53EF;&#x80FD;&#x9020;&#x6210;&#x65E0;&#x9650;&#x9012;&#x5F52;&#xFF1F;&#xFF1F;&#xFF1F;&#xFF09;</span>
+            sb.append(<span class="hljs-string">&apos;=&apos;</span>);
+            sb.append(value == <span class="hljs-keyword">this</span> ? <span class="hljs-string">&quot;(this Map)&quot;</span> : value); <span class="hljs-comment">// sb.append(Object obj)&#xFF0C;&#x4F1A;&#x8C03;&#x7528;String.valueOf(obj)&#x8F6C;&#x5316;&#x4E3A;String</span>
+            <span class="hljs-keyword">if</span> (! i.hasNext())
+                <span class="hljs-keyword">return</span> sb.append(<span class="hljs-string">&apos;}&apos;</span>).toString();
+            sb.append(<span class="hljs-string">&apos;,&apos;</span>).append(<span class="hljs-string">&apos; &apos;</span>);
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Returns a shallow copy of this &lt;tt&gt;AbstractMap&lt;/tt&gt; instance: the keys
+     * and values themselves are not cloned.
+     * &#x8FD4;&#x56DE;&#x8BE5;AbstractMap&#x5B9E;&#x4F8B;&#x7684;&#x6D45;&#x62F7;&#x8D1D;&#xFF1A;keys&#x4E0E;values&#x672C;&#x8EAB;&#x4E0D;&#x4F1A;&#x62F7;&#x8D1D;&#xFF08;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;keys&#x3001;values&#x7684;&#x526F;&#x672C;&#xFF0C;&#x53EA;&#x662F;&#x591A;&#x4E86;&#x4E2A;AbstractMap&#x7684;&#x526F;&#x672C;&#xFF09;
+     * &#xFF08;&#x5806;&#x91CC;&#x6709;&#x4E24;&#x4E2A;AbstractMap&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x62F7;&#x8D1D;&#x540E;&#x7684;result&#x6CA1;&#x6709;keys&#x3001;values&#x4E86;&#xFF09;
+     *
+     * <span class="hljs-doctag">@return</span> a shallow copy of this map
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> Object <span class="hljs-title">clone</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> CloneNotSupportedException </span>{
+        AbstractMap&lt;?,?&gt; result = (AbstractMap&lt;?,?&gt;)<span class="hljs-keyword">super</span>.clone();
+        result.keySet = <span class="hljs-keyword">null</span>;
+        result.values = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">return</span> result;
+    }
+
+    <span class="hljs-comment">/**
+     * Utility method for SimpleEntry and SimpleImmutableEntry.
+     * Test for equality, checking for nulls.
+     * SimpleEntry&#x4E0E;SimpleImmutableEntry&#x7684;&#x5B9E;&#x7528;&#xFF08;Utility&#xFF09;&#x65B9;&#x6CD5;&#x3002;
+     * &#x6D4B;&#x8BD5;&#x76F8;&#x7B49;&#x6027;&#xFF0C;&#x68C0;&#x67E5;null&#x503C;&#x3002;
+     *
+     * NB: Do not replace with Object.equals until JDK-8015417 is resolved.
+     * &#x6CE8;&#x610F;&#xFF08;NB&#xFF09;&#xFF1A;&#x4E0D;&#x8981;&#x7528;Object.equals&#x6765;&#x66FF;&#x6362;&#x8BE5;&#x65B9;&#x6CD5;&#xFF0C;&#x76F4;&#x5230;JDK-8015417&#x88AB;&#x89E3;&#x51B3;&#x3002;
+     * &#xFF08;&#x4E0D;&#x77E5;&#x9053;&#x662F;&#x5426;&#x53EF;&#x7528;JDK1.7&#x7684;Objects.equals()&#x6765;&#x505A;&#xFF09;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">eq</span><span class="hljs-params">(Object o1, Object o2)</span> </span>{
+        <span class="hljs-keyword">return</span> o1 == <span class="hljs-keyword">null</span> ? o2 == <span class="hljs-keyword">null</span> : o1.equals(o2);
+    }
+
+    <span class="hljs-comment">// Implementation Note: SimpleEntry and SimpleImmutableEntry</span>
+    <span class="hljs-comment">// are distinct unrelated classes, even though they share</span>
+    <span class="hljs-comment">// some code. Since you can&apos;t add or subtract final-ness</span>
+    <span class="hljs-comment">// of a field in a subclass, they can&apos;t share representations,</span>
+    <span class="hljs-comment">// and the amount of duplicated code is too small to warrant</span>
+    <span class="hljs-comment">// exposing a common abstract class.</span>
+    <span class="hljs-comment">// &#x5B9E;&#x73B0;&#x8BF4;&#x660E;&#xFF1A;SimpleEntry&#xFF08;&#x7B80;&#x5355;Entry&#xFF09;&#x4E0E;SimpleImmutableEntry&#xFF08;&#x7B80;&#x5355;&#x4E0D;&#x53EF;&#x53D8;Entry&#xFF09;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x7C7B;&#xFF0C;&#x5373;&#x4F7F;&#x4ED6;&#x4EEC;&#x6709;&#x76F8;&#x540C;&#x7684;&#x4EE3;&#x7801;&#x3002;</span>
+    <span class="hljs-comment">// &#x7531;&#x4E8E;&#x4F60;&#x4E0D;&#x80FD;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x6DFB;&#x52A0;&#x6216;&#x8005;&#x51CF;&#x53BB;&#x5B57;&#x6BB5;&#x7684;&#x6700;&#x7EC8;&#x6027;&#xFF08;final-ness&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x4ED6;&#x4EEC;&#x4E0D;&#x80FD;&#x5171;&#x4EAB;&#x8868;&#x793A;&#xFF0C;</span>
+    <span class="hljs-comment">// &#x5E76;&#x4E14;&#x91CD;&#x590D;&#x7684;&#x4EE3;&#x7801;&#x592A;&#x5C11;&#xFF0C;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#xFF08;warrant&#xFF09;&#x80FD;&#x591F;&#x4ECE;&#x91CC;&#x9762;&#x62BD;&#x8C61;&#x51FA;&#x6765;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x7C7B;&#xFF08;&#x516C;&#x5171;&#x62BD;&#x8C61;&#x7C7B;&#xFF09;&#x3002;</span>
+
+
+    <span class="hljs-comment">/**
+     * An Entry maintaining a key and a value.  The value may be
+     * changed using the &lt;tt&gt;setValue&lt;/tt&gt; method.  This class
+     * facilitates the process of building custom map
+     * implementations. For example, it may be convenient to return
+     * arrays of &lt;tt&gt;SimpleEntry&lt;/tt&gt; instances in method
+     * &lt;tt&gt;Map.entrySet().toArray&lt;/tt&gt;.
+     * &#x7EF4;&#x62A4;&#x4E00;&#x4E2A;key&#x4E0E;value&#x7684;Entry&#x3002;
+     * &#x53EF;&#x4EE5;&#x4F7F;&#x7528;setValue&#x6765;&#x4FEE;&#x6539;&#x5185;&#x90E8;&#x7684;value&#x503C;&#x3002;
+     * &#x8BE5;&#x7C7B;&#x6709;&#x52A9;&#x4E8E;&#xFF08;facilitate&#xFF09;&#x81EA;&#x5B9A;&#x4E49;map&#x7684;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x3002;
+     * &#x4F8B;&#x5982;&#xFF1A;&#x5728;&#x65B9;&#x6CD5;Map.entrySet().toArray&#x8FD4;&#x56DE;SimpleEntry&#x6570;&#x7EC4;&#x53EF;&#x80FD;&#x66F4;&#x65B9;&#x4FBF;&#xFF08;convenient&#xFF09;&#x3002;
+     *
+     * <span class="hljs-doctag">@since</span> 1.6
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleEntry</span>&lt;<span class="hljs-title">K</span>,<span class="hljs-title">V</span>&gt;
+        <span class="hljs-keyword">implements</span> <span class="hljs-title">Entry</span>&lt;<span class="hljs-title">K</span>,<span class="hljs-title">V</span>&gt;, <span class="hljs-title">java</span>.<span class="hljs-title">io</span>.<span class="hljs-title">Serializable</span> // &#x8FD9;&#x4E2A;<span class="hljs-title">Entry</span>&#x63A5;&#x53E3;&#xFF0C;&#x662F;<span class="hljs-title">Map</span>&#x63A5;&#x53E3;&#x91CC;&#x7684;<span class="hljs-title">interface</span> <span class="hljs-title">Entry</span>&lt;<span class="hljs-title">K</span>,<span class="hljs-title">V</span>&gt;
+    </span>{
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> serialVersionUID = -<span class="hljs-number">8499721149061103585L</span>;
+
+        <span class="hljs-comment">// &#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;</span>
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> K key; <span class="hljs-comment">// key&#x4F5C;&#x4E3A;final&#xFF0C;&#x53EA;&#x80FD;&#x8D4B;&#x503C;&#x4E00;&#x6B21;</span>
+        <span class="hljs-keyword">private</span> V value;     <span class="hljs-comment">// value&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x4FEE;&#x6539;</span>
+
+        <span class="hljs-comment">/**
+         * Creates an entry representing a mapping from the specified
+         * key to the specified value.
+         * &#x521B;&#x5EFA;&#x4E00;&#x4E2A;entry&#xFF0C;&#x8868;&#x793A;&#x4ECE;&#x7ED9;&#x5B9A;key&#x5230;&#x7ED9;&#x5B9A;value&#x7684;&#x6620;&#x5C04;&#x3002;
+         *
+         * <span class="hljs-doctag">@param</span> key the key represented by this entry
+         * <span class="hljs-doctag">@param</span> value the value represented by this entry
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SimpleEntry</span><span class="hljs-params">(K key, V value)</span> </span>{
+            <span class="hljs-keyword">this</span>.key   = key;
+            <span class="hljs-keyword">this</span>.value = value;
+        }
+
+        <span class="hljs-comment">/**
+         * Creates an entry representing the same mapping as the
+         * specified entry.
+         * &#x521B;&#x5EFA;&#x4E00;&#x4E2A;entry&#xFF0C;&#x8868;&#x793A;&#x4E0E;&#x7ED9;&#x5B9A;entry&#x76F8;&#x540C;&#x7684;&#x6620;&#x5C04;&#x3002;
+         *
+         * <span class="hljs-doctag">@param</span> entry the entry to copy
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SimpleEntry</span><span class="hljs-params">(Entry&lt;? extends K, ? extends V&gt; entry)</span> </span>{
+            <span class="hljs-keyword">this</span>.key   = entry.getKey();  <span class="hljs-comment">// &#x62C6;&#x89E3;&#x5F00;&#x5206;&#x522B;&#x8D4B;&#x503C;</span>
+            <span class="hljs-keyword">this</span>.value = entry.getValue();
+        }
+
+        <span class="hljs-comment">/**
+         * Returns the key corresponding to this entry.
+         * &#x8FD4;&#x56DE;&#x8BE5;entry&#x5173;&#x8054;&#x7684;key
+         *
+         * <span class="hljs-doctag">@return</span> the key corresponding to this entry
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> K <span class="hljs-title">getKey</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> key;
+        }
+
+        <span class="hljs-comment">/**
+         * Returns the value corresponding to this entry.
+         * &#x8FD4;&#x56DE;&#x8BE5;entry&#x5173;&#x8054;&#x7684;value
+         *
+         * <span class="hljs-doctag">@return</span> the value corresponding to this entry
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">getValue</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> value;
+        }
+
+        <span class="hljs-comment">/**
+         * Replaces the value corresponding to this entry with the specified
+         * value.
+         * &#x7528;&#x7ED9;&#x5B9A;value&#x66FF;&#x6362;&#x8BE5;entry&#x5173;&#x8054;&#x7684;value&#x503C;&#x3002;
+         *
+         * <span class="hljs-doctag">@param</span> value new value to be stored in this entry
+         *        &#x5B58;&#x5165;entry&#x7684;&#x65B0;&#x503C;
+         * <span class="hljs-doctag">@return</span> the old value corresponding to the entry
+         *          &#x8FD4;&#x56DE;&#x65E7;&#x503C;
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">setValue</span><span class="hljs-params">(V value)</span> </span>{
+            V oldValue = <span class="hljs-keyword">this</span>.value;
+            <span class="hljs-keyword">this</span>.value = value;
+            <span class="hljs-keyword">return</span> oldValue;
+        }
+
+        <span class="hljs-comment">/**
+         * Compares the specified object with this entry for equality.
+         * Returns {<span class="hljs-doctag">@code</span> true} if the given object is also a map entry and
+         * the two entries represent the same mapping.  More formally, two
+         * entries {<span class="hljs-doctag">@code</span> e1} and {<span class="hljs-doctag">@code</span> e2} represent the same mapping
+         * if&lt;pre&gt;
+         *   (e1.getKey()==null ?
+         *    e2.getKey()==null :
+         *    e1.getKey().equals(e2.getKey()))
+         *   &amp;amp;&amp;amp;
+         *   (e1.getValue()==null ?
+         *    e2.getValue()==null :
+         *    e1.getValue().equals(e2.getValue()))&lt;/pre&gt;
+         * This ensures that the {<span class="hljs-doctag">@code</span> equals} method works properly across
+         * different implementations of the {<span class="hljs-doctag">@code</span> Map.Entry} interface.
+         * &#x6BD4;&#x8F83;&#x7ED9;&#x5B9A;&#x7684;object&#x4E0E;&#x8BE5;entry&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3002;
+         * &#x5982;&#x679C;&#x7ED9;&#x5B9A;object&#x4E5F;&#x662F;&#x4E2A;map&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4FE9;map&#x4EE3;&#x8868;&#x76F8;&#x540C;&#x6620;&#x5C04;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;true&#x3002;
+         * &#x66F4;&#x6B63;&#x5F0F;&#x7684;&#x8BF4;&#x6CD5;&#xFF0C;&#x4E24;&#x4E2A;entry&#xFF1A;e1&#x4E0E;e2,&#x4EE3;&#x8868;&#x76F8;&#x540C;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#xFF1A;
+         *   (e1.getKey()==null ?
+         *    e2.getKey()==null :
+         *    e1.getKey().equals(e2.getKey()))
+         *   &amp;&amp;
+         *   (e1.getValue()==null ?
+         *    e2.getValue()==null :
+         *    e1.getValue().equals(e2.getValue()))
+         * &#x8FD9;&#x786E;&#x4FDD;&#x4E86;equals&#x65B9;&#x6CD5;&#x5728;&#x4E0D;&#x540C;&#x7684;Map.Entry&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x4E2D;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;
+         *
+         * <span class="hljs-doctag">@param</span> o object to be compared for equality with this map entry
+         * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if the specified object is equal to this map
+         *         entry
+         * <span class="hljs-doctag">@see</span>    #hashCode
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Object o)</span> </span>{
+            <span class="hljs-keyword">if</span> (!(o <span class="hljs-keyword">instanceof</span> Map.Entry))
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+            Map.Entry&lt;?,?&gt; e = (Map.Entry&lt;?,?&gt;)o;
+            <span class="hljs-keyword">return</span> eq(key, e.getKey()) &amp;&amp; eq(value, e.getValue()); <span class="hljs-comment">// &#x76F4;&#x63A5;&#x901A;&#x8FC7;AbstractMap#eq()&#x65B9;&#x6CD5;&#x6765;&#x7B80;&#x5316;&#x5B9E;&#x73B0;</span>
+        }
+
+        <span class="hljs-comment">/**
+         * Returns the hash code value for this map entry.  The hash code
+         * of a map entry {<span class="hljs-doctag">@code</span> e} is defined to be: &lt;pre&gt;
+         *   (e.getKey()==null   ? 0 : e.getKey().hashCode()) ^
+         *   (e.getValue()==null ? 0 : e.getValue().hashCode())&lt;/pre&gt;
+         * This ensures that {<span class="hljs-doctag">@code</span> e1.equals(e2)} implies that
+         * {<span class="hljs-doctag">@code</span> e1.hashCode()==e2.hashCode()} for any two Entries
+         * {<span class="hljs-doctag">@code</span> e1} and {<span class="hljs-doctag">@code</span> e2}, as required by the general
+         * contract of {<span class="hljs-doctag">@link</span> Object#hashCode}.
+         * &#x8FD4;&#x56DE;&#x8BE5;map entry&#x7684;hash code&#x503C;&#x3002;
+         * map entry--e&#x7684;hash code&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;
+         *     (e.getKey()==null   ? 0 : e.getKey().hashCode()) ^
+         *     (e.getValue()==null ? 0 : e.getValue().hashCode())
+         * &#xFF08;&#x7528;key&#x7684;hashCode&#x4E0E;value&#x7684;hashCode&#x505A;&#x5F02;&#x6216;&#x64CD;&#x4F5C;&#xFF0C;&#x4F5C;&#x4E3A;Entry&#x7684;hashCode&#xFF09; 
+         * &#x4FDD;&#x8BC1;&#x4E86;&#x5BF9;&#x4E8E;&#x4EFB;&#x610F;&#x4E24;&#x4E2A;Entry&#xFF1A;e1&#x4E0E;e2&#xFF0C;e1.equals(e2)&#x6210;&#x7ACB;&#x610F;&#x5473;&#x7740;e1.hashCode()==e2.hashCode()&#xFF0C;
+         * &#x8FD9;&#x4E5F;&#x7B26;&#x5408;Object.hashCode&#x57FA;&#x672C;&#x7EA6;&#x5B9A;&#x8981;&#x6C42;&#x3002;&#xFF08;&#x5373;equals&#x76F8;&#x7B49;hashCode&#x5FC5;&#x987B;&#x76F8;&#x7B49;&#xFF09;
+         *
+         * <span class="hljs-doctag">@return</span> the hash code value for this map entry
+         * <span class="hljs-doctag">@see</span>    #equals
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">hashCode</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> (key   == <span class="hljs-keyword">null</span> ? <span class="hljs-number">0</span> :   key.hashCode()) ^
+                   (value == <span class="hljs-keyword">null</span> ? <span class="hljs-number">0</span> : value.hashCode());
+        }
+
+        <span class="hljs-comment">/**
+         * Returns a String representation of this map entry.  This
+         * implementation returns the string representation of this
+         * entry&apos;s key followed by the equals character (&quot;&lt;tt&gt;=&lt;/tt&gt;&quot;)
+         * followed by the string representation of this entry&apos;s value.
+         * &#x8FD4;&#x56DE;&#x4EE3;&#x8868;&#x8BE5;map entry&#x7684;String&#x5B57;&#x7B26;&#x4E32;&#x3002;
+         * &#x8BE5;&#x5B9E;&#x73B0;&#x8FD4;&#x56DE;&#x7684;&#x8BE5;entry&#x7684;key&#x7684;String&#x8868;&#x793A;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x7B49;&#x53F7;&#x201C;=&#x201D;&#xFF0C;&#x518D;&#x8DDF;&#x7740;entry&#x7684;value&#x7684;String&#x8868;&#x793A;
+         *
+         * <span class="hljs-doctag">@return</span> a String representation of this map entry
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> key + <span class="hljs-string">&quot;=&quot;</span> + value;
+        }
+
+    }
+
+    <span class="hljs-comment">/**
+     * An Entry maintaining an immutable key and value.  This class
+     * does not support method &lt;tt&gt;setValue&lt;/tt&gt;.  This class may be
+     * convenient in methods that return thread-safe snapshots of
+     * key-value mappings.
+     * &#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x53D8;&#x7684;key&#x4E0E;value&#x7684;Entry&#x3002;
+     * &#x8BE5;&#x7C7B;&#x4E0D;&#x652F;&#x6301;setValue&#x65B9;&#x6CD5;&#x3002;
+     * &#x5728;&#x8FD4;&#x56DE;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;key-value&#x6620;&#x5C04;&#x7684;&#x5FEB;&#x7167;&#x65B9;&#x6CD5;&#x4E2D;&#x4F7F;&#x7528;&#x8BE5;&#x7C7B;&#x53EF;&#x80FD;&#x66F4;&#x65B9;&#x4FBF;&#x3002;
+     *
+     * <span class="hljs-doctag">@since</span> 1.6
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleImmutableEntry</span>&lt;<span class="hljs-title">K</span>,<span class="hljs-title">V</span>&gt;
+        <span class="hljs-keyword">implements</span> <span class="hljs-title">Entry</span>&lt;<span class="hljs-title">K</span>,<span class="hljs-title">V</span>&gt;, <span class="hljs-title">java</span>.<span class="hljs-title">io</span>.<span class="hljs-title">Serializable</span>
+    </span>{
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> serialVersionUID = <span class="hljs-number">7138329143949025153L</span>;
+
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> K key;
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> V value; <span class="hljs-comment">// &#x4E0E;SimpleEntry&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;value&#x4E5F;&#x662F;final&#x7684;</span>
+
+        <span class="hljs-comment">/**
+         * Creates an entry representing a mapping from the specified
+         * key to the specified value.
+         *
+         * <span class="hljs-doctag">@param</span> key the key represented by this entry
+         * <span class="hljs-doctag">@param</span> value the value represented by this entry
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SimpleImmutableEntry</span><span class="hljs-params">(K key, V value)</span> </span>{
+            <span class="hljs-keyword">this</span>.key   = key;
+            <span class="hljs-keyword">this</span>.value = value;
+        }
+
+        <span class="hljs-comment">/**
+         * Creates an entry representing the same mapping as the
+         * specified entry.
+         *
+         * <span class="hljs-doctag">@param</span> entry the entry to copy
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SimpleImmutableEntry</span><span class="hljs-params">(Entry&lt;? extends K, ? extends V&gt; entry)</span> </span>{
+            <span class="hljs-keyword">this</span>.key   = entry.getKey();
+            <span class="hljs-keyword">this</span>.value = entry.getValue();
+        }
+
+        <span class="hljs-comment">/**
+         * Returns the key corresponding to this entry.
+         *
+         * <span class="hljs-doctag">@return</span> the key corresponding to this entry
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> K <span class="hljs-title">getKey</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> key;
+        }
+
+        <span class="hljs-comment">/**
+         * Returns the value corresponding to this entry.
+         *
+         * <span class="hljs-doctag">@return</span> the value corresponding to this entry
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">getValue</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> value;
+        }
+
+        <span class="hljs-comment">/**
+         * Replaces the value corresponding to this entry with the specified
+         * value (optional operation).  This implementation simply throws
+         * &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt;, as this class implements
+         * an &lt;i&gt;immutable&lt;/i&gt; map entry.
+         * &#x8BE5;&#x5B9E;&#x73B0;&#x66FF;&#x6362;value&#x4F1A;&#x629B;&#x51FA;UnsupportedOperationException&#xFF0C;&#x4F5C;&#x4E3A;&#x8BE5;&#x7C7B;&#x5B9E;&#x73B0;&#x7684;&#x4E0D;&#x53EF;&#x53D8;&#xFF08;immutable&#xFF09;map entry&#x3002;
+         *
+         * <span class="hljs-doctag">@param</span> value new value to be stored in this entry
+         * <span class="hljs-doctag">@return</span> (Does not return)
+         * <span class="hljs-doctag">@throws</span> UnsupportedOperationException always
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">setValue</span><span class="hljs-params">(V value)</span> </span>{
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> UnsupportedOperationException();
+        }
+
+        <span class="hljs-comment">/**
+         * Compares the specified object with this entry for equality.
+         * Returns {<span class="hljs-doctag">@code</span> true} if the given object is also a map entry and
+         * the two entries represent the same mapping.  More formally, two
+         * entries {<span class="hljs-doctag">@code</span> e1} and {<span class="hljs-doctag">@code</span> e2} represent the same mapping
+         * if&lt;pre&gt;
+         *   (e1.getKey()==null ?
+         *    e2.getKey()==null :
+         *    e1.getKey().equals(e2.getKey()))
+         *   &amp;amp;&amp;amp;
+         *   (e1.getValue()==null ?
+         *    e2.getValue()==null :
+         *    e1.getValue().equals(e2.getValue()))&lt;/pre&gt;
+         * This ensures that the {<span class="hljs-doctag">@code</span> equals} method works properly across
+         * different implementations of the {<span class="hljs-doctag">@code</span> Map.Entry} interface.
+         *
+         * <span class="hljs-doctag">@param</span> o object to be compared for equality with this map entry
+         * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if the specified object is equal to this map
+         *         entry
+         * <span class="hljs-doctag">@see</span>    #hashCode
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Object o)</span> </span>{
+            <span class="hljs-keyword">if</span> (!(o <span class="hljs-keyword">instanceof</span> Map.Entry))
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+            Map.Entry&lt;?,?&gt; e = (Map.Entry&lt;?,?&gt;)o;
+            <span class="hljs-keyword">return</span> eq(key, e.getKey()) &amp;&amp; eq(value, e.getValue());
+        }
+
+        <span class="hljs-comment">/**
+         * Returns the hash code value for this map entry.  The hash code
+         * of a map entry {<span class="hljs-doctag">@code</span> e} is defined to be: &lt;pre&gt;
+         *   (e.getKey()==null   ? 0 : e.getKey().hashCode()) ^
+         *   (e.getValue()==null ? 0 : e.getValue().hashCode())&lt;/pre&gt;
+         * This ensures that {<span class="hljs-doctag">@code</span> e1.equals(e2)} implies that
+         * {<span class="hljs-doctag">@code</span> e1.hashCode()==e2.hashCode()} for any two Entries
+         * {<span class="hljs-doctag">@code</span> e1} and {<span class="hljs-doctag">@code</span> e2}, as required by the general
+         * contract of {<span class="hljs-doctag">@link</span> Object#hashCode}.
+         *
+         * <span class="hljs-doctag">@return</span> the hash code value for this map entry
+         * <span class="hljs-doctag">@see</span>    #equals
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">hashCode</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> (key   == <span class="hljs-keyword">null</span> ? <span class="hljs-number">0</span> :   key.hashCode()) ^
+                   (value == <span class="hljs-keyword">null</span> ? <span class="hljs-number">0</span> : value.hashCode());
+        }
+
+        <span class="hljs-comment">/**
+         * Returns a String representation of this map entry.  This
+         * implementation returns the string representation of this
+         * entry&apos;s key followed by the equals character (&quot;&lt;tt&gt;=&lt;/tt&gt;&quot;)
+         * followed by the string representation of this entry&apos;s value.
+         *
+         * <span class="hljs-doctag">@return</span> a String representation of this map entry
+         */</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> key + <span class="hljs-string">&quot;=&quot;</span> + value;
+        }
+
+    }
+
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Map.java.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Map.Java">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AbstractMap.Java","level":"1.2.1","depth":2,"next":{"title":"Map.Java","level":"1.2.2","depth":2,"path":"Doc/util/Map.java.md","ref":"Doc/util/Map.java.md","articles":[]},"previous":{"title":"Util","level":"1.2","depth":1,"ref":"","articles":[{"title":"AbstractMap.Java","level":"1.2.1","depth":2,"path":"Doc/util/AbstractMap.java.md","ref":"Doc/util/AbstractMap.java.md","articles":[]},{"title":"Map.Java","level":"1.2.2","depth":2,"path":"Doc/util/Map.java.md","ref":"Doc/util/Map.java.md","articles":[]},{"title":"Concurrent","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"AbstractExecutorService.Java","level":"1.2.3.1","depth":3,"path":"Doc/util/concurrent/AbstractExecutorService.java.md","ref":"Doc/util/concurrent/AbstractExecutorService.java.md","articles":[]},{"title":"Callable.Java","level":"1.2.3.2","depth":3,"path":"Doc/util/concurrent/Callable.java.md","ref":"Doc/util/concurrent/Callable.java.md","articles":[]},{"title":"ConcurrentHashMap.Java","level":"1.2.3.3","depth":3,"path":"Doc/util/concurrent/ConcurrentHashMap.java.md","ref":"Doc/util/concurrent/ConcurrentHashMap.java.md","articles":[]},{"title":"ConcurrentMap.Java","level":"1.2.3.4","depth":3,"path":"Doc/util/concurrent/ConcurrentMap.java.md","ref":"Doc/util/concurrent/ConcurrentMap.java.md","articles":[]},{"title":"Executor.Java","level":"1.2.3.5","depth":3,"path":"Doc/util/concurrent/Executor.java.md","ref":"Doc/util/concurrent/Executor.java.md","articles":[]},{"title":"ExecutorCompletionService.Java","level":"1.2.3.6","depth":3,"path":"Doc/util/concurrent/ExecutorCompletionService.java.md","ref":"Doc/util/concurrent/ExecutorCompletionService.java.md","articles":[]},{"title":"ExecutorService.Java","level":"1.2.3.7","depth":3,"path":"Doc/util/concurrent/ExecutorService.java.md","ref":"Doc/util/concurrent/ExecutorService.java.md","articles":[]},{"title":"Future.Java","level":"1.2.3.8","depth":3,"path":"Doc/util/concurrent/Future.java.md","ref":"Doc/util/concurrent/Future.java.md","articles":[]},{"title":"FutureTask.Java","level":"1.2.3.9","depth":3,"path":"Doc/util/concurrent/FutureTask.java.md","ref":"Doc/util/concurrent/FutureTask.java.md","articles":[]},{"title":"RunnableFuture.Java","level":"1.2.3.10","depth":3,"path":"Doc/util/concurrent/RunnableFuture.java.md","ref":"Doc/util/concurrent/RunnableFuture.java.md","articles":[]},{"title":"ThreadPoolExecutor.Java","level":"1.2.3.11","depth":3,"path":"Doc/util/concurrent/ThreadPoolExecutor.java.md","ref":"Doc/util/concurrent/ThreadPoolExecutor.java.md","articles":[]},{"title":"Locks","level":"1.2.3.12","depth":3,"ref":"","articles":[{"title":"AbstractOwnableSynchronizer.Java","level":"1.2.3.12.1","depth":4,"path":"Doc/util/concurrent/locks/AbstractOwnableSynchronizer.java.md","ref":"Doc/util/concurrent/locks/AbstractOwnableSynchronizer.java.md","articles":[]},{"title":"AbstractQueuedSynchronizer.Java","level":"1.2.3.12.2","depth":4,"path":"Doc/util/concurrent/locks/AbstractQueuedSynchronizer.java.md","ref":"Doc/util/concurrent/locks/AbstractQueuedSynchronizer.java.md","articles":[]},{"title":"Condition.Java","level":"1.2.3.12.3","depth":4,"path":"Doc/util/concurrent/locks/Condition.java.md","ref":"Doc/util/concurrent/locks/Condition.java.md","articles":[]},{"title":"Lock.Java","level":"1.2.3.12.4","depth":4,"path":"Doc/util/concurrent/locks/Lock.java.md","ref":"Doc/util/concurrent/locks/Lock.java.md","articles":[]},{"title":"ReentrantLock.Java","level":"1.2.3.12.5","depth":4,"path":"Doc/util/concurrent/locks/ReentrantLock.java.md","ref":"Doc/util/concurrent/locks/ReentrantLock.java.md","articles":[]}]}]}]},"dir":"ltr"},"config":{"plugins":["summary","splitter","code","-sharing","-lunr","-search","search-pro","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"summary":{},"splitter":{},"code":{"copyButtons":true},"search-pro":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"莫显辉","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*","description":"日常笔记"},"file":{"path":"Doc/util/AbstractMap.java.md","mtime":"2021-08-20T08:45:51.111Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-30T05:59:23.144Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

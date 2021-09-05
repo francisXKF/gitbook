@@ -5,5 +5,5 @@
   "styles": {
 	    "website": "styles/website.css"
 	},
-  "plugins": ["summary", "splitter", "code", "-sharing"]
+  "plugins": ["summary", "splitter", "code", "-sharing", "-lunr", "-search", "search-pro"]
 }

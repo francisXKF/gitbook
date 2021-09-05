@@ -1,0 +1,1100 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>FutureTask.Java · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="莫显辉">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="RunnableFuture.java.html" />
+    
+    
+    <link rel="prev" href="Future.java.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Doc</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../AbstractMap.java.html">
+            
+                <a href="../AbstractMap.java.html">
+            
+                    
+                    AbstractMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Map.java.html">
+            
+                <a href="../Map.java.html">
+            
+                    
+                    Map.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Concurrent
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="AbstractExecutorService.java.html">
+            
+                <a href="AbstractExecutorService.java.html">
+            
+                    
+                    AbstractExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="Callable.java.html">
+            
+                <a href="Callable.java.html">
+            
+                    
+                    Callable.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="ConcurrentHashMap.java.html">
+            
+                <a href="ConcurrentHashMap.java.html">
+            
+                    
+                    ConcurrentHashMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="ConcurrentMap.java.html">
+            
+                <a href="ConcurrentMap.java.html">
+            
+                    
+                    ConcurrentMap.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="Executor.java.html">
+            
+                <a href="Executor.java.html">
+            
+                    
+                    Executor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="ExecutorCompletionService.java.html">
+            
+                <a href="ExecutorCompletionService.java.html">
+            
+                    
+                    ExecutorCompletionService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="ExecutorService.java.html">
+            
+                <a href="ExecutorService.java.html">
+            
+                    
+                    ExecutorService.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="Future.java.html">
+            
+                <a href="Future.java.html">
+            
+                    
+                    Future.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.9" data-path="FutureTask.java.html">
+            
+                <a href="FutureTask.java.html">
+            
+                    
+                    FutureTask.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="RunnableFuture.java.html">
+            
+                <a href="RunnableFuture.java.html">
+            
+                    
+                    RunnableFuture.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="ThreadPoolExecutor.java.html">
+            
+                <a href="ThreadPoolExecutor.java.html">
+            
+                    
+                    ThreadPoolExecutor.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" >
+            
+                <span>
+            
+                    
+                    Locks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.12.1" data-path="locks/AbstractOwnableSynchronizer.java.html">
+            
+                <a href="locks/AbstractOwnableSynchronizer.java.html">
+            
+                    
+                    AbstractOwnableSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.2" data-path="locks/AbstractQueuedSynchronizer.java.html">
+            
+                <a href="locks/AbstractQueuedSynchronizer.java.html">
+            
+                    
+                    AbstractQueuedSynchronizer.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.3" data-path="locks/Condition.java.html">
+            
+                <a href="locks/Condition.java.html">
+            
+                    
+                    Condition.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.4" data-path="locks/Lock.java.html">
+            
+                <a href="locks/Lock.java.html">
+            
+                    
+                    Lock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12.5" data-path="locks/ReentrantLock.java.html">
+            
+                <a href="locks/ReentrantLock.java.html">
+            
+                    
+                    ReentrantLock.Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../日志.html">
+            
+                <a href="../../日志.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >FutureTask.Java</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="futuretask">FutureTask</h1>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */</span>
+
+<span class="hljs-comment">/*
+ *
+ *
+ *
+ *
+ *
+ * Written by Doug Lea with assistance from members of JCP JSR-166
+ * Expert Group and released to the public domain, as explained at
+ * http://creativecommons.org/publicdomain/zero/1.0/
+ */</span>
+
+<span class="hljs-keyword">package</span> java.util.concurrent;
+<span class="hljs-keyword">import</span> java.util.concurrent.locks.LockSupport;
+
+<span class="hljs-comment">/**
+ * A cancellable asynchronous computation.  This class provides a base
+ * implementation of {<span class="hljs-doctag">@link</span> Future}, with methods to start and cancel
+ * a computation, query to see if the computation is complete, and
+ * retrieve the result of the computation.  The result can only be
+ * retrieved when the computation has completed; the {<span class="hljs-doctag">@code</span> get}
+ * methods will block if the computation has not yet completed.  Once
+ * the computation has completed, the computation cannot be restarted
+ * or cancelled (unless the computation is invoked using
+ * {<span class="hljs-doctag">@link</span> #runAndReset}).
+ * &#x652F;&#x6301;&#x53D6;&#x6D88;&#x7684;&#x5F02;&#x6B65;&#x8BA1;&#x7B97;&#x3002;
+ * &#x8BE5;&#x7C7B;&#x57FA;&#x4E8E;Future&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x652F;&#x6301;&#x542F;&#x52A8;&#x548C;&#x53D6;&#x6D88;&#x8BA1;&#x7B97;&#xFF0C;&#x67E5;&#x8BE2;&#x8BA1;&#x7B97;&#x662F;&#x5426;&#x5B8C;&#x6210;&#xFF0C;&#x8FD4;&#x56DE;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x3002;
+ * &#x53EA;&#x6709;&#x5728;&#x8BA1;&#x7B97;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;&#x624D;&#x80FD;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1B;
+ * get&#x65B9;&#x6CD5;&#x5C06;&#x963B;&#x585E;&#x76F4;&#x5230;&#x8BA1;&#x7B97;&#x5B8C;&#x6210;&#x3002;
+ * &#x4E00;&#x65E6;&#x8BA1;&#x7B97;&#x5B8C;&#x6210;&#xFF0C;&#x8BA1;&#x7B97;&#x4E0D;&#x80FD;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x6216;&#x8005;&#x53D6;&#x6D88;&#xFF08;&#x9664;&#x975E;&#x8BE5;&#x8BA1;&#x7B97;&#x4F7F;&#x7528;runAndReset&#x8C03;&#x7528;&#xFF09;
+ *
+ * &lt;p&gt;A {<span class="hljs-doctag">@code</span> FutureTask} can be used to wrap a {<span class="hljs-doctag">@link</span> Callable} or
+ * {<span class="hljs-doctag">@link</span> Runnable} object.  Because {<span class="hljs-doctag">@code</span> FutureTask} implements
+ * {<span class="hljs-doctag">@code</span> Runnable}, a {<span class="hljs-doctag">@code</span> FutureTask} can be submitted to an
+ * {<span class="hljs-doctag">@link</span> Executor} for execution.
+ * FutureTask&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5305;&#x88C5;&#xFF08;wrap&#xFF09;Callable&#x6216;&#x8005;Runnable&#x5BF9;&#x8C61;&#x3002;
+ * &#x56E0;&#x4E3A;FutureTask&#x5B9E;&#x73B0;&#x4E86;Runnable&#x63A5;&#x53E3;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x63D0;&#x4EA4;&#x5230;Executor&#x4E2D;&#x6267;&#x884C;&#xFF08;&#x901A;&#x8FC7;execute&#x65B9;&#x6CD5;&#x6267;&#x884C;&#xFF09;&#x3002;
+ *
+ * &lt;p&gt;In addition to serving as a standalone class, this class provides
+ * {<span class="hljs-doctag">@code</span> protected} functionality that may be useful when creating
+ * customized task classes.
+ * &#x9664;&#x4E86;&#x4F5C;&#x4E3A;&#x72EC;&#x7ACB;&#x4F7F;&#x7528;&#x7684;&#x7C7B;&#x5916;&#xFF0C;&#x8BE5;&#x7C7B;&#x63D0;&#x4F9B;&#x7684;&#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x7C7B;&#x65F6;&#x53EF;&#x80FD;&#x5F88;&#x6709;&#x7528;&#x3002;
+ *
+ * <span class="hljs-doctag">@since</span> 1.5
+ * <span class="hljs-doctag">@author</span> Doug Lea
+ * <span class="hljs-doctag">@param</span> &lt;V&gt; The result type returned by this FutureTask&apos;s {<span class="hljs-doctag">@code</span> get} methods
+ * V&#x8868;&#x793A;get&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FutureTask</span>&lt;<span class="hljs-title">V</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">RunnableFuture</span>&lt;<span class="hljs-title">V</span>&gt; </span>{
+    <span class="hljs-comment">/*
+     * Revision notes: This differs from previous versions of this
+     * class that relied on AbstractQueuedSynchronizer, mainly to
+     * avoid surprising users about retaining interrupt status during
+     * cancellation races. Sync control in the current design relies
+     * on a &quot;state&quot; field updated via CAS to track completion, along
+     * with a simple Treiber stack to hold waiting threads.
+     * &#x4FEE;&#x8BA2;&#xFF08;revision&#xFF09;&#x8BF4;&#x660E;&#xFF1A;&#x4E0E;&#x4E4B;&#x524D;&#x4F9D;&#x8D56;AQS&#x7684;&#x7248;&#x672C;&#x4E0D;&#x540C;&#xFF0C;&#x4E3B;&#x8981;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x7528;&#x6237;&#x5BF9;&#x4E8E;&#x5728;&#x53D6;&#x6D88;&#x7ADE;&#x4E89;&#x65F6;&#x4ECD;&#x4FDD;&#x7559;&#x4E2D;&#x65AD;&#x72B6;&#x6001;&#x800C;&#x611F;&#x5230;&#x60CA;&#x8BB6;&#x3002;
+     * &#x5728;&#x5F53;&#x524D;&#x8BBE;&#x8BA1;&#x4E2D;&#x540C;&#x6B65;&#x5668;&#x4F9D;&#x8D56;&#x901A;&#x8FC7;CAS&#x66F4;&#x65B0;&#x7684;state&#x5B57;&#x6BB5;&#x6765;&#x8DDF;&#x8E2A;&#x5B8C;&#x6210;&#x72B6;&#x6001;&#xFF0C;&#x4EE5;&#x53CA;&#x7B80;&#x5355;&#x7684;Treiber&#x6808;&#x6765;&#x4FDD;&#x5B58;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#x3002;
+     * &#xFF08;Treiber Stack Algorithm&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x65E0;&#x9501;&#x6808;&#xFF0C;&#x5229;&#x7528;&#x7EC6;&#x7C92;&#x5EA6;&#x7684;&#x5E76;&#x53D1;&#x539F;&#x8BED;CAS&#x6765;&#x5B9E;&#x73B0;&#x7684;&#xFF09;
+     *
+     * Style note: As usual, we bypass overhead of using
+     * AtomicXFieldUpdaters and instead directly use Unsafe intrinsics.
+     * &#x6837;&#x5F0F;&#x8BF4;&#x660E;&#xFF1A;&#x50CF;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#xFF0C;&#x7ED5;&#x8FC7;&#x4F7F;&#x7528;AtomicXFieldUpdaters&#x7684;&#x5F00;&#x9500;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;Unsafe&#x5185;&#x90E8;&#x51FD;&#x6570;&#x3002;
+     *
+     */</span>
+
+    <span class="hljs-comment">/**
+     * The run state of this task, initially NEW.  The run state
+     * transitions to a terminal state only in methods set,
+     * setException, and cancel.  During completion, state may take on
+     * transient values of COMPLETING (while outcome is being set) or
+     * INTERRUPTING (only while interrupting the runner to satisfy a
+     * cancel(true)). Transitions from these intermediate to final
+     * states use cheaper ordered/lazy writes because values are unique
+     * and cannot be further modified.
+     * &#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;&#x72B6;&#x6001;&#xFF08;state&#xFF09;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x662F;NEW&#x3002;
+     * &#x8FD0;&#x884C;&#x72B6;&#x6001;&#x4EC5;&#x5728;set&#x3001;setException&#x3001;cancel&#x65B9;&#x6CD5;&#x4E2D;&#x4F1A;&#x8F6C;&#x53D8;&#x4E3A;&#x7EC8;&#x6B62;&#xFF08;terminal&#xFF09;&#x72B6;&#x6001;&#x3002;
+     * &#x5728;&#x5B8C;&#x6210;&#x671F;&#x95F4;&#xFF0C;&#x72B6;&#x6001;&#x53EF;&#x80FD;&#x91C7;&#x7528;COMPLIETING&#xFF08;&#x5728;&#x8BBE;&#x7F6E;&#x7ED3;&#x679C;&#x65F6;&#xFF09;&#x6216;&#x8005;INTERRUPTING&#xFF08;&#x4EC5;&#x5728;&#x4E2D;&#x65AD;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#x4EE5;&#x6EE1;&#x8DB3;&#x53D6;&#x6D88;&#x4E3A;true&#x65F6;&#xFF09;&#x8FD9;&#x79CD;&#x77AC;&#x65F6;&#x6001;&#x3002;
+     * &#x4ECE;&#x8FD9;&#x4E9B;&#x4E2D;&#x95F4;&#x6001;&#x5230;&#x6700;&#x7EC8;&#x6001;&#x7684;&#x8F6C;&#x5316;&#xFF0C;&#x4F7F;&#x7528;cheaper&#x6709;&#x5E8F;/&#x61D2;&#x60F0;&#x5199;&#x5165;&#xFF0C;&#x56E0;&#x4E3A;&#x503C;&#x662F;&#x552F;&#x4E00;&#x7684;&#x5E76;&#x4E14;&#x65E0;&#x6CD5;&#x8FDB;&#x4E00;&#x6B65;&#xFF08;further&#xFF09;&#x4FEE;&#x6539;&#x3002;
+     *
+     * Possible state transitions:
+     * &#x53EF;&#x80FD;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x5316;
+     *
+     * NEW -&gt; COMPLETING -&gt; NORMAL
+     * NEW -&gt; COMPLETING -&gt; EXCEPTIONAL
+     * NEW -&gt; CANCELLED
+     * NEW -&gt; INTERRUPTING -&gt; INTERRUPTED
+     */</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">volatile</span> <span class="hljs-keyword">int</span> state;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> NEW          = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> COMPLETING   = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> NORMAL       = <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> EXCEPTIONAL  = <span class="hljs-number">3</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> CANCELLED    = <span class="hljs-number">4</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> INTERRUPTING = <span class="hljs-number">5</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> INTERRUPTED  = <span class="hljs-number">6</span>;
+
+    <span class="hljs-comment">/** The underlying callable; nulled out after running */</span>
+    <span class="hljs-comment">// &#x5E95;&#x5C42;&#x7684;callable&#xFF1B;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x7F6E;&#x4E3A;null&#x3002;</span>
+    <span class="hljs-keyword">private</span> Callable&lt;V&gt; callable;   <span class="hljs-comment">// &#x662F;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x3002;</span>
+    <span class="hljs-comment">/** The result to return or exception to throw from get() */</span>
+    <span class="hljs-comment">// &#x901A;&#x8FC7;get()&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x6216;&#x8005;&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;</span>
+    <span class="hljs-keyword">private</span> Object outcome; <span class="hljs-comment">// non-volatile, protected by state reads/writes // &#x975E;volatile&#xFF0C;&#x53D7;state&#x7684;&#x8BFB;/&#x5199;&#x4FDD;&#x62A4;</span>
+    <span class="hljs-comment">/** The thread running the callable; CASed during run() */</span>
+    <span class="hljs-comment">// &#x6267;&#x884C;callable&#x7684;&#x7EBF;&#x7A0B;&#xFF1B;&#x5728;run()&#x671F;&#x95F4;CAS&#x63A7;&#x5236;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">volatile</span> Thread runner;   <span class="hljs-comment">// &#x6267;&#x884C;&#x4EFB;&#x52A1;&#x7684;&#x7EBF;&#x7A0B;</span>
+    <span class="hljs-comment">/** Treiber stack of waiting threads */</span>
+    <span class="hljs-comment">// Treiber&#x6808;&#x4FDD;&#x5B58;&#x7684;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">volatile</span> WaitNode waiters; <span class="hljs-comment">// &#x7528;&#x6765;&#x6307;&#x5411;&#x7B2C;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;WaitNode&#xFF0C;&#x6CA1;&#x6709;&#x7684;&#x8BDD;&#x4E3A;null&#x3002;&#x8FD9;&#x91CC;&#x7684;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#xFF0C;&#x662F;&#x6307;&#x7684;&#x7B49;&#x5F85;&#x83B7;&#x53D6;&#x7ED3;&#x679C;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x7684;&#x7EBF;&#x7A0B;</span>
+
+    <span class="hljs-comment">/**
+     * Returns result or throws exception for completed task.
+     * &#x5BF9;&#x4E8E;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x6216;&#x8005;&#x629B;&#x51FA;&#x5F02;&#x5E38;
+     *
+     * <span class="hljs-doctag">@param</span> s completed state value
+     */</span>
+    <span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;unchecked&quot;</span>)
+    <span class="hljs-function"><span class="hljs-keyword">private</span> V <span class="hljs-title">report</span><span class="hljs-params">(<span class="hljs-keyword">int</span> s)</span> <span class="hljs-keyword">throws</span> ExecutionException </span>{
+        Object x = outcome;
+        <span class="hljs-keyword">if</span> (s == NORMAL) <span class="hljs-comment">// &#x5F53;state&#x5904;&#x4E8E;NORMAL&#x72B6;&#x6001;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x6267;&#x884C;&#x7ED3;&#x679C;</span>
+            <span class="hljs-keyword">return</span> (V)x;
+        <span class="hljs-keyword">if</span> (s &gt;= CANCELLED) <span class="hljs-comment">// &#x5F53;state&#x5904;&#x4E8E;CANCELLED&#x3001;INTERRUPTING&#x3001;INTERRUPTED&#x72B6;&#x6001;&#xFF0C;&#x629B;&#x51FA;&#x5DF2;&#x53D6;&#x6D88;&#x5F02;&#x5E38;&#x3002;</span>
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> CancellationException();
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> ExecutionException((Throwable)x); <span class="hljs-comment">// &#x80FD;&#x5230;&#x8FD9;&#x91CC;&#x5C31;&#x5269;EXCEPTIONAL&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x6709;state&gt;COMPLETING&#x7684;&#x624D;&#x80FD;&#x8FDB;&#x5165;&#x8BE5;&#x65B9;&#x6CD5;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x628A;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5C01;&#x88C5;&#x6210;&#x4E86;Exception&#x7ED9;&#x629B;&#x51FA;&#x4E86;</span>
+                                                     <span class="hljs-comment">// &#x6784;&#x9020;&#x8BE5;&#x5F02;&#x5E38;&#x7684;&#x6D41;&#x7A0B;&#x4E3A;&#xFF1A;public ExecutionException(Throwable cause)-&gt;public Exception(Throwable cause)-&gt;public Throwable(Throwable cause) </span>
+    }
+
+    <span class="hljs-comment">/**
+     * Creates a {<span class="hljs-doctag">@code</span> FutureTask} that will, upon running, execute the
+     * given {<span class="hljs-doctag">@code</span> Callable}.
+     * FutureTask&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5C06;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;Callable&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span>  callable the callable task
+     * <span class="hljs-doctag">@throws</span> NullPointerException if the callable is null
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">FutureTask</span><span class="hljs-params">(Callable&lt;V&gt; callable)</span> </span>{
+        <span class="hljs-keyword">if</span> (callable == <span class="hljs-keyword">null</span>)
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException();
+        <span class="hljs-keyword">this</span>.callable = callable;
+        <span class="hljs-keyword">this</span>.state = NEW;       <span class="hljs-comment">// ensure visibility of callable</span>
+    }
+
+    <span class="hljs-comment">/**
+     * Creates a {<span class="hljs-doctag">@code</span> FutureTask} that will, upon running, execute the
+     * given {<span class="hljs-doctag">@code</span> Runnable}, and arrange that {<span class="hljs-doctag">@code</span> get} will return the
+     * given result on successful completion.
+     * FutureTask&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5C06;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x6267;&#x884C;&#x7ED9;&#x5B9A;&#x7684;Runnable&#xFF0C;&#x5E76;&#x4E14;&#x5B89;&#x6392;&#xFF08;arrange&#xFF09;&#x5728;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x540E;&#xFF0C;get&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x7684;result&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> runnable the runnable task
+     * <span class="hljs-doctag">@param</span> result the result to return on successful completion. If
+     * you don&apos;t need a particular result, consider using
+     * constructions of the form:
+     * {<span class="hljs-doctag">@code</span> Future&lt;?&gt; f = new FutureTask&lt;Void&gt;(runnable, null)}
+     * result&#x53C2;&#x6570;&#x8868;&#x793A;&#x6210;&#x529F;&#x6267;&#x884C;&#x540E;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x9700;&#x8981;&#x7279;&#x5B9A;&#x7684;result&#xFF0C;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x5F62;&#x5F0F;&#x7684;&#x7ED3;&#x6784;&#xFF1A;
+     * Future&lt;?&gt; f = new FutureTask&lt;Void&gt;(runnable, null)
+     * Void&#x662F;java.lang.Void&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x5360;&#x4F4D;&#x7B26;&#x7C7B;&#xFF0C;&#x7528;&#x4E8E;&#x5BF9;void&#x5173;&#x952E;&#x5B57;&#x7684;&#x5F15;&#x7528;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#x8868;&#x793A;&#x65E0;&#x8FD4;&#x56DE;&#x503C;&#x3002;
+     *
+     * <span class="hljs-doctag">@throws</span> NullPointerException if the runnable is null
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">FutureTask</span><span class="hljs-params">(Runnable runnable, V result)</span> </span>{
+        <span class="hljs-keyword">this</span>.callable = Executors.callable(runnable, result); <span class="hljs-comment">// &#x4F7F;&#x7528;Executors&#x5DE5;&#x5177;&#x7C7B;&#x5C06;Runnable&#x9002;&#x914D;&#x4E3A;Callable&#xFF08;Executors.callable-&gt;Executors#RunnableAdapter&#x7C7B;&#xFF09;</span>
+        <span class="hljs-keyword">this</span>.state = NEW;       <span class="hljs-comment">// ensure visibility of callable</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isCancelled</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> state &gt;= CANCELLED; <span class="hljs-comment">// &#x5305;&#x62EC;CANCELLED&#x3001;INTERRUPTING&#x3001;INTERRUPTED</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isDone</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> state != NEW; <span class="hljs-comment">// &#x4E0D;&#x662F;NEW&#x5C31;&#x7B97;&#x7ED3;&#x675F;&#xFF08;&#x5305;&#x542B;&#x77AC;&#x65F6;&#x6001;&#x4E0E;&#x5176;&#x4ED6;&#x7ED3;&#x675F;&#x6001;&#xFF09;</span>
+    }
+
+    <span class="hljs-comment">// &#x9664;&#x4E86;&#x5C06;NEW&#x72B6;&#x6001;&#x8F6C;&#x5316;&#x4E3A;INTERRUPTING/CANCELLED</span>
+    <span class="hljs-comment">// &#x6216;&#x8005;&#x5BF9;&#x4E8E;&#x652F;&#x6301;mayInterruptedIfRunning&#x7684;&#xFF0C;&#x5C06;&#x975E;NEW&#x72B6;&#x6001;&#x8F6C;&#x5316;&#x4E3A;INTERRUPTED</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">cancel</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> mayInterruptIfRunning)</span> </span>{
+          <span class="hljs-comment">// &#x5982;&#x679C;state=NEW&#xFF0C;&#x5C1D;&#x8BD5;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;state=INTERRUPTING&#xFF08;&#x5982;&#x679C;&#x8FD9;&#x6837;&#x8BBE;&#x7F6E;&#x7684;&#x8BDD;&#xFF09;&#xFF0C;&#x5426;&#x5219;&#x8BBE;&#x7F6E;state=CANCELLED&#x6765;&#x8868;&#x793A;&#x4EFB;&#x52A1;&#x53D6;&#x6D88;&#x3002;&#xFF08;&#x8FD9;&#x91CC;&#x53EA;&#x662F;&#x8BBE;&#x7F6E;&#x4E86;&#x72B6;&#x6001;&#xFF0C;&#x5177;&#x4F53;&#x53D6;&#x6D88;&#x5728;&#x540E;&#x9762;&#xFF09;</span>
+        <span class="hljs-keyword">if</span> (!(state == NEW &amp;&amp;
+              UNSAFE.compareAndSwapInt(<span class="hljs-keyword">this</span>, stateOffset, NEW,
+                  mayInterruptIfRunning ? INTERRUPTING : CANCELLED))) <span class="hljs-comment">// &#x5982;&#x679C;mayInterruptIfRunning&#x4E3A;true&#xFF0C;&#x8868;&#x793A;&#x901A;&#x8FC7;&#x4E2D;&#x65AD;&#x6267;&#x884C;&#x8BE5;&#x4EFB;&#x52A1;&#x7684;&#x7EBF;&#x7A0B;&#x6765;&#x5C1D;&#x8BD5;&#x505C;&#x6B62;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#xFF0C;&#x8FD9;&#x91CC;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;state=INTERRUPTING</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        <span class="hljs-keyword">try</span> {    <span class="hljs-comment">// in case call to interrupt throws exception // &#x5982;&#x679C;&#x8C03;&#x7528;&#x4E2D;&#x65AD;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+            <span class="hljs-keyword">if</span> (mayInterruptIfRunning) { <span class="hljs-comment">// &#x5982;&#x679C;&#x5141;&#x8BB8;&#x901A;&#x8FC7;&#x4E2D;&#x65AD;&#x6267;&#x884C;&#x8BE5;&#x4EFB;&#x52A1;&#x7684;&#x7EBF;&#x7A0B;&#x6765;&#x505C;&#x6B62;&#x4EFB;&#x52A1;&#x6267;&#x884C;</span>
+                <span class="hljs-keyword">try</span> {
+                    Thread t = runner; <span class="hljs-comment">// runner&#x662F;&#x6267;&#x884C;&#x8BE5;callable&#x7684;&#x7EBF;&#x7A0B;</span>
+                    <span class="hljs-keyword">if</span> (t != <span class="hljs-keyword">null</span>)
+                        t.interrupt(); <span class="hljs-comment">// &#x4E2D;&#x65AD;&#x8BE5;&#x7EBF;&#x7A0B;</span>
+                } <span class="hljs-keyword">finally</span> { <span class="hljs-comment">// final state</span>
+                    UNSAFE.putOrderedInt(<span class="hljs-keyword">this</span>, stateOffset, INTERRUPTED); <span class="hljs-comment">// &#x6700;&#x540E;&#xFF0C;&#x5C06;state&#x7F6E;&#x4E3A;&#x6700;&#x7EC8;&#x6001;INTERRUPTED&#xFF08;&#x6839;&#x636E;&#x7C7B;&#x5F00;&#x59CB;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x5316;&#x5173;&#x7CFB;&#xFF0C;&#x53EA;&#x80FD;&#x662F;&#x4ECE;&#x77AC;&#x65F6;&#x6001;INTERRUPTING&#x8F6C;&#x5316;&#x4E3A;INTERRUPTED&#xFF09;</span>
+                }
+            }
+        } <span class="hljs-keyword">finally</span> {
+            finishCompletion(); <span class="hljs-comment">// &#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x6240;&#x6709;&#x7684;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#x90FD;&#x5524;&#x9192;&#x4E0E;&#x79FB;&#x9664;&#x3002;&#x8FD9;&#x91CC;runner&#x7EBF;&#x7A0B;&#x4E0E;waitnode&#x7EBF;&#x7A0B;&#x6CA1;&#x6709;&#x5173;&#x7CFB;&#xFF0C;runner&#x662F;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#xFF08;callable&#xFF09;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;waitnode&#x91CC;&#x7684;&#x7EBF;&#x7A0B;&#x662F;&#x60F3;&#x83B7;&#x53D6;&#x7ED3;&#x679C;&#x7684;&#x7EBF;&#x7A0B;</span>
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@throws</span> CancellationException {<span class="hljs-doctag">@inheritDoc</span>}
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">get</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> InterruptedException, ExecutionException </span>{
+        <span class="hljs-keyword">int</span> s = state;                   <span class="hljs-comment">// 1&#x3001;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6267;&#x884C;&#x7684;&#x72B6;&#x6001;state</span>
+        <span class="hljs-keyword">if</span> (s &lt;= COMPLETING)             <span class="hljs-comment">// 2&#x3001;&#x5982;&#x679C;state&lt;=COMPLETING&#xFF0C;&#x8868;&#x793A;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x4E3A;NEW&#x6216;&#x8005;COMPLETING&#x65F6;</span>
+            s = awaitDone(<span class="hljs-keyword">false</span>, <span class="hljs-number">0L</span>);    <span class="hljs-comment">// 3&#x3001;&#x62FF;&#x5F53;&#x524D;&#x7684;state&#x503C;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x88AB;&#x4E2D;&#x65AD;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x5982;&#x679C;&#x5904;&#x4E8E;&#x5B8C;&#x6210;&#x6001;&#xFF08;&gt;COMPLETING&#xFF09;&#x8FD4;&#x56DE;state&#x503C;&#xFF08;&#x5982;&#x679C;&#x672C;&#x6B21;&#x52A0;&#x5165;&#x4E86;waiterNode&#xFF0C;&#x9700;&#x8981;&#x5220;&#x9664;&#xFF09;&#xFF0C;&#x5982;&#x679C;=COMPLETING&#xFF0C;&#x90A3;&#x4E48;&#x8BA9;&#x51FA;CPU&#x65F6;&#x95F4;&#x7B49;&#x5F85;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x662F;&#x5B8C;&#x6210;&#x6001;&#xFF0C;&#x90A3;&#x4E48;park&#x7B49;&#x5F85;</span>
+        <span class="hljs-keyword">return</span> report(s);                <span class="hljs-comment">// 4&#x3001;state&#x8868;&#x793A;&#x6B63;&#x5E38;&#x7ED3;&#x675F;&#x5C31;&#x8FD4;&#x56DE;&#x5B9E;&#x9645;&#x7ED3;&#x679C;outcome&#xFF0C;&#x5982;&#x679C;&#x662F;CANCELLED&#x6216;&#x8005;&#x4E24;&#x4E2A;INTERRUPT&#xFF0C;&#x629B;&#x51FA;&#x53D6;&#x6D88;&#x5F02;&#x5E38;&#xFF0C;&#x5982;&#x679C;&#x662F;EXCEPTIONAL&#xFF0C;&#x629B;&#x51FA;&#x5BF9;&#x5E94;&#x7684;&#x5F02;&#x5E38;&#x3002;</span>
+    }
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@throws</span> CancellationException {<span class="hljs-doctag">@inheritDoc</span>}
+     * &#x5E26;&#x6709;&#x9650;&#x65F6;&#x7B49;&#x5F85;&#x7684;get&#x65B9;&#x6CD5;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">get</span><span class="hljs-params">(<span class="hljs-keyword">long</span> timeout, TimeUnit unit)</span>
+        <span class="hljs-keyword">throws</span> InterruptedException, ExecutionException, TimeoutException </span>{
+        <span class="hljs-keyword">if</span> (unit == <span class="hljs-keyword">null</span>)               <span class="hljs-comment">// &#x5982;&#x679C;&#x9650;&#x65F6;&#x4E3A;null&#xFF0C;&#x76F4;&#x63A5;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException();
+        <span class="hljs-keyword">int</span> s = state;
+        <span class="hljs-keyword">if</span> (s &lt;= COMPLETING &amp;&amp;
+            (s = awaitDone(<span class="hljs-keyword">true</span>, unit.toNanos(timeout))) &lt;= COMPLETING) <span class="hljs-comment">// &#x8C03;&#x7528;&#x7B49;&#x5F85;&#x5B8C;&#x6210;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x65F6;&#x8FD4;&#x56DE;&#x7684;state&#x4ECD;&#x662F;&#x672A;&#x5B8C;&#x6210;&#x72B6;&#x6001;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> TimeoutException();
+        <span class="hljs-keyword">return</span> report(s);               <span class="hljs-comment">// &#x5426;&#x5219;&#x8FD4;&#x56DE;&#x5BF9;&#x5E94;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;</span>
+    }
+
+    <span class="hljs-comment">/**
+     * Protected method invoked when this task transitions to state
+     * {<span class="hljs-doctag">@code</span> isDone} (whether normally or via cancellation). The
+     * default implementation does nothing.  Subclasses may override
+     * this method to invoke completion callbacks or perform
+     * bookkeeping. Note that you can query status inside the
+     * implementation of this method to determine whether this task
+     * has been cancelled.
+     * &#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x4EFB;&#x52A1;&#x8F6C;&#x5316;&#x4E3A;isDone&#x72B6;&#x6001;&#xFF08;state!=NEW&#xFF09;&#x65F6;&#x8C03;&#x7528;&#xFF08;&#x65E0;&#x8BBA;&#x662F;&#x6B63;&#x5E38;&#x7ED3;&#x675F;&#x8FD8;&#x662F;&#x901A;&#x8FC7;&#x53D6;&#x6D88;&#xFF09;&#x3002;
+     * &#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x505A;&#x3002;
+     * &#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x6B64;&#x65B9;&#x6CD5;&#x6765;&#x8C03;&#x7528;&#x5B8C;&#x6210;&#x65F6;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;&#xFF08;callback&#xFF09;&#x6216;&#x8005;&#x6267;&#x884C;&#x7C3F;&#x8BB0;&#xFF08;&#x53EF;&#x80FD;&#x662F;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#x7684;&#x610F;&#x601D;&#xFF1F;&#xFF09;&#x3002;
+     * &#x6CE8;&#x610F;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#x67E5;&#x8BE2;&#x72B6;&#x6001;&#xFF0C;&#x4EE5;&#x786E;&#x5B9A;&#x8BE5;&#x4EFB;&#x52A1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x53D6;&#x6D88;&#x3002;
+     * &#x8FD9;&#x4E2A;&#x53EF;&#x4EE5;&#x53C2;&#x7167;ExecutorCompletionService&#x5B50;&#x7C7B;&#xFF0C;&#x91CC;&#x9762;&#x6709;&#x5BF9;done&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x91CD;&#x8F7D;&#xFF0C;&#x8BB0;&#x5F55;&#x5B8C;&#x6210;&#x7684;task&#x5217;&#x8868;
+     *
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">done</span><span class="hljs-params">()</span> </span>{ }
+
+    <span class="hljs-comment">/**
+     * Sets the result of this future to the given value unless
+     * this future has already been set or has been cancelled.
+     * &#x8BBE;&#x7F6E;&#x8BE5;future&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#x7ED9;&#x5B9A;&#x7684;&#x503C;&#xFF0C;&#x9664;&#x975E;&#x8BE5;future&#x5DF2;&#x7ECF;&#x88AB;&#x8BBE;&#x7F6E;&#x8FC7;&#x6216;&#x8005;&#x5DF2;&#x7ECF;&#x88AB;&#x53D6;&#x6D88;&#x3002;
+     *
+     * &lt;p&gt;This method is invoked internally by the {<span class="hljs-doctag">@link</span> #run} method
+     * upon successful completion of the computation.
+     * &#x5F53;&#x8BA1;&#x7B97;&#x6210;&#x529F;&#x7ED3;&#x675F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7531;run&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#x8C03;&#x7528;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> v the value
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">set</span><span class="hljs-params">(V v)</span> </span>{
+        <span class="hljs-keyword">if</span> (UNSAFE.compareAndSwapInt(<span class="hljs-keyword">this</span>, stateOffset, NEW, COMPLETING)) { <span class="hljs-comment">// &#x5C06;state&#x4ECE;NEW&#x66F4;&#x65B0;&#x4E3A;COMPLETING&#xFF08;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;&#x8FC7;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4E0D;&#x4F1A;&#x91CD;&#x590D;&#x8BBE;&#x7F6E;&#xFF09;</span>
+            outcome = v;
+            UNSAFE.putOrderedInt(<span class="hljs-keyword">this</span>, stateOffset, NORMAL); <span class="hljs-comment">// final state // &#x7528;NORMAL&#x8986;&#x76D6;&#x77AC;&#x65F6;&#x6001;</span>
+            finishCompletion();                                              <span class="hljs-comment">// &#x91CA;&#x653E;&#x6240;&#x6709;&#x963B;&#x585E;&#x7B49;&#x5F85;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7684;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#xFF08;&#x57FA;&#x672C;&#x90FD;&#x5728;awaitDone&#x65B9;&#x6CD5;&#x4E0A;&#x963B;&#x585E;&#x4E86;&#xFF09;&#xFF0C;&#x597D;&#x8BA9;&#x4ED6;&#x4EEC;&#x62FF;&#x5230;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x3002;</span>
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Causes this future to report an {<span class="hljs-doctag">@link</span> ExecutionException}
+     * with the given throwable as its cause, unless this future has
+     * already been set or has been cancelled.
+     * &#x8BE5;future&#x4F7F;&#x7528;&#x7ED9;&#x5B9A;&#x7684;throwable&#x4F5C;&#x4E3A;&#x539F;&#x56E0;&#x4E0A;&#x62A5;ExecutionException&#xFF0C;&#x9664;&#x975E;&#x8BE5;future&#x5DF2;&#x7ECF;&#x88AB;&#x8BBE;&#x7F6E;&#x8FC7;&#x6216;&#x8005;&#x88AB;&#x53D6;&#x6D88;&#x3002;
+     *
+     * &lt;p&gt;This method is invoked internally by the {<span class="hljs-doctag">@link</span> #run} method
+     * upon failure of the computation.
+     * &#x5F53;&#x8BA1;&#x7B97;&#x5931;&#x8D25;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x7531;run&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#x8C03;&#x7528;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> t the cause of failure // t&#x8868;&#x793A;&#x5931;&#x8D25;&#x539F;&#x56E0;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setException</span><span class="hljs-params">(Throwable t)</span> </span>{
+        <span class="hljs-keyword">if</span> (UNSAFE.compareAndSwapInt(<span class="hljs-keyword">this</span>, stateOffset, NEW, COMPLETING)) { <span class="hljs-comment">// &#x5C06;state&#x4ECE;NEW&#x66F4;&#x65B0;&#x4E3A;COMPLETING&#xFF08;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;&#x8FC7;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4E0D;&#x4F1A;&#x91CD;&#x590D;&#x8BBE;&#x7F6E;&#xFF09;</span>
+            outcome = t;                                                     <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x7ED3;&#x679C;&#x4E3A;&#x5F02;&#x5E38;&#x539F;&#x56E0;</span>
+            UNSAFE.putOrderedInt(<span class="hljs-keyword">this</span>, stateOffset, EXCEPTIONAL); <span class="hljs-comment">// final state // &#x7528;EXCEPTIONAL&#x8986;&#x76D6;&#x77AC;&#x65F6;&#x6001;</span>
+            finishCompletion();                                              <span class="hljs-comment">// &#x91CA;&#x653E;&#x6240;&#x6709;&#x963B;&#x585E;&#x7B49;&#x5F85;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7684;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;</span>
+        }
+    }
+
+    <span class="hljs-comment">// run()&#x662F;&#x4E0D;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x7684;&#xFF0C;&#x7ED3;&#x679C;&#x9700;&#x8981;&#x901A;&#x8FC7;get()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (state != NEW ||
+            !UNSAFE.compareAndSwapObject(<span class="hljs-keyword">this</span>, runnerOffset,
+                                         <span class="hljs-keyword">null</span>, Thread.currentThread())) <span class="hljs-comment">// &#x5982;&#x679C;state&#x4E0D;&#x662F;NEW&#x6216;&#x8005;&#x8BBE;&#x7F6E;runner&#x4E3A;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5931;&#x8D25;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#xFF08;&#x6709;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x62A2;&#x7740;&#x505A;runner&#xFF09;</span>
+            <span class="hljs-keyword">return</span>;
+        <span class="hljs-keyword">try</span> {
+            Callable&lt;V&gt; c = callable;
+            <span class="hljs-keyword">if</span> (c != <span class="hljs-keyword">null</span> &amp;&amp; state == NEW) { <span class="hljs-comment">// &#x518D;&#x6B21;&#x5224;&#x65AD;state</span>
+                V result;
+                <span class="hljs-keyword">boolean</span> ran;
+                <span class="hljs-keyword">try</span> {
+                    result = c.call(); <span class="hljs-comment">// &#x7B49;&#x5F85;&#x6267;&#x884C;&#x5B8C;&#x6210;</span>
+                    ran = <span class="hljs-keyword">true</span>;
+                } <span class="hljs-keyword">catch</span> (Throwable ex) {
+                    result = <span class="hljs-keyword">null</span>;
+                    ran = <span class="hljs-keyword">false</span>;
+                    setException(ex); <span class="hljs-comment">// &#x5C06;outcome&#x8BBE;&#x7F6E;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x5F02;&#x5E38;</span>
+                }
+                <span class="hljs-keyword">if</span> (ran)
+                    set(result); <span class="hljs-comment">// &#x5C06;outcome&#x8BBE;&#x7F6E;&#x4E3A;&#x6267;&#x884C;&#x7ED3;&#x679C;</span>
+            }
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-comment">// runner must be non-null until state is settled to</span>
+            <span class="hljs-comment">// prevent concurrent calls to run()</span>
+            <span class="hljs-comment">// runner&#x5FC5;&#x987B;&#x4E0D;&#x4E3A;null&#xFF0C;&#x76F4;&#x5230;state&#x7A33;&#x5B9A;&#xFF08;settled &#x56FA;&#x5B9A;&#x7684;&#xFF09;&#xFF0C;&#x4EE5;&#x9632;&#x6B62;&#xFF08;prevent&#xFF09;&#x5E76;&#x53D1;&#x8C03;&#x7528;run()&#x65B9;&#x6CD5;&#x3002;&#xFF08;&#x662F;null&#x7684;&#x8BDD;run&#x65B9;&#x6CD5;&#x5C31;&#x53EF;&#x88AB;&#x5E76;&#x53D1;&#x8C03;&#x7528;&#x6267;&#x884C;&#xFF09;</span>
+            runner = <span class="hljs-keyword">null</span>;
+            <span class="hljs-comment">// state must be re-read after nulling runner to prevent</span>
+            <span class="hljs-comment">// leaked interrupts</span>
+            <span class="hljs-comment">// &#x5C06;runner&#x91CD;&#x7F6E;&#x4E3A;null&#x540E;&#xFF0C;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x8BFB;&#x53D6;state&#xFF0C;&#x4EE5;&#x9632;&#x6B62;&#x6CC4;&#x9732;&#x4E2D;&#x65AD;&#x3002;&#xFF08;&#x5C31;&#x662F;&#x6267;&#x884C;&#x4E86;&#x4E0A;&#x9762;&#x90A3;&#x4E00;&#x6B65;&#x4E4B;&#x540E;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x8BFB;&#x53D6;state&#xFF09;</span>
+            <span class="hljs-keyword">int</span> s = state;
+            <span class="hljs-keyword">if</span> (s &gt;= INTERRUPTING)
+                handlePossibleCancellationInterrupt(s); <span class="hljs-comment">// &#x5982;&#x679C;&#x8FDB;finally&#x662F;&#x56E0;&#x4E3A;cancel(true)&#x5F15;&#x8D77;&#x7684;&#x4E2D;&#x65AD;&#xFF0C;&#x90A3;&#x4E48;&#x7B49;&#x5F85;&#x4E2D;&#x65AD;&#x5B8C;&#x6210;&#x3002;</span>
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Executes the computation without setting its result, and then
+     * resets this future to initial state, failing to do so if the
+     * computation encounters an exception or is cancelled.  This is
+     * designed for use with tasks that intrinsically execute more
+     * than once.
+     * &#x6267;&#x884C;&#x8BA1;&#x7B97;&#x591A;&#x6B21;&#x4F46;&#x4E0D;&#x8BBE;&#x7F6E;&#x7ED3;&#x679C;&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x7F6E;future&#x4E3A;&#x521D;&#x8BC6;&#x72B6;&#x6001;&#xFF0C;
+     * &#x5982;&#x679C;&#x8BA1;&#x7B97;&#x9047;&#x5230;&#xFF08;encounter&#xFF09;&#x5F02;&#x5E38;&#x6216;&#x8005;&#x88AB;&#x53D6;&#x6D88;&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x8FD9;&#x4E48;&#x505A;&#x3002;&#xFF08;&#x65E0;&#x6CD5;&#x91CD;&#x7F6E;&#x4E3A;&#x521D;&#x59CB;&#x503C;&#xFF09;
+     * &#x8BBE;&#x8BA1;&#x7528;&#x4E8E;&#x672C;&#x8D28;&#x4E0A;&#xFF08;intrinsically&#xFF09;&#x6267;&#x884C;&#x591A;&#x6B21;&#x7684;&#x4EFB;&#x52A1;&#x3002;
+     *
+     * <span class="hljs-doctag">@return</span> {<span class="hljs-doctag">@code</span> true} if successfully run and reset
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">runAndReset</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (state != NEW ||
+            !UNSAFE.compareAndSwapObject(<span class="hljs-keyword">this</span>, runnerOffset,
+                                         <span class="hljs-keyword">null</span>, Thread.currentThread())) <span class="hljs-comment">// &#x5982;&#x679C;state&#x4E0D;&#x662F;NEW&#x6216;&#x8005;&#x8BBE;&#x7F6E;runner&#x4E3A;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5931;&#x8D25;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#xFF08;&#x6709;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x62A2;&#x7740;&#x505A;runner&#xFF09;</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+        <span class="hljs-keyword">boolean</span> ran = <span class="hljs-keyword">false</span>;
+        <span class="hljs-keyword">int</span> s = state;
+        <span class="hljs-keyword">try</span> {
+            Callable&lt;V&gt; c = callable;
+            <span class="hljs-keyword">if</span> (c != <span class="hljs-keyword">null</span> &amp;&amp; s == NEW) {
+                <span class="hljs-keyword">try</span> {
+                    c.call(); <span class="hljs-comment">// don&apos;t set result // &#x4E0D;&#x8BBE;&#x7F6E;&#x7ED3;&#x679C;</span>
+                    ran = <span class="hljs-keyword">true</span>;
+                } <span class="hljs-keyword">catch</span> (Throwable ex) {
+                    setException(ex);
+                }
+            }
+        } <span class="hljs-keyword">finally</span> {
+            <span class="hljs-comment">// runner must be non-null until state is settled to</span>
+            <span class="hljs-comment">// prevent concurrent calls to run()</span>
+            runner = <span class="hljs-keyword">null</span>;
+            <span class="hljs-comment">// state must be re-read after nulling runner to prevent</span>
+            <span class="hljs-comment">// leaked interrupts</span>
+            s = state;
+            <span class="hljs-keyword">if</span> (s &gt;= INTERRUPTING)
+                handlePossibleCancellationInterrupt(s);
+        }
+        <span class="hljs-keyword">return</span> ran &amp;&amp; s == NEW; <span class="hljs-comment">// &#x5982;&#x679C;&#x6267;&#x884C;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE;true&#xFF08;&#x5B8C;&#x6210;&#x4E14;&#x6CA1;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#xFF0C;&#x5F02;&#x5E38;&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x6267;&#x884C;c.call&#x7684;&#x65F6;&#x5019;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x5F53;&#x524D;runner&#x88AB;cancel&#x7684;&#x5F02;&#x5E38;&#xFF09;</span>
+    }
+
+    <span class="hljs-comment">/**
+     * Ensures that any interrupt from a possible cancel(true) is only
+     * delivered to a task while in run or runAndReset.
+     * &#x786E;&#x4FDD;&#x53EF;&#x80FD;&#x6765;&#x81EA;cancel(true)&#x7684;&#x4EFB;&#x4F55;&#x4E2D;&#x65AD;&#xFF0C;&#x4EC5;&#x5728;&#x4EFB;&#x52A1;&#x5904;&#x4E8E;run&#x6216;&#x8005;runAndReset&#x65F6;&#x4F20;&#x9012;&#x7ED9;&#x4EFB;&#x52A1;&#x3002;
+     * &#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x4F1A;&#x8BBE;&#x7F6E;state&#x4E3A;INTERRUPTING&#x72B6;&#x6001;&#xFF0C;&#x5C31;&#x662F;&#x8C03;&#x7528;cancel(true)&#x7684;&#x65F6;&#x5019;&#x3002;
+     * &#x8C03;&#x7528;cancel(true)&#xFF0C;&#x5982;&#x679C;&#x6EE1;&#x8DB3;state==NEW&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x8BBE;&#x7F6E;&#x4E3A;INTERRUPTING&#xFF0C;&#x76F4;&#x5230;runner.interrupt()&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x624D;&#x8BBE;&#x7F6E;INTERRUPTING&#x72B6;&#x6001;&#x4E3A;INTERRUPTED&#x72B6;&#x6001;&#x3002;
+     *
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handlePossibleCancellationInterrupt</span><span class="hljs-params">(<span class="hljs-keyword">int</span> s)</span> </span>{
+        <span class="hljs-comment">// It is possible for our interrupter to stall before getting a</span>
+        <span class="hljs-comment">// chance to interrupt us.  Let&apos;s spin-wait patiently.</span>
+        <span class="hljs-comment">// &#x53EF;&#x80FD;&#x6211;&#x4EEC;&#x7684;interrupter&#x5728;&#x83B7;&#x53D6;&#x673A;&#x4F1A;&#x4E2D;&#x65AD;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x4F1A;&#x505C;&#x6B62;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x8010;&#x5FC3;&#x7684;&#xFF08;patiently&#xFF09;&#x81EA;&#x65CB;&#x7B49;&#x5F85;&#x3002;</span>
+        <span class="hljs-comment">//</span>
+        <span class="hljs-keyword">if</span> (s == INTERRUPTING)
+            <span class="hljs-keyword">while</span> (state == INTERRUPTING)
+                Thread.yield(); <span class="hljs-comment">// wait out pending interrupt</span>
+
+        <span class="hljs-comment">// assert state == INTERRUPTED;</span>
+
+        <span class="hljs-comment">// We want to clear any interrupt we may have received from</span>
+        <span class="hljs-comment">// cancel(true).  However, it is permissible to use interrupts</span>
+        <span class="hljs-comment">// as an independent mechanism for a task to communicate with</span>
+        <span class="hljs-comment">// its caller, and there is no way to clear only the</span>
+        <span class="hljs-comment">// cancellation interrupt.</span>
+        <span class="hljs-comment">// &#x6211;&#x4EEC;&#x60F3;&#x6E05;&#x9664;&#x901A;&#x8FC7;cancel(true)&#x53EF;&#x80FD;&#x83B7;&#x5F97;&#x7684;&#x4EFB;&#x4F55;&#x4E2D;&#x65AD;&#x3002;</span>
+        <span class="hljs-comment">// &#x7136;&#x800C;&#xFF0C;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x4E2D;&#x65AD;&#x4F5C;&#x4E3A;&#x4EFB;&#x52A1;&#x4E0E;&#x5176;&#x8C03;&#x7528;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#xFF08;communicate&#xFF09;&#x7684;&#x72EC;&#x7ACB;&#x673A;&#x5236;&#xFF08;java&#x7684;&#x57FA;&#x7840;&#x673A;&#x5236;&#xFF09;&#xFF0C;</span>
+        <span class="hljs-comment">// &#x6240;&#x4EE5;&#x6CA1;&#x529E;&#x6CD5;&#x4EC5;&#x53D6;&#x6D88;cancel&#x4E2D;&#x65AD;&#x3002;</span>
+        <span class="hljs-comment">//</span>
+        <span class="hljs-comment">// Thread.interrupted();</span>
+    }
+
+    <span class="hljs-comment">/**
+     * Simple linked list nodes to record waiting threads in a Treiber
+     * stack.  See other classes such as Phaser and SynchronousQueue
+     * for more detailed explanation.
+     * &#x7B80;&#x5355;&#x7684;&#x94FE;&#x8868;&#x8282;&#x70B9;&#xFF0C;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;Treiber stack&#x91CC;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#x3002;
+     * &#x6709;&#x5173;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x8BF4;&#x660E;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x9605;&#x5176;&#x4ED6;&#x7C7B;&#xFF0C;&#x4F8B;&#x5982;Phaser&#x4E0E;SynchronousQueue
+     *
+     */</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WaitNode</span> </span>{
+        <span class="hljs-keyword">volatile</span> Thread thread; <span class="hljs-comment">// &#x4FDD;&#x5B58;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF08;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x662F;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x83B7;&#x53D6;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x4E0D;&#x662F;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x7684;&#x7EBF;&#x7A0B;&#xFF09;</span>
+        <span class="hljs-keyword">volatile</span> WaitNode next; <span class="hljs-comment">// &#x7528;&#x4E8E;&#x6307;&#x5411;&#x4E0B;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;WaitNode</span>
+        WaitNode() { thread = Thread.currentThread(); } <span class="hljs-comment">// &#x5C06;&#x7EBF;&#x7A0B;&#x5C01;&#x88C5;&#x6210;WaitNode</span>
+    }
+
+    <span class="hljs-comment">/**
+     * Removes and signals all waiting threads, invokes done(), and
+     * nulls out callable.
+     * &#x79FB;&#x9664;&#x548C;&#x5524;&#x9192;&#x6240;&#x6709;&#x7B49;&#x5F85;&#xFF08;&#x60F3;&#x8981;&#x62FF;&#x5230;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x7684;&#xFF09;&#x7EBF;&#x7A0B;&#xFF0C;&#x8C03;&#x7528;done()&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x5C06;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x8BBE;&#x7F6E;&#x4E3A;null&#x3002;
+     *
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">finishCompletion</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// assert state &gt; COMPLETING; // &#x8FD9;&#x4E2A;assert&#x672C;&#x6765;&#x5C31;&#x6CE8;&#x91CA;&#x4E86;</span>
+        <span class="hljs-keyword">for</span> (WaitNode q; (q = waiters) != <span class="hljs-keyword">null</span>;) { <span class="hljs-comment">// &#x904D;&#x5386;Treiber stack&#x7ED3;&#x6784;&#x7684;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#x961F;&#x5217;&#xFF08;&#x5176;&#x5B9E;&#x662F;&#x4E2A;&#x6808;&#xFF09;&#xFF08;&#x8FD9;&#x91CC;&#x662F;&#x4E0D;&#x65AD;&#x7684;&#x4ECE;&#x7B2C;&#x4E00;&#x4E2A;WaitNode&#xFF08;&#x5934;&#xFF09;&#x5F00;&#x59CB;&#x904D;&#x5386;&#xFF09;</span>
+            <span class="hljs-keyword">if</span> (UNSAFE.compareAndSwapObject(<span class="hljs-keyword">this</span>, waitersOffset, q, <span class="hljs-keyword">null</span>)) { <span class="hljs-comment">// &#x5C06;q&#x7F6E;&#x4E3A;null</span>
+                <span class="hljs-keyword">for</span> (;;) {
+                    Thread t = q.thread;
+                    <span class="hljs-keyword">if</span> (t != <span class="hljs-keyword">null</span>) {
+                        q.thread = <span class="hljs-keyword">null</span>;
+                        LockSupport.unpark(t); <span class="hljs-comment">// &#x5524;&#x9192;&#x5F53;&#x524D;WaitNode&#x7684;&#x7EBF;&#x7A0B;</span>
+                    }
+                    WaitNode next = q.next;
+                    <span class="hljs-keyword">if</span> (next == <span class="hljs-keyword">null</span>) <span class="hljs-comment">// &#x5982;&#x679C;&#x8BE5;&#x8282;&#x70B9;&#x7684;next&#x4E3A;null&#xFF0C;&#x9000;&#x51FA;&#x672C;&#x5C42;&#x5FAA;&#x73AF;&#xFF08;&#x8BF4;&#x660E;&#x8FD9;&#x4E00;&#x6B21;&#x5BF9;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#x7684;&#x904D;&#x5386;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x5DF2;&#x5524;&#x9192;&#x6240;&#x6709;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#xFF09;</span>
+                        <span class="hljs-keyword">break</span>;
+                    q.next = <span class="hljs-keyword">null</span>; <span class="hljs-comment">// unlink to help gc // &#x5C06;next&#x6253;&#x65AD;&#xFF0C;&#x65B9;&#x4FBF;GC</span>
+                    q = next; <span class="hljs-comment">// &#x8BA9;q&#x6210;&#x4E3A;&#x4E0B;&#x4E00;&#x4E2A;waitNode&#xFF0C;&#x7EE7;&#x7EED;&#x904D;&#x5386;</span>
+                }
+                <span class="hljs-keyword">break</span>;
+            }
+        }
+
+        done(); <span class="hljs-comment">// &#x672C;&#x7C7B;&#x662F;&#x7A7A;&#xFF0C;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;</span>
+
+        callable = <span class="hljs-keyword">null</span>;        <span class="hljs-comment">// to reduce footprint // &#x51CF;&#x5C11;&#x8DB3;&#x8FF9;&#xFF1F;&#xFF1F;&#xFF1F;</span>
+    }
+
+    <span class="hljs-comment">/**
+     * Awaits completion or aborts on interrupt or timeout.
+     * &#x7B49;&#x5F85;&#x5B8C;&#x6210;&#xFF0C;&#x6216;&#x8005;&#x7531;&#x4E8E;&#x4E2D;&#x65AD;&#x6216;&#x8005;&#x8D85;&#x65F6;&#x5BFC;&#x81F4;&#x7684;&#x7EC8;&#x6B62;&#x3002;
+     *
+     * <span class="hljs-doctag">@param</span> timed true if use timed waits
+     *        timed true &#x5982;&#x679C;&#x4F7F;&#x7528;&#x9650;&#x65F6;&#x7B49;&#x5F85;
+     * <span class="hljs-doctag">@param</span> nanos time to wait, if timed
+     *        nanos &#x65F6;&#x95F4;&#x503C; &#x5982;&#x679C;&#x9700;&#x8981;&#x9650;&#x65F6;&#x7B49;&#x5F85;
+     * <span class="hljs-doctag">@return</span> state upon completion
+     *         &#x5B8C;&#x6210;&#xFF08;&#x6216;&#x8005;&#x8D85;&#x65F6;&#xFF09;&#x540E;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#xFF08;&#x4E2D;&#x65AD;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF09;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> <span class="hljs-title">awaitDone</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> timed, <span class="hljs-keyword">long</span> nanos)</span>
+        <span class="hljs-keyword">throws</span> InterruptedException </span>{
+        <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> deadline = timed ? System.nanoTime() + nanos : <span class="hljs-number">0L</span>;      <span class="hljs-comment">// 1&#x3001;&#x5982;&#x679C;&#x9700;&#x8981;&#x9650;&#x65F6;&#x7B49;&#x5F85;&#xFF0C;&#x8BA1;&#x7B97;&#x622A;&#x6B62;&#x65F6;&#x95F4;</span>
+        WaitNode q = <span class="hljs-keyword">null</span>;                                                  <span class="hljs-comment">// 2&#x3001;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#x8282;&#x70B9;&#xFF0C;&#x7B49;&#x5F85;&#x6267;&#x884C;&#x7ED3;&#x679C;</span>
+        <span class="hljs-keyword">boolean</span> queued = <span class="hljs-keyword">false</span>;                                            <span class="hljs-comment">// queued&#x8868;&#x793A;&#x5F53;&#x524D;&#x7B49;&#x5F85;&#x8282;&#x70B9;&#x662F;&#x5426;&#x5DF2;&#x5728;Treiber stack&#x7B49;&#x5F85;&#x961F;&#x5217;&#xFF08;&#x5176;&#x5B9E;&#x662F;&#x4E2A;&#x6808;&#xFF09;&#x91CC;</span>
+        <span class="hljs-keyword">for</span> (;;) {
+            <span class="hljs-keyword">if</span> (Thread.interrupted()) {                                     <span class="hljs-comment">// &#x5982;&#x679C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x53D1;&#x751F;&#x4E2D;&#x65AD;&#xFF0C;&#x79FB;&#x9664;&#x7B49;&#x5F85;&#x7ED3;&#x679C;&#x7684;&#x7EBF;&#x7A0B;&#x8282;&#x70B9;&#xFF0C;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+                removeWaiter(q);                                            <span class="hljs-comment">// &#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x505A;&#x8FD9;&#x4E2A;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;q&#x53EF;&#x80FD;&#x5728;&#x7B49;&#x5F85;&#x6808;&#x91CC;&#xFF0C;&#x8981;&#x4ECE;&#x7B49;&#x5F85;&#x6808;&#x91CC;&#x7ED9;&#x79FB;&#x9664;</span>
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> InterruptedException();
+            }
+
+            <span class="hljs-keyword">int</span> s = state;
+            <span class="hljs-keyword">if</span> (s &gt; COMPLETING) {                                            <span class="hljs-comment">// &#x5982;&#x679C;state&#x72B6;&#x6001;&#x6210;&#x4E3A;&#x5B8C;&#x6210;&#x6001;&#xFF08;&#x5305;&#x542B;&#x5B8C;&#x6210;&#x3001;&#x4E2D;&#x65AD;&#x3001;&#x53D6;&#x6D88;&#xFF09;</span>
+                <span class="hljs-keyword">if</span> (q != <span class="hljs-keyword">null</span>)                                               <span class="hljs-comment">//    &#x5982;&#x679C;&#x7B49;&#x5F85;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;null&#xFF0C;&#x5C06;&#x7B49;&#x5F85;&#x8282;&#x70B9;&#x7684;&#x7EBF;&#x7A0B;&#x7F6E;&#x4E3A;null&#xFF08;&#x76F8;&#x5F53;&#x4E8E;&#x6253;&#x4E2A;&#x6807;&#x8BB0;&#xFF0C;&#x4E3A;&#x4EE5;&#x540E;removeWaiter()&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#xFF0C;&#x5F53;&#x7136;&#x672C;&#x6B21;&#x662F;&#x4E0D;&#x4F1A;&#x53BB;&#x8C03;&#x7528;removeWaiter()&#x4E86;&#xFF09;</span>
+                    q.thread = <span class="hljs-keyword">null</span>;
+                <span class="hljs-keyword">return</span> s;                                                    <span class="hljs-comment">// &#x8FD4;&#x56DE;&#x6267;&#x884C;&#x72B6;&#x6001;</span>
+            }
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (s == COMPLETING) <span class="hljs-comment">// cannot time out yet</span>
+                Thread.yield();                                               <span class="hljs-comment">// &#x5904;&#x5728;&#x5B8C;&#x6210;&#x7684;&#x77AC;&#x65F6;&#x6001;&#xFF0C;&#x63D0;&#x793A;&#x8C03;&#x5EA6;&#x5668;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x6682;&#x65F6;&#x653E;&#x5F03;CPU&#x8C03;&#x5EA6;&#xFF0C;&#x7B49;&#x518D;&#x88AB;&#x8C03;&#x5EA6;&#x65F6;&#x4E0D;&#x4F1A;&#x8D70;&#x8FDB;park&#x5206;&#x652F;&#xFF0C;&#x76F4;&#x63A5;&#x5224;&#x65AD;state&#x662F;&#x5426;&#x4E3A;&#x5B8C;&#x6210;&#x6001;&#x3002;</span>
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (q == <span class="hljs-keyword">null</span>)
+                q = <span class="hljs-keyword">new</span> WaitNode();                                           <span class="hljs-comment">// &#x7B2C;&#x4E00;&#x8F6E;&#x6CA1;&#x6709;&#x62FF;&#x5230;&#x5B8C;&#x6210;&#x6001;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x8282;&#x70B9;</span>
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!queued)                                                 <span class="hljs-comment">// &#x5982;&#x679C;&#x7B49;&#x5F85;&#x8282;&#x70B9;&#x6CA1;&#x5728;&#x7B49;&#x5F85;&#x961F;&#x5217;&#xFF08;&#x5176;&#x5B9E;&#x662F;&#x4E2A;&#x6808;&#xFF09;&#x4E2D;&#xFF0C;&#x5C1D;&#x8BD5;&#x5165;&#x961F;</span>
+                queued = UNSAFE.compareAndSwapObject(<span class="hljs-keyword">this</span>, waitersOffset,
+                                                     q.next = waiters, q);     <span class="hljs-comment">// &#x65B0;&#x5165;&#x6808;&#x7684;&#x5728;&#x6808;&#x9876;&#xFF0C;&#x8BA9;&#x5F53;&#x524D;&#x8282;&#x70B9;next&#x6307;&#x5411;&#x539F;&#x6808;&#x9876;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x5165;&#x6808;</span>
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (timed) {                                                 <span class="hljs-comment">// &#x5982;&#x679C;&#x9700;&#x8981;&#x9650;&#x65F6;&#xFF0C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x7B49;&#x5F85;&#x8D85;&#x65F6;&#xFF0C;&#x8D85;&#x65F6;&#x7684;&#x7B49;&#x5F85;&#x5C06;&#x4ECE;&#x7B49;&#x5F85;&#x6808;&#x4E2D;&#x79FB;&#x9664;</span>
+                nanos = deadline - System.nanoTime();
+                <span class="hljs-keyword">if</span> (nanos &lt;= <span class="hljs-number">0L</span>) {
+                    removeWaiter(q);
+                    <span class="hljs-keyword">return</span> state;
+                }
+                LockSupport.parkNanos(<span class="hljs-keyword">this</span>, nanos);                          <span class="hljs-comment">// &#x9700;&#x8981;&#x9650;&#x65F6;&#x7684;&#x5982;&#x679C;&#x6CA1;&#x8D85;&#x65F6;&#xFF0C;&#x8BBE;&#x7F6E;park&#x65F6;&#x95F4;&#x5F00;&#x59CB;&#x963B;&#x585E;</span>
+            }
+            <span class="hljs-keyword">else</span>
+                LockSupport.park(<span class="hljs-keyword">this</span>);                                      <span class="hljs-comment">// &#x8FD9;&#x4E00;&#x904D;&#x68C0;&#x67E5;&#x53D1;&#x73B0;&#x4EFB;&#x52A1;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#xFF0C;&#x5F00;&#x59CB;park&#x963B;&#x585E;&#xFF08;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F1A;&#x5524;&#x9192;&#x5462;&#xFF1F;&#xFF1F;&#xFF1F;&#xFF09;</span>
+        }
+    }
+
+    <span class="hljs-comment">/**
+     * Tries to unlink a timed-out or interrupted wait node to avoid
+     * accumulating garbage.  Internal nodes are simply unspliced
+     * without CAS since it is harmless if they are traversed anyway
+     * by releasers.  To avoid effects of unsplicing from already
+     * removed nodes, the list is retraversed in case of an apparent
+     * race.  This is slow when there are a lot of nodes, but we don&apos;t
+     * expect lists to be long enough to outweigh higher-overhead
+     * schemes.
+     * &#x5C1D;&#x8BD5;&#x53D6;&#x6D88;&#x8D85;&#x65F6;&#x6216;&#x8005;&#x4E2D;&#x65AD;&#x7684;&#x7B49;&#x5F85;&#x8282;&#x70B9;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x907F;&#x514D;&#x5783;&#x573E;&#x79EF;&#x7D2F;&#x3002;
+     * &#x5185;&#x90E8;&#x8282;&#x70B9;&#x5728;&#x6CA1;&#x6709;CAS&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x53EA;&#x662F;&#xFF08;simply &#x53EA;&#x662F;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#xFF09;&#x62C6;&#x5F00;&#xFF0C;&#x56E0;&#x4E3A;&#x65E0;&#x8BBA;&#x53D1;&#x5E03;&#x8005;&#x600E;&#x4E48;&#x904D;&#x5386;&#x4ED6;&#x4EEC;&#x90FD;&#x662F;&#x65E0;&#x5BB3;&#x7684;&#x3002;
+     * &#x4E3A;&#x4E86;&#x907F;&#x514D;&#x4ECE;&#x5DF2;&#x7ECF;&#x79FB;&#x9664;&#x7684;&#x8282;&#x70B9;&#x62C6;&#x5F00;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x660E;&#x663E;&#x7ADE;&#x4E89;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x8FDB;&#x884C;&#x5217;&#x8868;&#x56DE;&#x6EAF;&#x3002;
+     * &#x5F53;&#x6709;&#x592A;&#x591A;&#x8282;&#x70B9;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5F88;&#x6162;&#xFF0C;&#x4F46;&#x4E0D;&#x5E0C;&#x671B;&#x5217;&#x8868;&#x8DB3;&#x591F;&#x957F;&#x4EE5;&#x8D85;&#x8FC7;&#x66F4;&#x9AD8;&#x5F00;&#x9500;&#x7684;&#x65B9;&#x6848;&#x3002;
+     * &#xFF08;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x53D6;&#x6D88;&#x65E0;&#x7528;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x6765;&#x7F29;&#x77ED;&#x5217;&#x8868;&#x957F;&#x5EA6;&#xFF0C;&#x540C;&#x65F6;&#x907F;&#x514D;&#x7531;&#x4E8E;&#x5DF2;&#x79FB;&#x9664;&#x7684;&#x8282;&#x70B9;&#x5BFC;&#x81F4;&#x8FDE;&#x63A5;&#x65AD;&#x4E86;&#xFF0C;&#x867D;&#x7136;&#x7F29;&#x77ED;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E5F;&#x4F1A;&#x5E26;&#x6765;&#x65F6;&#x95F4;&#x6D88;&#x8017;&#xFF09;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">removeWaiter</span><span class="hljs-params">(WaitNode node)</span> </span>{
+        <span class="hljs-keyword">if</span> (node != <span class="hljs-keyword">null</span>) {
+            node.thread = <span class="hljs-keyword">null</span>;
+            retry:
+            <span class="hljs-keyword">for</span> (;;) {          <span class="hljs-comment">// restart on removeWaiter race // &#x5728;&#x6709;&#x7ADE;&#x4E89;&#x65F6;&#x91CD;&#x65B0;&#x5F00;&#x59CB;</span>
+                <span class="hljs-keyword">for</span> (WaitNode pred = <span class="hljs-keyword">null</span>, q = waiters, s; q != <span class="hljs-keyword">null</span>; q = s) { <span class="hljs-comment">// &#x5F00;&#x59CB;&#x65F6;q&#x662F;Treiber&#x7B49;&#x5F85;&#x6808;&#x7684;&#x5934;&#x5143;&#x7D20;</span>
+                    s = q.next;
+                    <span class="hljs-keyword">if</span> (q.thread != <span class="hljs-keyword">null</span>) <span class="hljs-comment">// &#x8BE5;node&#x7684;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#x4E0D;&#x4E3A;null&#xFF0C;&#x90A3;&#x4E48;&#x79FB;&#x52A8;pred&#x6307;&#x5411;&#x8BE5;node&#xFF08;&#x8868;&#x793A;&#x8BE5;node&#x4E0D;&#x7528;&#x5220;&#x9664;&#xFF09;</span>
+                        pred = q;
+                    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (pred != <span class="hljs-keyword">null</span>) { <span class="hljs-comment">// &#x5982;&#x679C;&#x8BE5;node&#x7684;&#x7B49;&#x5F85;&#x7EBF;&#x7A0B;&#x4E3A;null&#xFF0C;&#x90A3;&#x4E48;&#x5220;&#x9664;&#x8BE5;node&#xFF08;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x4E3A;&#x8BA9;&#x8BE5;node&#x7684;&#x524D;&#x9A71;.next&#x6307;&#x5411;&#x8BE5;node&#x7684;&#x540E;&#x7EE7;&#xFF09;</span>
+                        pred.next = s;
+                        <span class="hljs-keyword">if</span> (pred.thread == <span class="hljs-keyword">null</span>) <span class="hljs-comment">// check for race // &#x5982;&#x679C;&#x53D1;&#x73B0;&#x524D;&#x9A71;&#x7684;thread&#x4E5F;&#x662F;null&#x4E86;&#xFF0C;&#x8BF4;&#x660E;&#x524D;&#x9A71;&#x4E5F;&#x5E94;&#x8BE5;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x91CD;&#x65B0;&#x904D;&#x5386;&#x7B49;&#x5F85;&#x6808;&#x3002;</span>
+                            <span class="hljs-keyword">continue</span> retry;
+                    }
+                    <span class="hljs-comment">// &#x5230;&#x8FD9;&#x91CC;&#x7684;&#x6761;&#x4EF6;&#x662F;q.thread == null &amp;&amp; pred == null&#xFF0C;&#x8FD9;&#x8868;&#x793A;pred&#x5C31;&#x6CA1;&#x627E;&#x5230;&#x4E2A;&#x4E0D;&#x662F;null&#x7684;&#x5E76;&#x4E14;q&#x662F;&#x5934;&#x8282;&#x70B9;&#xFF08;&#x5176;&#x5B9E;q&#x4E0D;&#x662F;&#x5F00;&#x59CB;&#x7684;&#x5934;&#x7ED3;&#x70B9;&#xFF0C;&#x662F;&#x4E0D;&#x65AD;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;CAS&#x8BBE;&#x7F6E;&#x7684;&#x5934;&#x7ED3;&#x70B9;&#xFF08;&#x539F;&#x6765;&#x7684;&#x5934;&#x7ED3;&#x70B9;&#x5C31;&#x987A;&#x5E26;&#x5220;&#x4E86;&#xFF09;&#xFF09;</span>
+                    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!UNSAFE.compareAndSwapObject(<span class="hljs-keyword">this</span>, waitersOffset,
+                                                          q, s)) <span class="hljs-comment">// &#x7528;&#x5934;&#x7ED3;&#x70B9;&#x7684;next&#x66FF;&#x6362;&#x5934;&#x7ED3;&#x70B9;&#xFF0C;&#x5982;&#x679C;&#x66FF;&#x6362;&#x5931;&#x8D25;&#x4E86;&#xFF0C;&#x8BF4;&#x660E;&#x53EF;&#x80FD;&#x6709;&#x7ADE;&#x4E89;&#x5165;&#x961F;&#x7684;&#xFF0C;&#x5C31;&#x4ECE;&#x5934;&#x91CD;&#x65B0;&#x904D;&#x5386;</span>
+                        <span class="hljs-keyword">continue</span> retry;
+                }
+                <span class="hljs-keyword">break</span>;
+            }
+        }
+    }
+
+    <span class="hljs-comment">// Unsafe mechanics</span>
+    <span class="hljs-comment">// &#x4E00;&#x5806;&#x4F7F;&#x7528;Unsafe&#x5B9E;&#x73B0;&#x7684;CAS</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> sun.misc.Unsafe UNSAFE;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> stateOffset;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> runnerOffset;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> waitersOffset;
+    <span class="hljs-keyword">static</span> {
+        <span class="hljs-keyword">try</span> {
+            UNSAFE = sun.misc.Unsafe.getUnsafe();
+            Class&lt;?&gt; k = FutureTask.class;
+            stateOffset = UNSAFE.objectFieldOffset
+                (k.getDeclaredField(<span class="hljs-string">&quot;state&quot;</span>));
+            runnerOffset = UNSAFE.objectFieldOffset
+                (k.getDeclaredField(<span class="hljs-string">&quot;runner&quot;</span>));
+            waitersOffset = UNSAFE.objectFieldOffset
+                (k.getDeclaredField(<span class="hljs-string">&quot;waiters&quot;</span>));
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(e);
+        }
+    }
+
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Future.java.html" class="navigation navigation-prev " aria-label="Previous page: Future.Java">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="RunnableFuture.java.html" class="navigation navigation-next " aria-label="Next page: RunnableFuture.Java">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"FutureTask.Java","level":"1.2.3.9","depth":3,"next":{"title":"RunnableFuture.Java","level":"1.2.3.10","depth":3,"path":"Doc/util/concurrent/RunnableFuture.java.md","ref":"Doc/util/concurrent/RunnableFuture.java.md","articles":[]},"previous":{"title":"Future.Java","level":"1.2.3.8","depth":3,"path":"Doc/util/concurrent/Future.java.md","ref":"Doc/util/concurrent/Future.java.md","articles":[]},"dir":"ltr"},"config":{"plugins":["summary","splitter","code","-sharing","-lunr","-search","search-pro","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"summary":{},"splitter":{},"code":{"copyButtons":true},"search-pro":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"莫显辉","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*","description":"日常笔记"},"file":{"path":"Doc/util/concurrent/FutureTask.java.md","mtime":"2021-07-29T02:14:01.392Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-30T05:59:23.144Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
